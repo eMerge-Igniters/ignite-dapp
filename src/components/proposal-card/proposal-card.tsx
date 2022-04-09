@@ -8,6 +8,7 @@ export class ProposalCard {
   modal;
   detailsModal;
   radioGroup;
+  header;
 
   @Prop() heading = '';
   @Prop() expirationDate: Date = null;
@@ -27,6 +28,11 @@ export class ProposalCard {
 
   @State() voteValue = 'for';
 
+  componentDidRender() {
+    const header: HTMLElement = this.header.shadowRoot.querySelector('ukg-card-title')
+    header.style.color = 'white'
+  }
+
   render() {
     return (
       <Host class="proposal-card">
@@ -36,7 +42,7 @@ export class ProposalCard {
           }}
           fit-content
         >
-          <ukg-card-header card-title={this.heading} subtitle={this.getDaysTillExpiration() + ' days left'}></ukg-card-header>
+          <ukg-card-header ref={el => this.header = el} card-title={this.heading} subtitle={this.getDaysTillExpiration() + ' days left'}></ukg-card-header>
           <ukg-card-content>
             <div class="description">{this.description}</div>
 

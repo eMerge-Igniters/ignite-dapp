@@ -6,6 +6,7 @@
 
   ukg-card {
     background: #06111e;
+    box-shadow: 0px 0px 0px 1px rgb(255 255 255 / 30%);
   }
 
   // card component internal parts
@@ -20,6 +21,11 @@
       flex-grow: 1;
     }
   }
+}
+
+ukg-card-content {
+  color: white !important;
+  --ukg-progress-indicator-track: white;
 }
 
 .progress-bar {

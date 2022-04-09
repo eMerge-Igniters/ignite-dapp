@@ -9,7 +9,7 @@ import { Component, h, State } from '@stencil/core';
 export class AppRoot {
   heading = 'Community Hub';
   taskDrawerEl;
-  mediaQuery = window.matchMedia('(min-width: 555px');
+  mediaQuery = window.matchMedia('(min-width: 768px');
   @State() isMobile = false;
 
   async triggerTaskDrawer() {
@@ -138,7 +138,7 @@ export class AppRoot {
               }}
             >
               {this.isMobile ? (
-                <ukg-button-group style={{ paddingBottom: '16px' }}>
+                <ukg-button-group style={{ paddingBottom: '16px', paddingLeft: '22px' }}>
                   <ukg-button emphasis="mid" onClick={() => this.triggerTaskDrawer()}>
                     Add Proposal
                     <i slot="child-icon" style={{ color: 'white', marginLeft: '4px' }} class="fa-solid fa-plus"></i>
