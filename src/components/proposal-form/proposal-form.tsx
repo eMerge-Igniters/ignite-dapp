@@ -1,4 +1,5 @@
 import { Component, Host, h, Listen, State } from '@stencil/core';
+import ProposalService from '../../services/proposal.services';
 
 @Component({
   tag: 'proposal-form',
@@ -17,6 +18,8 @@ export class ProposalForm {
   categoryInput;
   votingMonInput;
   tagInput;
+
+  proposalService = new ProposalService();
 
   @State() titleInputDisabled: boolean = true;
   @State() descriptionInputDisabled: boolean = true;
@@ -66,7 +69,7 @@ export class ProposalForm {
     return [...chips].filter(chip => chip.selected).map(chip => chip.value);
   }
 
-  getValues() {
+  async getValues() {
     const title = this.titleInput.value;
     const description = this.descriptionInput.value;
     const category = this.categoryInput.value;
@@ -79,7 +82,10 @@ export class ProposalForm {
       votingMonth: votingMonth,
       tags: tags,
     };
-    return JSON.stringify(values);
+
+    const signer = await this.proposalService.getSigner();
+    this.proposalService.createProposal(signer,JSON.stringify(values));
+    console.log(JSON.stringify(values));
   }
 
   render() {

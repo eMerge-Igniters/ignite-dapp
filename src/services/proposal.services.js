@@ -6,6 +6,14 @@ export default class ProposalService {
   web3 = new Web3(Web3.givenProvider);
   addresses = getAddresses(Networks.ETH);
   provider;
+  signer;
+  
+  constructor() {
+    if (ProposalService._instance) {
+      return ProposalService._instance
+    }
+    ProposalService._instance = this;
+  }
 
   async getProvider() {
     this.provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -13,8 +21,13 @@ export default class ProposalService {
   }
 
   async getSigner() {
+    if (this.signer) {
+      return this.signer;
+    }
+
     await this.getProvider();
-    return this.provider.getSigner();
+    this.signer = this.provider.getSigner();
+    return this.signer;
   }
 
   async createProposal(signer, proposalDescription) {

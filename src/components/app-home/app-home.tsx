@@ -12,7 +12,9 @@ export class AppHome {
 
   proposalService = new ProposalService();
 
-  componentDidLoad() {
+  async componentDidLoad() {
+    await this.proposalService.getSigner();
+    
     this.proposalService.onProposalsCreated(
       _ => {},
       e => {
@@ -29,11 +31,14 @@ export class AppHome {
   render() {
     const allProposals = [...this.pastProposals, ...this.createdProposals];
     console.log('ALL PROPOSALS', allProposals);
-    const filteredProposals = allProposals.filter(proposal => !proposal.returnValues.description.includes('PID'));
-    const descriptions = filteredProposals.map((proposal) =>  { 
-      return proposal.returnValues.description; 
+    const filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
+    const proposalObjs = filteredProposals.map((proposal) =>  {
+      return JSON.parse(proposal.returnValues.description);
     } );
-    console.log(descriptions);
+    console.log(proposalObjs);
+
+    // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
+    
     return (
       <div class="app-home">
         <ukg-grid-container>
@@ -42,9 +47,9 @@ export class AppHome {
               return (
                 <div class="ukg-col-lg-4 ukg-col-md-4 ukg-col-sm-4">
                   <proposal-card
-                    heading={descriptions[index]}
+                    heading={proposalObjs[index].title}
                     expirationDate={new Date('04/15/2022')}
-                    description={descriptions[index]}
+                    description={proposalObjs[index].description}
                     totalVotes={600}
                     yay={500}
                     nay={100}
