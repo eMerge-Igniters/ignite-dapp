@@ -46,6 +46,18 @@ export class AppRoot {
     }
   }
 
+  clearProposalForm() {
+    if (this.taskDrawerEl) {
+      this.taskDrawerEl.querySelector('#title-input').value = null;
+      this.taskDrawerEl.querySelector('#description-input').value = null;
+      this.taskDrawerEl.querySelector('#category-input').value = null;
+      this.taskDrawerEl.querySelector('#voting-mon-input').value = null;
+      const tags = this.taskDrawerEl.querySelector('#tag-input')?.querySelectorAll('ukg-chip');
+      tags.forEach(tag => (tag.selected = false));
+      this.taskDrawerEl.querySelector('ukg-stepper').clear();
+    }
+  }
+
   render() {
     return (
       <ukg-app-shell>
@@ -54,8 +66,11 @@ export class AppRoot {
             ref={el => (this.taskDrawerEl = el)}
             heading="New Proposal"
             has-reset-button
+            has-apply-button
             reset-button-text="Cancel"
+            apply-button-text="Clear"
             onUkgTaskDrawerResetButtonClicked={() => this.triggerTaskDrawer()}
+            onUkgTaskDrawerApplyButtonClicked={() => this.clearProposalForm()}
           >
             <proposal-form></proposal-form>
           </ukg-task-drawer>
