@@ -41,6 +41,9 @@ export class AppRoot {
           this.connected = accounts.length > 0;
           const signer = provider.getSigner();
           this.proposalService.setSigner(signer);
+          signer.getAddress().then(address => {
+            this.proposalService.setAddress(address);
+          });
         });
       }
     }
@@ -119,6 +122,9 @@ export class AppRoot {
                           this.connected = accounts.length > 0;
                           const signer = provider.getSigner();
                           this.proposalService.setSigner(signer);
+                          signer.getAddress().then(address => {
+                            this.proposalService.setAddress(address);
+                          });
                         });
                       }}
                       onDisconnect={() => {
@@ -134,7 +140,7 @@ export class AppRoot {
               class="header-extension"
               style={{
                 paddingBottom: this.isMobile ? '60px' : null,
-                boxSizing: 'content-box'
+                boxSizing: 'content-box',
               }}
             >
               {this.isMobile ? (

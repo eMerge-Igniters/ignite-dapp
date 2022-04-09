@@ -7,6 +7,7 @@ export default class ProposalService {
   addresses = getAddresses(Networks.ETH);
   provider;
   signer;
+  address;
 
   constructor() {
     if (ProposalService._instance) {
@@ -33,6 +34,18 @@ export default class ProposalService {
 
   async setSigner(_signer) {
     this.signer = _signer;
+  }
+
+  async setAddress(address) {
+    this.address = address;
+  }
+
+  async getAddress() {
+    if (this.address) {
+      return this.address;
+    }
+    const signer = await this.getSigner();
+    return await signer.getAddress();
   }
 
   async createProposal(signer, proposalDescription) {

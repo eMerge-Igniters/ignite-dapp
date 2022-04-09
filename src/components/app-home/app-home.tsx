@@ -1,4 +1,4 @@
-import { Component, h, State } from '@stencil/core';
+import { Component, forceUpdate, h, State, Host } from '@stencil/core';
 import ProposalService from '../../services/proposal.services';
 @Component({
   tag: 'app-home',
@@ -10,6 +10,7 @@ export class AppHome {
   @State() pastProposals = [];
   @State() castedVotes = [];
   @State() pastVotes = [];
+  el;
 
   lastVoted;
   proposalService = new ProposalService();
@@ -30,7 +31,14 @@ export class AppHome {
     );
 
     this.proposalService.onPastProposals(e => {
-      this.pastProposals = [...e];
+      const proposals = [...e];
+      proposals.forEach(proposal => {
+        this.proposalService.hasVoted(proposal.returnValues.proposalId).then(res => {
+          proposal.returnValues.voted = res;
+          forceUpdate(this.el);
+        });
+      });
+      this.pastProposals = [...proposals];
     });
 
     this.proposalService.onVoteCast(
@@ -56,6 +64,7 @@ export class AppHome {
       events.forEach(event => {
         const { proposalId, support } = event.returnValues;
         this.pastVotes = [...this.pastVotes, { proposalId, support }];
+        console.log('past votes', this.pastVotes);
       });
     });
   }
@@ -106,14 +115,17 @@ export class AppHome {
   render() {
     console.log('ALL VOTES', this.castedVotes);
     const allProposals = [...this.pastProposals, ...this.createdProposals];
+    console.log(allProposals);
     console.log('ALL PROPOSALS', allProposals);
     let filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"') && !proposal.returnValues.description.includes('test'));
 
     console.log('FILTERED PROPOSALS', filteredProposals);
     const proposalObjs = filteredProposals.map(proposal => {
       // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
-      return { ...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId };
+      return { ...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId, voted: proposal.returnValues.voted };
     });
+
+    console.log('OBJS', proposalObjs);
 
     const allVotes = [...this.pastVotes, ...this.castedVotes];
     console.log('ALL VOTES', allVotes);
@@ -129,7 +141,12 @@ export class AppHome {
     console.log('FILTERED VOTES', filteredVotes);
 
     return (
-      <div class="app-home">
+      <Host
+        class="app-home"
+        ref={el => {
+          this.el = el;
+        }}
+      >
         <div class="container mx-auto px-4 sm:pt-12 pt-6">
           <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {proposalObjs.map((proposal, index) => {
@@ -141,6 +158,7 @@ export class AppHome {
                       this.lastVoted = document.querySelector(`#a${proposalObjs[index]?.proposalId}`) as any;
                       this.lastVoted.setLoading()
                       this.castVote(e.detail, proposalObjs[index].proposalId);
+                      proposalObjs[index].voted = true;
                     }}
                     id={'a' + proposalObjs[index]?.proposalId}
                     heading={proposalObjs[index]?.title}
@@ -149,13 +167,14 @@ export class AppHome {
                     totalVotes={filteredVotes[proposal.proposalId]?.total}
                     yay={filteredVotes[proposal.proposalId]?.yes}
                     nay={filteredVotes[proposal.proposalId]?.no}
+                    hasVoted={proposalObjs[index]?.voted}
                   ></proposal-card>
                 </div>
               );
             })}
           </div>
         </div>
-      </div>
+      </Host>
     );
   }
 }
