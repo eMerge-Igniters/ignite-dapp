@@ -17,10 +17,12 @@ export namespace Components {
     }
     interface ProposalCard {
         "description": string;
+        "dismissSnackbar": () => Promise<void>;
         "expirationDate": Date;
         "hasVoted": boolean;
         "heading": string;
         "nay": number;
+        "setLoading": () => Promise<void>;
         "totalVotes": number;
         "yay": number;
     }

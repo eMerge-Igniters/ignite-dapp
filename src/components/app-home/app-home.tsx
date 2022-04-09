@@ -11,6 +11,7 @@ export class AppHome {
   @State() castedVotes = [];
   @State() pastVotes = [];
 
+  lastVoted;
   proposalService = new ProposalService();
 
   async componentDidLoad() {
@@ -30,7 +31,8 @@ export class AppHome {
     });
 
     this.proposalService.onVoteCast(
-      _ => {},
+      _ => {
+      },
       e => {
         if (this.castedVotes.find((castedVote) => e.proposalId === castedVote.proposalId)) {
           return;
@@ -38,10 +40,11 @@ export class AppHome {
 
         const { proposalId, support } = e.returnValues;
         this.castedVotes = [...this.castedVotes, { proposalId, support }];
-        const card = document.getElementById(proposalId);
+        const card: any = document.getElementById(`a${proposalId}`);
         if (card) {
           (card as any).hasVoted = true;
         }
+        card.dismissSnackbar();
       },
       _ => {},
     );
@@ -131,9 +134,12 @@ export class AppHome {
                 <div class="ukg-col-lg-4 ukg-col-md-4 ukg-col-sm-4">
                   <proposal-card
                     onCastVote={e => {
+                      console.log(document.querySelector(`#a${proposalObjs[index]?.proposalId}`) as any);
+                      this.lastVoted = document.querySelector(`#a${proposalObjs[index]?.proposalId}`) as any;
+                      this.lastVoted.setLoading()
                       this.castVote(e.detail, proposalObjs[index].proposalId);
                     }}
-                    id={proposalObjs[index]?.proposalId}
+                    id={'a' + proposalObjs[index]?.proposalId}
                     heading={proposalObjs[index]?.title}
                     expirationDate={new Date('04/15/2022')}
                     description={proposalObjs[index]?.description}

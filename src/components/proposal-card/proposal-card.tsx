@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, State, Event, EventEmitter } from '@stencil/core';
+import { Component, Host, h, Prop, State, Event, EventEmitter, Method } from '@stencil/core';
 
 @Component({
   tag: 'proposal-card',
@@ -9,6 +9,7 @@ export class ProposalCard {
   detailsModal;
   radioGroup;
   header;
+  snackbar;
 
   @Prop() heading = '';
   @Prop() expirationDate: Date = null;
@@ -29,8 +30,16 @@ export class ProposalCard {
   @State() voteValue = 'for';
 
   componentDidRender() {
-    const header: HTMLElement = this.header.shadowRoot.querySelector('ukg-card-title')
-    header.style.color = 'white'
+    const header: HTMLElement = this.header.shadowRoot.querySelector('ukg-card-title');
+    header.style.color = 'white';
+  }
+
+  @Method() async setLoading() {
+    this.snackbar.open();
+  }
+
+  @Method() async dismissSnackbar() {
+    this.snackbar.dismiss();
   }
 
   render() {
@@ -42,7 +51,12 @@ export class ProposalCard {
           }}
           fit-content
         >
-          <ukg-card-header ref={el => this.header = el} card-title={this.heading} subtitle={this.getDaysTillExpiration() + ' days left'}></ukg-card-header>
+          <ukg-snackbar indeterminate ref={el => (this.snackbar = el)} duration="60" is-on-dark has-dismiss-button>
+            Vote submitted ... <ukg-progress-circular indeterminate size="small" style={{
+              marginLeft: '16px'
+            }}></ukg-progress-circular>
+          </ukg-snackbar>
+          <ukg-card-header ref={el => (this.header = el)} card-title={this.heading} subtitle={this.getDaysTillExpiration() + ' days left'}></ukg-card-header>
           <ukg-card-content>
             <div class="description">{this.description}</div>
 
