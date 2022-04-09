@@ -12,6 +12,10 @@ ukg-step-button {
   border-width: 2px;
 }
 
+ukg-step-button.ukg-is-active {
+  background: #0e2a47;
+}
+
 html {
   background: #0a1b2e;
 }
