@@ -13,6 +13,8 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface PageFooter {
+    }
     interface ProposalCard {
         "description": string;
         "expirationDate": Date;
@@ -46,6 +48,12 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLPageFooterElement extends Components.PageFooter, HTMLStencilElement {
+    }
+    var HTMLPageFooterElement: {
+        prototype: HTMLPageFooterElement;
+        new (): HTMLPageFooterElement;
+    };
     interface HTMLProposalCardElement extends Components.ProposalCard, HTMLStencilElement {
     }
     var HTMLProposalCardElement: {
@@ -68,6 +76,7 @@ declare global {
         "app-details": HTMLAppDetailsElement;
         "app-home": HTMLAppHomeElement;
         "app-root": HTMLAppRootElement;
+        "page-footer": HTMLPageFooterElement;
         "proposal-card": HTMLProposalCardElement;
         "proposal-form": HTMLProposalFormElement;
         "wallet-button": HTMLWalletButtonElement;
@@ -80,6 +89,8 @@ declare namespace LocalJSX {
     interface AppHome {
     }
     interface AppRoot {
+    }
+    interface PageFooter {
     }
     interface ProposalCard {
         "description"?: string;
@@ -100,6 +111,7 @@ declare namespace LocalJSX {
         "app-details": AppDetails;
         "app-home": AppHome;
         "app-root": AppRoot;
+        "page-footer": PageFooter;
         "proposal-card": ProposalCard;
         "proposal-form": ProposalForm;
         "wallet-button": WalletButton;
@@ -112,6 +124,7 @@ declare module "@stencil/core" {
             "app-details": LocalJSX.AppDetails & JSXBase.HTMLAttributes<HTMLAppDetailsElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "page-footer": LocalJSX.PageFooter & JSXBase.HTMLAttributes<HTMLPageFooterElement>;
             "proposal-card": LocalJSX.ProposalCard & JSXBase.HTMLAttributes<HTMLProposalCardElement>;
             "proposal-form": LocalJSX.ProposalForm & JSXBase.HTMLAttributes<HTMLProposalFormElement>;
             "wallet-button": LocalJSX.WalletButton & JSXBase.HTMLAttributes<HTMLWalletButtonElement>;

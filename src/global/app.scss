@@ -1,115 +1,114 @@
-
 //Uses these colors as a family to differentiate objects of the same shape. Dots, bars, and charts that can't have different shapes are prime candidates.
-$ukg-cvd-blue-contrast:rgba(255,255,255, 1);
-$ukg-cvd-blue:#0072B2;
-$ukg-cvd-charcoal-contrast:rgba(255,255,255, 1);
-$ukg-cvd-charcoal:#323232;
-$ukg-cvd-green-contrast:rgba(255,255,255, 1);
-$ukg-cvd-green:#009E73;
-$ukg-cvd-light-blue-contrast:rgba(255,255,255, 1);
-$ukg-cvd-light-blue:#56B4E9;
-$ukg-cvd-orange-contrast:rgba(255,255,255, 1);
-$ukg-cvd-orange:#E69F00;
-$ukg-cvd-pink-contrast:rgba(255,255,255, 1);
-$ukg-cvd-pink:#CC79A7;
-$ukg-cvd-vermillion-contrast:rgba(255,255,255, 1);
-$ukg-cvd-vermillion:#D55E00;
-$ukg-cvd-yellow-contrast:rgba(255,255,255, 1);
-$ukg-cvd-yellow:#F0E442;
+$ukg-cvd-blue-contrast: rgba(255, 255, 255, 1);
+$ukg-cvd-blue: #0072b2;
+$ukg-cvd-charcoal-contrast: rgba(255, 255, 255, 1);
+$ukg-cvd-charcoal: #323232;
+$ukg-cvd-green-contrast: rgba(255, 255, 255, 1);
+$ukg-cvd-green: #009e73;
+$ukg-cvd-light-blue-contrast: rgba(255, 255, 255, 1);
+$ukg-cvd-light-blue: #56b4e9;
+$ukg-cvd-orange-contrast: rgba(255, 255, 255, 1);
+$ukg-cvd-orange: #e69f00;
+$ukg-cvd-pink-contrast: rgba(255, 255, 255, 1);
+$ukg-cvd-pink: #cc79a7;
+$ukg-cvd-vermillion-contrast: rgba(255, 255, 255, 1);
+$ukg-cvd-vermillion: #d55e00;
+$ukg-cvd-yellow-contrast: rgba(255, 255, 255, 1);
+$ukg-cvd-yellow: #f0e442;
 
 //Status colors are used to convey warnings and successes.
-$ukg-important-border-contrast:rgba(0,0,0, 0.87);
-$ukg-important-border:#F8CFD3;
-$ukg-important-contrast:rgba(255,255,255, 1);
-$ukg-important-icon-bg-contrast:rgba(0,0,0, 0.87);
-$ukg-important-icon-bg:#FBE4E7;
-$ukg-important-surface-contrast:rgba(0,0,0, 0.87);
-$ukg-important-surface:#FDF2F3;
-$ukg-important-text-contrast:rgba(255,255,255, 1);
-$ukg-important-text:#C10B1E;
-$ukg-important:#DC0C22;
-$ukg-info-border-contrast:rgba(0,0,0, 0.87);
-$ukg-info-border:#D1D9FF;
-$ukg-info-contrast:rgba(255,255,255, 1);
-$ukg-info-icon-bg-contrast:rgba(0,0,0, 0.87);
-$ukg-info-icon-bg:#EBEFFF;
-$ukg-info-surface-contrast:rgba(0,0,0, 0.87);
-$ukg-info-surface:#F4F6FF;
-$ukg-info:#617BFF;
-$ukg-success-border-contrast:rgba(0,0,0, 0.87);
-$ukg-success-border:#C5E2DB;
-$ukg-success-contrast:rgba(255,255,255, 1);
-$ukg-success-icon-bg-contrast:rgba(0,0,0, 0.87);
-$ukg-success-icon-bg:#DEEDE9;
-$ukg-success-surface-contrast:rgba(0,0,0, 0.87);
-$ukg-success-surface:#EDF6F4;
-$ukg-success-text-contrast:rgba(255,255,255, 1);
-$ukg-success-text:#006B50;
-$ukg-success:#008060;
-$ukg-warning-border-contrast:rgba(0,0,0, 0.87);
-$ukg-warning-border:#F2DABA;
-$ukg-warning-contrast:rgba(255,255,255, 1);
-$ukg-warning-icon-bg-contrast:rgba(0,0,0, 0.87);
-$ukg-warning-icon-bg:#F9ECDC;
-$ukg-warning-surface-contrast:rgba(0,0,0, 0.87);
-$ukg-warning-surface:#FCF6ED;
-$ukg-warning-text-contrast:rgba(255,255,255, 1);
-$ukg-warning-text:#A35C00;
-$ukg-warning:#CC7300;
+$ukg-important-border-contrast: rgba(0, 0, 0, 0.87);
+$ukg-important-border: #f8cfd3;
+$ukg-important-contrast: rgba(255, 255, 255, 1);
+$ukg-important-icon-bg-contrast: rgba(0, 0, 0, 0.87);
+$ukg-important-icon-bg: #fbe4e7;
+$ukg-important-surface-contrast: rgba(0, 0, 0, 0.87);
+$ukg-important-surface: #fdf2f3;
+$ukg-important-text-contrast: rgba(255, 255, 255, 1);
+$ukg-important-text: #c10b1e;
+$ukg-important: #dc0c22;
+$ukg-info-border-contrast: rgba(0, 0, 0, 0.87);
+$ukg-info-border: #d1d9ff;
+$ukg-info-contrast: rgba(255, 255, 255, 1);
+$ukg-info-icon-bg-contrast: rgba(0, 0, 0, 0.87);
+$ukg-info-icon-bg: #ebefff;
+$ukg-info-surface-contrast: rgba(0, 0, 0, 0.87);
+$ukg-info-surface: #f4f6ff;
+$ukg-info: #617bff;
+$ukg-success-border-contrast: rgba(0, 0, 0, 0.87);
+$ukg-success-border: #c5e2db;
+$ukg-success-contrast: rgba(255, 255, 255, 1);
+$ukg-success-icon-bg-contrast: rgba(0, 0, 0, 0.87);
+$ukg-success-icon-bg: #deede9;
+$ukg-success-surface-contrast: rgba(0, 0, 0, 0.87);
+$ukg-success-surface: #edf6f4;
+$ukg-success-text-contrast: rgba(255, 255, 255, 1);
+$ukg-success-text: #006b50;
+$ukg-success: #008060;
+$ukg-warning-border-contrast: rgba(0, 0, 0, 0.87);
+$ukg-warning-border: #f2daba;
+$ukg-warning-contrast: rgba(255, 255, 255, 1);
+$ukg-warning-icon-bg-contrast: rgba(0, 0, 0, 0.87);
+$ukg-warning-icon-bg: #f9ecdc;
+$ukg-warning-surface-contrast: rgba(0, 0, 0, 0.87);
+$ukg-warning-surface: #fcf6ed;
+$ukg-warning-text-contrast: rgba(255, 255, 255, 1);
+$ukg-warning-text: #a35c00;
+$ukg-warning: #cc7300;
 
 //The brand color is a theme and branding color. It is used for the top navigation bar and as a brand tint throughout our illustration work.
-$ukg-brand-contrast:rgba(255,255,255, 1);
-$ukg-brand-darker-contrast:rgba(255,255,255, 1);
-$ukg-brand-darker:#003133;
-$ukg-brand-lighter-contrast:rgba(255,255,255, 1);
-$ukg-brand-lighter:#17978E;
-$ukg-brand-nav-header-gradient-contrast:rgba(255,255,255, 1);
-$ukg-brand-nav-header-gradient:linear-gradient(90deg, rgb(0, 81, 81) 0%, rgb(8, 124, 121) 60%, rgb(0, 81, 81) 100%);
-$ukg-brand:#005151;
+$ukg-brand-contrast: rgba(255, 255, 255, 1);
+$ukg-brand-darker-contrast: rgba(255, 255, 255, 1);
+$ukg-brand-darker: #003133;
+$ukg-brand-lighter-contrast: rgba(255, 255, 255, 1);
+$ukg-brand-lighter: #17978e;
+$ukg-brand-nav-header-gradient-contrast: rgba(255, 255, 255, 1);
+$ukg-brand-nav-header-gradient: linear-gradient(90deg, rgb(0, 81, 81) 0%, rgb(8, 124, 121) 60%, rgb(0, 81, 81) 100%);
+$ukg-brand: #005151;
 
 //The action theme color is used to denote prominent actions. This color will appear on buttons, links and other actionable controls.
-$ukg-action-contrast:rgba(255,255,255, 1);
-$ukg-action-darker-contrast:rgba(255,255,255, 1);
-$ukg-action-darker:#005C89;
-$ukg-action-lighter-contrast:rgba(255,255,255, 1);
-$ukg-action-lighter:#3C96C3;
-$ukg-action:#0176B2;
+$ukg-action-contrast: rgba(255, 255, 255, 1);
+$ukg-action-darker-contrast: rgba(255, 255, 255, 1);
+$ukg-action-darker: #005c89;
+$ukg-action-lighter-contrast: rgba(255, 255, 255, 1);
+$ukg-action-lighter: #3c96c3;
+$ukg-action: #0176b2;
 
 //Action text colors are used to ensure contrast compliance on hyperlink and button use cases, including when used on top of highlight-range and highlight-range hover backgrounds. The darker $ukg-action-text color also helps thin action text to visually match the $ukg-action color used on thicker action-colored icons, such as in the buttons
-$ukg-action-text-active-contrast:rgba(255,255,255, 1);
-$ukg-action-text-active:#3A90BB;
-$ukg-action-text-contrast:rgba(255,255,255, 1);
-$ukg-action-text-hover-contrast:rgba(255,255,255, 1);
-$ukg-action-text-hover:#005680;
-$ukg-action-text:#016FA7;
+$ukg-action-text-active-contrast: rgba(255, 255, 255, 1);
+$ukg-action-text-active: #3a90bb;
+$ukg-action-text-contrast: rgba(255, 255, 255, 1);
+$ukg-action-text-hover-contrast: rgba(255, 255, 255, 1);
+$ukg-action-text-hover: #005680;
+$ukg-action-text: #016fa7;
 
 //Use the light surface for content areas. Use the darker variant to break up a page, or highlight a specific piece of content. Use light surfaces as a backing for all "on light surface" type styles.
-$ukg-surface-light-contrast:rgba(0,0,0, 0.87);
-$ukg-surface-light-darker-contrast:rgba(0,0,0, 0.87);
-$ukg-surface-light-darker:#F5F5F5;
-$ukg-surface-light:#FFFFFF;
+$ukg-surface-light-contrast: rgba(0, 0, 0, 0.87);
+$ukg-surface-light-darker-contrast: rgba(0, 0, 0, 0.87);
+$ukg-surface-light-darker: #f5f5f5;
+$ukg-surface-light: #ffffff;
 
 //The dark surface is used for our left navigation. It is also used for some componentry that requires a high-contrast like the snackbar. Use dark surfaces as a backing for all "on dark surface" type styles.
-$ukg-surface-dark-contrast:rgba(255,255,255, 1);
-$ukg-surface-dark-darker-contrast:rgba(255,255,255, 1);
-$ukg-surface-dark-darker:#323232;
-$ukg-surface-dark:#4A4A4A;
+$ukg-surface-dark-contrast: rgba(255, 255, 255, 1);
+$ukg-surface-dark-darker-contrast: rgba(255, 255, 255, 1);
+$ukg-surface-dark-darker: #323232;
+$ukg-surface-dark: #4a4a4a;
 
-//Shadows are used to separate foreground content from background content. All shadows are cast from three light sources. These light sources ensure an even exterior shading with a natural look. 
+//Shadows are used to separate foreground content from background content. All shadows are cast from three light sources. These light sources ensure an even exterior shading with a natural look.
 $ukg-elevation-01: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.15);
-$ukg-elevation-02: 0 3px 8px 0 rgba(0, 0, 0, 0.10), 0 0 4px 0 rgba(0, 0, 0, 0.13);
+$ukg-elevation-02: 0 3px 8px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.13);
 $ukg-elevation-03: 0 4px 12px 0 rgba(0, 0, 0, 0.09), 0 0 6px 0 rgba(0, 0, 0, 0.11);
-$ukg-elevation-04: 0 8px 18px 0 rgba(0, 0, 0, 0.08), 0 0 9px 0 rgba(0, 0, 0, 0.10);
+$ukg-elevation-04: 0 8px 18px 0 rgba(0, 0, 0, 0.08), 0 0 9px 0 rgba(0, 0, 0, 0.1);
 $ukg-elevation-06: 0 10px 24px 0 rgba(0, 0, 0, 0.08), 0 0 13px 0 rgba(0, 0, 0, 0.08);
 $ukg-elevation-08: 0 12px 30px 0 rgba(0, 0, 0, 0.09), 0 0 18px 0 rgba(0, 0, 0, 0.08);
-$ukg-elevation-09: 0 13px 36px 0 rgba(0, 0, 0, 0.10), 0 0 23px 0 rgba(0, 0, 0, 0.08);
+$ukg-elevation-09: 0 13px 36px 0 rgba(0, 0, 0, 0.1), 0 0 23px 0 rgba(0, 0, 0, 0.08);
 $ukg-elevation-12: 0 14px 42px 0 rgba(0, 0, 0, 0.11), 0 0 29px 0 rgba(0, 0, 0, 0.08);
 $ukg-elevation-16: 0 17px 50px 0 rgba(0, 0, 0, 0.12), 0 0 38px 0 rgba(0, 0, 0, 0.08);
 $ukg-elevation-24: 0 24px 68px 0 rgba(0, 0, 0, 0.14), 0 0 54px 0 rgba(0, 0, 0, 0.08);
 
 //Focus boxes appear when an item is tab-focused or when an item that requires user input is focused.
-$ukg-focus-border-color-on-dark: rgba(255,255,255,0.65);
-$ukg-focus-border-color-on-light: #549AC8;
+$ukg-focus-border-color-on-dark: rgba(255, 255, 255, 0.65);
+$ukg-focus-border-color-on-light: #549ac8;
 $ukg-focus-border-radius-circular: 25px;
 $ukg-focus-border-radius-large: 6px;
 $ukg-focus-border-radius-nav-item: 0 22px 22px 0;
@@ -133,7 +132,7 @@ $ukg-spacing-m: 1.5rem;
 $ukg-spacing-s: 1rem;
 $ukg-spacing-touch: 2.75rem;
 $ukg-spacing-xl: 2.5rem;
-$ukg-spacing-xs: 0.50rem;
+$ukg-spacing-xs: 0.5rem;
 $ukg-spacing-xxl: 3rem;
 $ukg-spacing-xxs: 0.25rem;
 $ukg-spacing-xxxl: 3.5rem;
@@ -141,70 +140,73 @@ $ukg-spacing-xxxs: 0.125rem;
 $ukg-spacing-xxxxs: 0.063rem;
 
 //Different tint and shades related to use interaction or application logic. Values derived from other variables are stamped due to opacity calculated
-$ukg-actionable-border-on-dark: rgba(255,255,255, 0.43);
-$ukg-actionable-border-on-light: rgba(0,0,0, 0.42);
-$ukg-button-border-disabled-on-dark: rgba(255,255,255, 0.2);
-$ukg-button-border-disabled-on-light: rgba(0,0,0, 0.38);
-$ukg-button-border-enabled-on-dark: rgba(255,255,255, 1);
-$ukg-button-border-enabled-on-light: #0176B2;
-$ukg-button-selected-on-dark: rgba(0,0,0, 0.32);
-$ukg-button-selected-on-light: rgba(0,0,0, 0.09);
-$ukg-chip-container-hover: rgba(0,0,0, 0.13);
-$ukg-chip-container: rgba(0,0,0, 0.08);
-$ukg-divider-on-dark: rgba(255,255,255, 0.15);
-$ukg-divider-on-light: rgba(0,0,0, 0.15);
-$ukg-focus-border-on-dark: rgba(255,255,255, 0.65);
-$ukg-focus-border-on-light: #3C96C3;
+$ukg-actionable-border-on-dark: rgba(255, 255, 255, 0.43);
+$ukg-actionable-border-on-light: rgba(0, 0, 0, 0.42);
+$ukg-button-border-disabled-on-dark: rgba(255, 255, 255, 0.2);
+$ukg-button-border-disabled-on-light: rgba(0, 0, 0, 0.38);
+$ukg-button-border-enabled-on-dark: rgba(255, 255, 255, 1);
+$ukg-button-border-enabled-on-light: #0176b2;
+$ukg-button-selected-on-dark: rgba(0, 0, 0, 0.32);
+$ukg-button-selected-on-light: rgba(0, 0, 0, 0.09);
+$ukg-chip-container-hover: rgba(0, 0, 0, 0.13);
+$ukg-chip-container: rgba(0, 0, 0, 0.08);
+$ukg-divider-on-dark: rgba(255, 255, 255, 0.15);
+$ukg-divider-on-light: rgba(0, 0, 0, 0.15);
+$ukg-focus-border-on-dark: rgba(255, 255, 255, 0.65);
+$ukg-focus-border-on-light: #3c96c3;
 $ukg-highlight-range-hover: rgba(19, 116, 180, 0.13);
 $ukg-highlight-range: rgba(1, 111, 167, 0.08);
-$ukg-hover-on-dark: rgba(255,255,255, 0.15);
-$ukg-hover-on-light: rgba(0,0,0, 0.05);
-$ukg-icon-disabled-on-dark: rgba(255,255,255, 0.4);
-$ukg-icon-disabled-on-light: rgba(0,0,0, 0.2);
-$ukg-icon-enabled-low-emphasis-on-dark: rgba(255,255,255, 0.65);
-$ukg-icon-enabled-low-emphasis-on-light: rgba(0,0,0, 0.42);
-$ukg-icon-enabled-on-dark: rgba(255,255,255, 0.9);
-$ukg-icon-enabled-on-light: rgba(0,0,0, 0.55);
+$ukg-hover-on-dark: rgba(255, 255, 255, 0.15);
+$ukg-hover-on-light: rgba(0, 0, 0, 0.05);
+$ukg-icon-disabled-on-dark: rgba(255, 255, 255, 0.4);
+$ukg-icon-disabled-on-light: rgba(0, 0, 0, 0.2);
+$ukg-icon-enabled-low-emphasis-on-dark: rgba(255, 255, 255, 0.65);
+$ukg-icon-enabled-low-emphasis-on-light: rgba(0, 0, 0, 0.42);
+$ukg-icon-enabled-on-dark: rgba(255, 255, 255, 0.9);
+$ukg-icon-enabled-on-light: rgba(0, 0, 0, 0.55);
 $ukg-icon-error-on-light: rgba(220, 12, 34, 1);
-$ukg-icon-hover-on-dark: rgba(255,255,255, 1);
-$ukg-icon-hover-on-light: rgba(0,0,0, 0.87);
-$ukg-icon-selected-on-dark: rgba(255,255,255, 0.9);
-$ukg-icon-selected-on-light: rgba(0,0,0, 0.72);
-$ukg-on-dark-input-field-border: rgba(255,255,255, 0.43);
+$ukg-icon-hover-on-dark: rgba(255, 255, 255, 1);
+$ukg-icon-hover-on-light: rgba(0, 0, 0, 0.87);
+$ukg-icon-selected-on-dark: rgba(255, 255, 255, 0.9);
+$ukg-icon-selected-on-light: rgba(0, 0, 0, 0.72);
+$ukg-on-dark-input-field-border: rgba(255, 255, 255, 0.43);
 $ukg-on-light-error-text: rgba(220, 12, 34, 1);
-$ukg-on-light-input-field-border: rgba(0,0,0, 0.42);
-$ukg-progress-indicator-track: rgba(0,0,0, 0.15);
-$ukg-scrim: rgba(0,0,0, 0.32);
-$ukg-scrollbar-hover-on-dark: rgba(0,0,0, 0.58);
-$ukg-scrollbar-hover-on-light: rgba(0,0,0, 0.57);
-$ukg-scrollbar-idle-on-dark: rgba(0,0,0, 0.43);
-$ukg-scrollbar-idle-on-light: rgba(0,0,0, 0.42);
-$ukg-scrollbar-pressed-on-dark: rgba(0,0,0, 0.73);
-$ukg-scrollbar-pressed-on-light: rgba(0,0,0, 0.72);
+$ukg-on-light-input-field-border: rgba(0, 0, 0, 0.42);
+$ukg-progress-indicator-track: rgba(0, 0, 0, 0.15);
+$ukg-scrim: rgba(0, 0, 0, 0.32);
+$ukg-scrollbar-hover-on-dark: rgba(0, 0, 0, 0.58);
+$ukg-scrollbar-hover-on-light: rgba(0, 0, 0, 0.57);
+$ukg-scrollbar-idle-on-dark: rgba(0, 0, 0, 0.43);
+$ukg-scrollbar-idle-on-light: rgba(0, 0, 0, 0.42);
+$ukg-scrollbar-pressed-on-dark: rgba(0, 0, 0, 0.73);
+$ukg-scrollbar-pressed-on-light: rgba(0, 0, 0, 0.72);
 $ukg-selected-on-dark: #323232;
-$ukg-selected-on-light: rgba(0,0,0, 0.09);
-$ukg-surface-disabled-on-dark: rgba(255,255,255, 0.2);
-$ukg-surface-disabled-on-light: rgba(0,0,0, 0.03);
-$ukg-table-cell-divider: rgba(0,0,0, 0.1);
-$ukg-table-cell-highlight-grey-darker: rgba(0,0,0, 0.06);
-$ukg-table-cell-highlight-grey: rgba(0,0,0, 0.03);
-$ukg-text-disabled-on-dark: rgba(255,255,255, 0.4);
-$ukg-text-disabled-on-light: rgba(0,0,0, 0.38);
-$ukg-text-high-emphasis-on-dark: rgba(255,255,255, 1);
-$ukg-text-high-emphasis-on-light: rgba(0,0,0, 0.87);
-$ukg-text-low-emphasis-on-dark: rgba(255,255,255, 0.7);
-$ukg-text-low-emphasis-on-light: rgba(0,0,0, 0.6);
-$ukg-text-navigation-idle-on-dark: rgba(255,255,255, 0.88);
-$ukg-text-navigation-idle-on-light: rgba(0,0,0, 0.72);
+$ukg-selected-on-light: rgba(0, 0, 0, 0.09);
+$ukg-surface-disabled-on-dark: rgba(255, 255, 255, 0.2);
+$ukg-surface-disabled-on-light: rgba(0, 0, 0, 0.03);
+$ukg-table-cell-divider: rgba(0, 0, 0, 0.1);
+$ukg-table-cell-highlight-grey-darker: rgba(0, 0, 0, 0.06);
+$ukg-table-cell-highlight-grey: rgba(0, 0, 0, 0.03);
+$ukg-text-disabled-on-dark: rgba(255, 255, 255, 0.4);
+$ukg-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+$ukg-text-high-emphasis-on-dark: rgba(255, 255, 255, 1);
+$ukg-text-high-emphasis-on-light: rgba(0, 0, 0, 0.87);
+$ukg-text-low-emphasis-on-dark: rgba(255, 255, 255, 0.7);
+$ukg-text-low-emphasis-on-light: rgba(0, 0, 0, 0.6);
+$ukg-text-navigation-idle-on-dark: rgba(255, 255, 255, 0.88);
+$ukg-text-navigation-idle-on-light: rgba(0, 0, 0, 0.72);
 
 //Content styles
 $ukg-text-max-width: 37.5rem;
 $ukg-base-font-size: 16px;
-$ukg-font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-$ukg-font-family-display: 'Noto Sans Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-$ukg-font-family-condensed: 'Noto Sans Condensed', sans-serif;
-$ukg-font-family-mono: 'Noto Sans Mono', 'Courier New', Courier, monospace;
-$ukg-font-family-secondary: 'Volte Rounded', 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$ukg-font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
+  "Helvetica Neue", sans-serif;
+$ukg-font-family-display: "Noto Sans Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell,
+  "Open Sans", "Helvetica Neue", sans-serif;
+$ukg-font-family-condensed: "Noto Sans Condensed", sans-serif;
+$ukg-font-family-mono: "Noto Sans Mono", "Courier New", Courier, monospace;
+$ukg-font-family-secondary: "Volte Rounded", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu,
+  Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 $ukg-line-height-small-text: 20px;
 $ukg-line-height-reading: 1.5;
 $ukg-line-height-tight: 1.2;
@@ -216,13 +218,13 @@ $ukg-font-weight-semibold: 600;
 $ukg-font-weight-heavy: 700;
 $ukg-font-weight-black: 900;
 $ukg-text-low-emphasis-opacity: 0.6;
-$ukg-text-normal-emphasis-opacity: .87;
-$ukg-text-disabled-emphasis-opacity: .38;
-$ukg-text-marked-opacity: .15;
+$ukg-text-normal-emphasis-opacity: 0.87;
+$ukg-text-disabled-emphasis-opacity: 0.38;
+$ukg-text-marked-opacity: 0.15;
 $ukg-font-style-italic: italic;
 $ukg-font-style-normal: normal;
-$ukg-text-size-0: .75rem;
-$ukg-text-size-1: .875rem;
+$ukg-text-size-0: 0.75rem;
+$ukg-text-size-1: 0.875rem;
 $ukg-text-size-2: 1rem;
 $ukg-text-size-3: 1.125rem;
 $ukg-text-size-4: 1.25rem;
@@ -231,8 +233,8 @@ $ukg-text-size-6: 1.625rem;
 $ukg-text-size-7: 2rem;
 $ukg-text-size-8: 2.5625rem;
 $ukg-text-size-9: 3.1875rem;
-$ukg-line-height-0: .75rem;
-$ukg-line-height-1: .875rem;
+$ukg-line-height-0: 0.75rem;
+$ukg-line-height-1: 0.875rem;
 $ukg-line-height-2: 1rem;
 $ukg-line-height-3: 1.125rem;
 $ukg-line-height-4: 1.25rem;
@@ -369,7 +371,7 @@ $ukg-standard-heading-4-on-light-margin-bottom: $ukg-spacing-s;
 $ukg-standard-heading-4-on-light-margin-top: $ukg-spacing-xl;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-standard-heading-5-on-light-color: rgba(0,0,0,.87);
+$ukg-standard-heading-5-on-light-color: rgba(0, 0, 0, 0.87);
 $ukg-standard-heading-5-on-light-font-family: $ukg-font-family;
 $ukg-standard-heading-5-on-light-font-size: $ukg-text-size-2;
 $ukg-standard-heading-5-on-light-font-weight: $ukg-font-weight-semibold;
@@ -378,7 +380,7 @@ $ukg-standard-heading-5-on-light-margin-bottom: $ukg-spacing-s;
 $ukg-standard-heading-5-on-light-margin-top: $ukg-spacing-xl;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-standard-heading-6-on-light-color: rgba(0,0,0,.87);
+$ukg-standard-heading-6-on-light-color: rgba(0, 0, 0, 0.87);
 $ukg-standard-heading-6-on-light-font-family: $ukg-font-family;
 $ukg-standard-heading-6-on-light-font-size: $ukg-text-size-1;
 $ukg-standard-heading-6-on-light-font-weight: $ukg-font-weight-semibold;
@@ -432,7 +434,7 @@ $ukg-standard-heading-4-on-dark-margin-bottom: $ukg-spacing-s;
 $ukg-standard-heading-4-on-dark-margin-top: $ukg-spacing-xl;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-standard-heading-5-on-dark-color: #FFFFFF;
+$ukg-standard-heading-5-on-dark-color: #ffffff;
 $ukg-standard-heading-5-on-dark-font-family: $ukg-font-family;
 $ukg-standard-heading-5-on-dark-font-size: $ukg-text-size-2;
 $ukg-standard-heading-5-on-dark-font-weight: $ukg-font-weight-semibold;
@@ -441,7 +443,7 @@ $ukg-standard-heading-5-on-dark-margin-bottom: $ukg-spacing-s;
 $ukg-standard-heading-5-on-dark-margin-top: $ukg-spacing-xl;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-standard-heading-6-on-dark-color: #FFFFFF;
+$ukg-standard-heading-6-on-dark-color: #ffffff;
 $ukg-standard-heading-6-on-dark-font-family: $ukg-font-family;
 $ukg-standard-heading-6-on-dark-font-size: $ukg-text-size-1;
 $ukg-standard-heading-6-on-dark-font-weight: $ukg-font-weight-semibold;
@@ -596,8 +598,8 @@ $ukg-quote-text-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-quote-text-on-dark-line-height: $ukg-line-height-reading;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-mark-text-on-light-background-color: #4A4A4A;
-$ukg-mark-text-on-light-color: #FFFFFF;
+$ukg-mark-text-on-light-background-color: #4a4a4a;
+$ukg-mark-text-on-light-color: #ffffff;
 $ukg-mark-text-on-light-font-family: $ukg-font-family;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
@@ -621,21 +623,21 @@ $ukg-italic-text-on-light-color: $ukg-text-high-emphasis-on-light;
 $ukg-italic-text-on-dark-color: $ukg-text-high-emphasis-on-dark;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-active-form-text-color: rgba(0,0,0,.87);
+$ukg-active-form-text-color: rgba(0, 0, 0, 0.87);
 $ukg-active-form-text-font-family: $ukg-font-family;
 $ukg-active-form-text-font-size: $ukg-text-size-2;
 $ukg-active-form-text-font-weight: $ukg-font-weight-regular;
 $ukg-active-form-text-line-height: $ukg-line-height-reading;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-hint-form-text-color: rgba(0,0,0,0.6);
+$ukg-hint-form-text-color: rgba(0, 0, 0, 0.6);
 $ukg-hint-form-text-font-family: $ukg-font-family;
 $ukg-hint-form-text-font-size: $ukg-text-size-2;
 $ukg-hint-form-text-font-weight: $ukg-font-weight-regular;
 $ukg-hint-form-text-line-height: $ukg-line-height-reading;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-disabled-form-text-color: rgba(0,0,0,.38);
+$ukg-disabled-form-text-color: rgba(0, 0, 0, 0.38);
 $ukg-disabled-form-text-font-family: $ukg-font-family;
 $ukg-disabled-form-text-font-size: $ukg-text-size-2;
 $ukg-disabled-form-text-font-weight: $ukg-font-weight-regular;
@@ -674,273 +676,273 @@ $ukg-code-text-font-weight: $ukg-font-weight-regular;
 $ukg-code-text-line-height: $ukg-line-height-reading;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-heading-on-light-color: rgba(0,0,0,.87);
+$ukg-nav-heading-on-light-color: rgba(0, 0, 0, 0.87);
 $ukg-nav-heading-on-light-font-family: $ukg-font-family-display;
 $ukg-nav-heading-on-light-font-size: $ukg-text-size-4;
 $ukg-nav-heading-on-light-font-weight: $ukg-font-weight-semibold;
 $ukg-nav-heading-on-light-line-height: 1.2;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-idle-on-light-color: rgba(0,0,0,0.72);
+$ukg-nav-idle-on-light-color: rgba(0, 0, 0, 0.72);
 $ukg-nav-idle-on-light-font-family: $ukg-font-family-display;
 $ukg-nav-idle-on-light-font-size: $ukg-text-size-1;
 $ukg-nav-idle-on-light-font-weight: $ukg-font-weight-regular;
 $ukg-nav-idle-on-light-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-selected-on-light-color: rgba(0,0,0,.87);
+$ukg-nav-selected-on-light-color: rgba(0, 0, 0, 0.87);
 $ukg-nav-selected-on-light-font-family: $ukg-font-family-display;
 $ukg-nav-selected-on-light-font-size: $ukg-text-size-1;
 $ukg-nav-selected-on-light-font-weight: $ukg-font-weight-heavy;
 $ukg-nav-selected-on-light-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-disabled-on-light-color: rgba(0,0,0,0.6);
+$ukg-nav-disabled-on-light-color: rgba(0, 0, 0, 0.6);
 $ukg-nav-disabled-on-light-font-family: $ukg-font-family-display;
 $ukg-nav-disabled-on-light-font-size: $ukg-text-size-1;
 $ukg-nav-disabled-on-light-font-weight: $ukg-font-weight-regular;
 $ukg-nav-disabled-on-light-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-section-title-on-light-color: rgba(0,0,0,0.6);
+$ukg-nav-section-title-on-light-color: rgba(0, 0, 0, 0.6);
 $ukg-nav-section-title-on-light-font-family: $ukg-font-family-display;
 $ukg-nav-section-title-on-light-font-size: $ukg-text-size-1;
 $ukg-nav-section-title-on-light-font-weight: $ukg-font-weight-regular;
 $ukg-nav-section-title-on-light-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-heading-on-dark-color: rgba(255,255,255,1);
+$ukg-nav-heading-on-dark-color: rgba(255, 255, 255, 1);
 $ukg-nav-heading-on-dark-font-family: $ukg-font-family-display;
 $ukg-nav-heading-on-dark-font-size: $ukg-text-size-4;
 $ukg-nav-heading-on-dark-font-weight: $ukg-font-weight-semibold;
 $ukg-nav-heading-on-dark-line-height: 1.2;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-idle-on-dark-color: rgba(255,255,255,.82);
+$ukg-nav-idle-on-dark-color: rgba(255, 255, 255, 0.82);
 $ukg-nav-idle-on-dark-font-family: $ukg-font-family-display;
 $ukg-nav-idle-on-dark-font-size: $ukg-text-size-1;
 $ukg-nav-idle-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-nav-idle-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-selected-on-dark-color: rgba(255,255,255,1);
+$ukg-nav-selected-on-dark-color: rgba(255, 255, 255, 1);
 $ukg-nav-selected-on-dark-font-family: $ukg-font-family-display;
 $ukg-nav-selected-on-dark-font-size: $ukg-text-size-1;
 $ukg-nav-selected-on-dark-font-weight: $ukg-font-weight-heavy;
 $ukg-nav-selected-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-disabled-on-dark-color: rgba(255,255,255,0.70);
+$ukg-nav-disabled-on-dark-color: rgba(255, 255, 255, 0.7);
 $ukg-nav-disabled-on-dark-font-family: $ukg-font-family-display;
 $ukg-nav-disabled-on-dark-font-size: $ukg-text-size-1;
 $ukg-nav-disabled-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-nav-disabled-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-nav-section-title-on-dark-color: rgba(255,255,255,0.70);
+$ukg-nav-section-title-on-dark-color: rgba(255, 255, 255, 0.7);
 $ukg-nav-section-title-on-dark-font-family: $ukg-font-family-display;
 $ukg-nav-section-title-on-dark-font-size: $ukg-text-size-1;
 $ukg-nav-section-title-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-nav-section-title-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-high-emphasis-color: rgba(0,0,0,0.87);
+$ukg-metadata-high-emphasis-color: rgba(0, 0, 0, 0.87);
 $ukg-metadata-high-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-high-emphasis-font-size: $ukg-text-size-2;
 $ukg-metadata-high-emphasis-font-weight: $ukg-font-weight-semibold;
 $ukg-metadata-high-emphasis-line-height: 1.375rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-mid-emphasis-color: rgba(0,0,0,0.87);
+$ukg-metadata-mid-emphasis-color: rgba(0, 0, 0, 0.87);
 $ukg-metadata-mid-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-mid-emphasis-font-size: $ukg-text-size-2;
 $ukg-metadata-mid-emphasis-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-mid-emphasis-line-height: 1.375rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-low-emphasis-color: rgba(0,0,0,0.6);
+$ukg-metadata-low-emphasis-color: rgba(0, 0, 0, 0.6);
 $ukg-metadata-low-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-low-emphasis-font-size: $ukg-text-size-2;
 $ukg-metadata-low-emphasis-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-low-emphasis-line-height: 1.375rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-disabled-color: rgba(0,0,0,0.38);
+$ukg-metadata-disabled-color: rgba(0, 0, 0, 0.38);
 $ukg-metadata-disabled-font-family: $ukg-font-family-display;
 $ukg-metadata-disabled-font-size: $ukg-text-size-2;
 $ukg-metadata-disabled-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-disabled-line-height: 1.375rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-high-emphasis-on-dark-color: rgba(255,255,255,0.87);
+$ukg-metadata-high-emphasis-on-dark-color: rgba(255, 255, 255, 0.87);
 $ukg-metadata-high-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-high-emphasis-on-dark-font-size: $ukg-text-size-2;
 $ukg-metadata-high-emphasis-on-dark-font-weight: $ukg-font-weight-semibold;
 $ukg-metadata-high-emphasis-on-dark-line-height: 1.375rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-mid-emphasis-on-dark-color: rgba(255,255,255,0.87);
+$ukg-metadata-mid-emphasis-on-dark-color: rgba(255, 255, 255, 0.87);
 $ukg-metadata-mid-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-mid-emphasis-on-dark-font-size: $ukg-text-size-2;
 $ukg-metadata-mid-emphasis-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-mid-emphasis-on-dark-line-height: 1.375rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-low-emphasis-on-dark-color: rgba(255,255,255,0.7);
+$ukg-metadata-low-emphasis-on-dark-color: rgba(255, 255, 255, 0.7);
 $ukg-metadata-low-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-low-emphasis-on-dark-font-size: $ukg-text-size-2;
 $ukg-metadata-low-emphasis-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-low-emphasis-on-dark-line-height: 1.375rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-disabled-on-dark-color: rgba(255,255,255,0.38);
+$ukg-metadata-disabled-on-dark-color: rgba(255, 255, 255, 0.38);
 $ukg-metadata-disabled-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-disabled-on-dark-font-size: $ukg-text-size-2;
 $ukg-metadata-disabled-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-disabled-on-dark-line-height: 1.375rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-xs-high-emphasis-color: rgba(0,0,0,0.87);
+$ukg-metadata-xs-high-emphasis-color: rgba(0, 0, 0, 0.87);
 $ukg-metadata-xs-high-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-xs-high-emphasis-font-size: $ukg-text-size-0;
 $ukg-metadata-xs-high-emphasis-font-weight: $ukg-font-weight-semibold;
 $ukg-metadata-xs-high-emphasis-line-height: 1rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-xs-mid-emphasis-color: rgba(0,0,0,0.87);
+$ukg-metadata-xs-mid-emphasis-color: rgba(0, 0, 0, 0.87);
 $ukg-metadata-xs-mid-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-xs-mid-emphasis-font-size: $ukg-text-size-0;
 $ukg-metadata-xs-mid-emphasis-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-xs-mid-emphasis-line-height: 1rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-xs-low-emphasis-color: rgba(0,0,0,0.6);
+$ukg-metadata-xs-low-emphasis-color: rgba(0, 0, 0, 0.6);
 $ukg-metadata-xs-low-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-xs-low-emphasis-font-size: $ukg-text-size-0;
 $ukg-metadata-xs-low-emphasis-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-xs-low-emphasis-line-height: 1rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-xs-disabled-color: rgba(0,0,0,0.38);
+$ukg-metadata-xs-disabled-color: rgba(0, 0, 0, 0.38);
 $ukg-metadata-xs-disabled-font-family: $ukg-font-family-display;
 $ukg-metadata-xs-disabled-font-size: $ukg-text-size-0;
 $ukg-metadata-xs-disabled-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-xs-disabled-line-height: 1rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-xs-high-emphasis-on-dark-color: rgba(255,255,255,0.87);
+$ukg-metadata-xs-high-emphasis-on-dark-color: rgba(255, 255, 255, 0.87);
 $ukg-metadata-xs-high-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-xs-high-emphasis-on-dark-font-size: $ukg-text-size-0;
 $ukg-metadata-xs-high-emphasis-on-dark-font-weight: $ukg-font-weight-semibold;
 $ukg-metadata-xs-high-emphasis-on-dark-line-height: 1rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-xs-mid-emphasis-on-dark-color: rgba(255,255,255,0.87);
+$ukg-metadata-xs-mid-emphasis-on-dark-color: rgba(255, 255, 255, 0.87);
 $ukg-metadata-xs-mid-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-xs-mid-emphasis-on-dark-font-size: $ukg-text-size-0;
 $ukg-metadata-xs-mid-emphasis-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-xs-mid-emphasis-on-dark-line-height: 1rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-xs-low-emphasis-on-dark-color: rgba(255,255,255,0.7);
+$ukg-metadata-xs-low-emphasis-on-dark-color: rgba(255, 255, 255, 0.7);
 $ukg-metadata-xs-low-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-xs-low-emphasis-on-dark-font-size: $ukg-text-size-0;
 $ukg-metadata-xs-low-emphasis-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-xs-low-emphasis-on-dark-line-height: 1rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-xs-disabled-on-dark-color: rgba(255,255,255,0.38);
+$ukg-metadata-xs-disabled-on-dark-color: rgba(255, 255, 255, 0.38);
 $ukg-metadata-xs-disabled-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-xs-disabled-on-dark-font-size: $ukg-text-size-0;
 $ukg-metadata-xs-disabled-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-xs-disabled-on-dark-line-height: 1rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-high-emphasis-color: rgba(0,0,0,0.87);
+$ukg-metadata-small-high-emphasis-color: rgba(0, 0, 0, 0.87);
 $ukg-metadata-small-high-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-small-high-emphasis-font-size: $ukg-text-size-1;
 $ukg-metadata-small-high-emphasis-font-weight: $ukg-font-weight-semibold;
 $ukg-metadata-small-high-emphasis-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-high-emphasis-on-dark-color: rgba(255,255,255,0.87);
+$ukg-metadata-small-high-emphasis-on-dark-color: rgba(255, 255, 255, 0.87);
 $ukg-metadata-small-high-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-small-high-emphasis-on-dark-font-size: $ukg-text-size-1;
 $ukg-metadata-small-high-emphasis-on-dark-font-weight: $ukg-font-weight-semibold;
 $ukg-metadata-small-high-emphasis-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-mid-emphasis-color: rgba(0,0,0,0.87);
+$ukg-metadata-small-mid-emphasis-color: rgba(0, 0, 0, 0.87);
 $ukg-metadata-small-mid-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-small-mid-emphasis-font-size: $ukg-text-size-1;
 $ukg-metadata-small-mid-emphasis-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-mid-emphasis-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-mid-emphasis-on-dark-color: rgba(255,255,255,0.87);
+$ukg-metadata-small-mid-emphasis-on-dark-color: rgba(255, 255, 255, 0.87);
 $ukg-metadata-small-mid-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-small-mid-emphasis-on-dark-font-size: $ukg-text-size-1;
 $ukg-metadata-small-mid-emphasis-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-mid-emphasis-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-low-emphasis-color: rgba(0,0,0,0.6);
+$ukg-metadata-small-low-emphasis-color: rgba(0, 0, 0, 0.6);
 $ukg-metadata-small-low-emphasis-font-family: $ukg-font-family-display;
 $ukg-metadata-small-low-emphasis-font-size: $ukg-text-size-1;
 $ukg-metadata-small-low-emphasis-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-low-emphasis-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-low-emphasis-on-dark-color: rgba(255,255,255,0.6);
+$ukg-metadata-small-low-emphasis-on-dark-color: rgba(255, 255, 255, 0.6);
 $ukg-metadata-small-low-emphasis-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-small-low-emphasis-on-dark-font-size: $ukg-text-size-1;
 $ukg-metadata-small-low-emphasis-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-low-emphasis-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-disabled-color: rgba(0,0,0,0.38);
+$ukg-metadata-small-disabled-color: rgba(0, 0, 0, 0.38);
 $ukg-metadata-small-disabled-font-family: $ukg-font-family-display;
 $ukg-metadata-small-disabled-font-size: $ukg-text-size-1;
 $ukg-metadata-small-disabled-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-disabled-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-disabled-on-dark-color: rgba(255,255,255,0.38);
+$ukg-metadata-small-disabled-on-dark-color: rgba(255, 255, 255, 0.38);
 $ukg-metadata-small-disabled-on-dark-font-family: $ukg-font-family-display;
 $ukg-metadata-small-disabled-on-dark-font-size: $ukg-text-size-1;
 $ukg-metadata-small-disabled-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-disabled-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-important-text-color: #DC0C22;
+$ukg-metadata-small-important-text-color: #dc0c22;
 $ukg-metadata-small-important-text-font-family: $ukg-font-family-display;
 $ukg-metadata-small-important-text-font-size: $ukg-text-size-1;
 $ukg-metadata-small-important-text-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-important-text-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-mid-emphasis-condensed-on-dark-color: rgba(255,255,255,0.87);
+$ukg-metadata-small-mid-emphasis-condensed-on-dark-color: rgba(255, 255, 255, 0.87);
 $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-family: $ukg-font-family-condensed;
 $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-size: $ukg-text-size-1;
 $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-mid-emphasis-condensed-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-mid-emphasis-condensed-on-light-color: rgba(0,0,0,0.87);
+$ukg-metadata-small-mid-emphasis-condensed-on-light-color: rgba(0, 0, 0, 0.87);
 $ukg-metadata-small-mid-emphasis-condensed-on-light-font-family: $ukg-font-family-condensed;
 $ukg-metadata-small-mid-emphasis-condensed-on-light-font-size: $ukg-text-size-1;
 $ukg-metadata-small-mid-emphasis-condensed-on-light-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-mid-emphasis-condensed-on-light-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-low-emphasis-condensed-on-dark-color: rgba(255,255,255,0.6);
+$ukg-metadata-small-low-emphasis-condensed-on-dark-color: rgba(255, 255, 255, 0.6);
 $ukg-metadata-small-low-emphasis-condensed-on-dark-font-family: $ukg-font-family-condensed;
 $ukg-metadata-small-low-emphasis-condensed-on-dark-font-size: $ukg-text-size-1;
 $ukg-metadata-small-low-emphasis-condensed-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-metadata-small-low-emphasis-condensed-on-dark-line-height: 1.125rem;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-metadata-small-low-emphasis-condensed-on-light-color: rgba(0,0,0,0.6);
+$ukg-metadata-small-low-emphasis-condensed-on-light-color: rgba(0, 0, 0, 0.6);
 $ukg-metadata-small-low-emphasis-condensed-on-light-font-family: $ukg-font-family-condensed;
 $ukg-metadata-small-low-emphasis-condensed-on-light-font-size: $ukg-text-size-1;
 $ukg-metadata-small-low-emphasis-condensed-on-light-font-weight: $ukg-font-weight-regular;
@@ -954,7 +956,7 @@ $ukg-button-text-enabled-on-light-font-weight: $ukg-font-weight-regular;
 $ukg-button-text-enabled-on-light-line-height: $ukg-line-height-2;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-button-text-disabled-on-light-color: rgba(0,0,0,.38);
+$ukg-button-text-disabled-on-light-color: rgba(0, 0, 0, 0.38);
 $ukg-button-text-disabled-on-light-font-family: $ukg-font-family;
 $ukg-button-text-disabled-on-light-font-size: $ukg-text-size-1;
 $ukg-button-text-disabled-on-light-font-weight: $ukg-font-weight-regular;
@@ -968,49 +970,49 @@ $ukg-button-text-large-enabled-on-light-font-weight: $ukg-font-weight-regular;
 $ukg-button-text-large-enabled-on-light-line-height: $ukg-line-height-3;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-button-text-large-disabled-on-light-color: rgba(0,0,0,.38);
+$ukg-button-text-large-disabled-on-light-color: rgba(0, 0, 0, 0.38);
 $ukg-button-text-large-disabled-on-light-font-family: $ukg-font-family;
 $ukg-button-text-large-disabled-on-light-font-size: $ukg-text-size-2;
 $ukg-button-text-large-disabled-on-light-font-weight: $ukg-font-weight-regular;
 $ukg-button-text-large-disabled-on-light-line-height: $ukg-line-height-3;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-button-text-enabled-on-dark-color: rgba(255,255,255, 1);
+$ukg-button-text-enabled-on-dark-color: rgba(255, 255, 255, 1);
 $ukg-button-text-enabled-on-dark-font-family: $ukg-font-family;
 $ukg-button-text-enabled-on-dark-font-size: $ukg-text-size-1;
 $ukg-button-text-enabled-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-button-text-enabled-on-dark-line-height: $ukg-line-height-2;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-button-text-disabled-on-dark-color: rgba(255,255,255,.38);
+$ukg-button-text-disabled-on-dark-color: rgba(255, 255, 255, 0.38);
 $ukg-button-text-disabled-on-dark-font-family: $ukg-font-family;
 $ukg-button-text-disabled-on-dark-font-size: $ukg-text-size-1;
 $ukg-button-text-disabled-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-button-text-disabled-on-dark-line-height: $ukg-line-height-2;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-button-text-large-enabled-on-dark-color: rgba(255,255,255, 1);
+$ukg-button-text-large-enabled-on-dark-color: rgba(255, 255, 255, 1);
 $ukg-button-text-large-enabled-on-dark-font-family: $ukg-font-family;
 $ukg-button-text-large-enabled-on-dark-font-size: $ukg-text-size-2;
 $ukg-button-text-large-enabled-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-button-text-large-enabled-on-dark-line-height: $ukg-line-height-3;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-button-text-large-disabled-on-dark-color: rgba(255,255,255,.38);
+$ukg-button-text-large-disabled-on-dark-color: rgba(255, 255, 255, 0.38);
 $ukg-button-text-large-disabled-on-dark-font-family: $ukg-font-family;
 $ukg-button-text-large-disabled-on-dark-font-size: $ukg-text-size-2;
 $ukg-button-text-large-disabled-on-dark-font-weight: $ukg-font-weight-regular;
 $ukg-button-text-large-disabled-on-dark-line-height: $ukg-line-height-3;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-button-text-monochrome-on-light-color: rgba(0,0,0,0.87);
+$ukg-button-text-monochrome-on-light-color: rgba(0, 0, 0, 0.87);
 $ukg-button-text-monochrome-on-light-font-family: $ukg-font-family;
 $ukg-button-text-monochrome-on-light-font-size: $ukg-text-size-1;
 $ukg-button-text-monochrome-on-light-font-weight: $ukg-font-weight-regular;
 $ukg-button-text-monochrome-on-light-line-height: $ukg-line-height-2;
 
 //Content styles ranging from overriding CSS for HTML elements and specialized content styles for the design system
-$ukg-button-text-large-monochrome-on-light-color: rgba(0,0,0,0.87);
+$ukg-button-text-large-monochrome-on-light-color: rgba(0, 0, 0, 0.87);
 $ukg-button-text-large-monochrome-on-light-font-family: $ukg-font-family;
 $ukg-button-text-large-monochrome-on-light-font-size: $ukg-text-size-2;
 $ukg-button-text-large-monochrome-on-light-font-weight: $ukg-font-weight-regular;
@@ -1134,481 +1136,1560 @@ $ukg-table-header--on-light-font-family: $ukg-font-family-display;
 $ukg-table-header--on-light-font-size: $ukg-text-size-1;
 $ukg-table-header--on-light-font-weight: $ukg-font-weight-medium;
 $ukg-table-header--on-light-line-height: 1rem;
-@mixin ukg-cvd-blue() {  background: $ukg-cvd-blue; color: $ukg-cvd-blue-contrast; }
-@mixin ukg-cvd-charcoal() {  background: $ukg-cvd-charcoal; color: $ukg-cvd-charcoal-contrast; }
-@mixin ukg-cvd-green() {  background: $ukg-cvd-green; color: $ukg-cvd-green-contrast; }
-@mixin ukg-cvd-light-blue() {  background: $ukg-cvd-light-blue; color: $ukg-cvd-light-blue-contrast; }
-@mixin ukg-cvd-orange() {  background: $ukg-cvd-orange; color: $ukg-cvd-orange-contrast; }
-@mixin ukg-cvd-pink() {  background: $ukg-cvd-pink; color: $ukg-cvd-pink-contrast; }
-@mixin ukg-cvd-vermillion() {  background: $ukg-cvd-vermillion; color: $ukg-cvd-vermillion-contrast; }
-@mixin ukg-cvd-yellow() {  background: $ukg-cvd-yellow; color: $ukg-cvd-yellow-contrast; }
+@mixin ukg-cvd-blue() {
+  background: $ukg-cvd-blue;
+  color: $ukg-cvd-blue-contrast;
+}
+@mixin ukg-cvd-charcoal() {
+  background: $ukg-cvd-charcoal;
+  color: $ukg-cvd-charcoal-contrast;
+}
+@mixin ukg-cvd-green() {
+  background: $ukg-cvd-green;
+  color: $ukg-cvd-green-contrast;
+}
+@mixin ukg-cvd-light-blue() {
+  background: $ukg-cvd-light-blue;
+  color: $ukg-cvd-light-blue-contrast;
+}
+@mixin ukg-cvd-orange() {
+  background: $ukg-cvd-orange;
+  color: $ukg-cvd-orange-contrast;
+}
+@mixin ukg-cvd-pink() {
+  background: $ukg-cvd-pink;
+  color: $ukg-cvd-pink-contrast;
+}
+@mixin ukg-cvd-vermillion() {
+  background: $ukg-cvd-vermillion;
+  color: $ukg-cvd-vermillion-contrast;
+}
+@mixin ukg-cvd-yellow() {
+  background: $ukg-cvd-yellow;
+  color: $ukg-cvd-yellow-contrast;
+}
 
-@mixin ukg-important() {  background: $ukg-important; color: $ukg-important-contrast; }
-@mixin ukg-important-icon-bg() {  background: $ukg-important-icon-bg; color: $ukg-important-icon-bg-contrast; }
-@mixin ukg-important-surface() {  background: $ukg-important-surface; color: $ukg-important-surface-contrast; }
-@mixin ukg-info() {  background: $ukg-info; color: $ukg-info-contrast; }
-@mixin ukg-info-icon-bg() {  background: $ukg-info-icon-bg; color: $ukg-info-icon-bg-contrast; }
-@mixin ukg-info-surface() {  background: $ukg-info-surface; color: $ukg-info-surface-contrast; }
-@mixin ukg-success() {  background: $ukg-success; color: $ukg-success-contrast; }
-@mixin ukg-success-icon-bg() {  background: $ukg-success-icon-bg; color: $ukg-success-icon-bg-contrast; }
-@mixin ukg-success-surface() {  background: $ukg-success-surface; color: $ukg-success-surface-contrast; }
-@mixin ukg-warning() {  background: $ukg-warning; color: $ukg-warning-contrast; }
-@mixin ukg-warning-icon-bg() {  background: $ukg-warning-icon-bg; color: $ukg-warning-icon-bg-contrast; }
-@mixin ukg-warning-surface() {  background: $ukg-warning-surface; color: $ukg-warning-surface-contrast; }
+@mixin ukg-important() {
+  background: $ukg-important;
+  color: $ukg-important-contrast;
+}
+@mixin ukg-important-icon-bg() {
+  background: $ukg-important-icon-bg;
+  color: $ukg-important-icon-bg-contrast;
+}
+@mixin ukg-important-surface() {
+  background: $ukg-important-surface;
+  color: $ukg-important-surface-contrast;
+}
+@mixin ukg-info() {
+  background: $ukg-info;
+  color: $ukg-info-contrast;
+}
+@mixin ukg-info-icon-bg() {
+  background: $ukg-info-icon-bg;
+  color: $ukg-info-icon-bg-contrast;
+}
+@mixin ukg-info-surface() {
+  background: $ukg-info-surface;
+  color: $ukg-info-surface-contrast;
+}
+@mixin ukg-success() {
+  background: $ukg-success;
+  color: $ukg-success-contrast;
+}
+@mixin ukg-success-icon-bg() {
+  background: $ukg-success-icon-bg;
+  color: $ukg-success-icon-bg-contrast;
+}
+@mixin ukg-success-surface() {
+  background: $ukg-success-surface;
+  color: $ukg-success-surface-contrast;
+}
+@mixin ukg-warning() {
+  background: $ukg-warning;
+  color: $ukg-warning-contrast;
+}
+@mixin ukg-warning-icon-bg() {
+  background: $ukg-warning-icon-bg;
+  color: $ukg-warning-icon-bg-contrast;
+}
+@mixin ukg-warning-surface() {
+  background: $ukg-warning-surface;
+  color: $ukg-warning-surface-contrast;
+}
 
-@mixin ukg-brand() {  background: $ukg-brand; color: $ukg-brand-contrast; }
-@mixin ukg-brand-darker() {  background: $ukg-brand-darker; color: $ukg-brand-darker-contrast; }
-@mixin ukg-brand-lighter() {  background: $ukg-brand-lighter; color: $ukg-brand-lighter-contrast; }
+@mixin ukg-brand() {
+  background: $ukg-brand;
+  color: $ukg-brand-contrast;
+}
+@mixin ukg-brand-darker() {
+  background: $ukg-brand-darker;
+  color: $ukg-brand-darker-contrast;
+}
+@mixin ukg-brand-lighter() {
+  background: $ukg-brand-lighter;
+  color: $ukg-brand-lighter-contrast;
+}
 
-@mixin ukg-action() {  background: $ukg-action; color: $ukg-action-contrast; }
-@mixin ukg-action-darker() {  background: $ukg-action-darker; color: $ukg-action-darker-contrast; }
-@mixin ukg-action-lighter() {  background: $ukg-action-lighter; color: $ukg-action-lighter-contrast; }
+@mixin ukg-action() {
+  background: $ukg-action;
+  color: $ukg-action-contrast;
+}
+@mixin ukg-action-darker() {
+  background: $ukg-action-darker;
+  color: $ukg-action-darker-contrast;
+}
+@mixin ukg-action-lighter() {
+  background: $ukg-action-lighter;
+  color: $ukg-action-lighter-contrast;
+}
 
+@mixin ukg-surface-light() {
+  background: $ukg-surface-light;
+  color: $ukg-surface-light-contrast;
+}
+@mixin ukg-surface-light-darker() {
+  background: $ukg-surface-light-darker;
+  color: $ukg-surface-light-darker-contrast;
+}
 
-@mixin ukg-surface-light() {  background: $ukg-surface-light; color: $ukg-surface-light-contrast; }
-@mixin ukg-surface-light-darker() {  background: $ukg-surface-light-darker; color: $ukg-surface-light-darker-contrast; }
+@mixin ukg-surface-dark() {
+  background: $ukg-surface-dark;
+  color: $ukg-surface-dark-contrast;
+}
+@mixin ukg-surface-dark-darker() {
+  background: $ukg-surface-dark-darker;
+  color: $ukg-surface-dark-darker-contrast;
+}
 
-@mixin ukg-surface-dark() {  background: $ukg-surface-dark; color: $ukg-surface-dark-contrast; }
-@mixin ukg-surface-dark-darker() {  background: $ukg-surface-dark-darker; color: $ukg-surface-dark-darker-contrast; }
+@mixin ukg-sr-only {
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  -webkit-clip-path: inset(50%) !important;
+  width: 1px !important;
+  height: 1px !important;
+  position: absolute !important;
+  border: 0 !important;
+  margin: -1px !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  padding: 0 !important;
+}
 
-@mixin ukg-sr-only { overflow: hidden !important; clip-path: inset(50%) !important; white-space: nowrap !important; -webkit-clip-path: inset(50%) !important; width: 1px !important; height: 1px !important; position: absolute !important; border: 0 !important; margin: -1px !important; clip: rect(1px, 1px, 1px, 1px) !important; padding: 0 !important;  }
+@mixin ukg-ie_default_scrollbar($color: null) {
+  scrollbar-track-color: $color;
+  scrollbar-3dlight-color: $color;
+  scrollbar-darkshadow-color: $color;
+  scrollbar-face-color: $color;
+  scrollbar-shadow-color: $color;
+  scrollbar-arrow-color: $color;
+}
+@mixin ukg-ie_set_scrollbar_color($color: null) {
+  scrollbar-face-color: $color;
+  scrollbar-shadow-color: $color;
+}
 
-    @mixin ukg-ie_default_scrollbar($color: null,) {  scrollbar-track-color: $color; scrollbar-3dlight-color: $color; scrollbar-darkshadow-color: $color; scrollbar-face-color: $color; scrollbar-shadow-color: $color; scrollbar-arrow-color: $color;  }
-@mixin ukg-ie_set_scrollbar_color($color: null,) {  scrollbar-face-color: $color; scrollbar-shadow-color: $color;  }
-
-@mixin ukg-focus--circular-on-dark() {  border-radius: $ukg-focus-border-radius-circular; border-width: $ukg-focus-border-width-circular; border-color: $ukg-focus-border-color-on-dark;  border-style: solid; }
-@mixin ukg-focus--circular-on-light() {  border-radius: $ukg-focus-border-radius-circular; border-width: $ukg-focus-border-width-circular; border-color: $ukg-focus-border-color-on-light;  border-style: solid; }
-@mixin ukg-focus--large-box-on-dark() {  border-radius: $ukg-focus-border-radius-large; border-width: $ukg-focus-border-width-large; border-color: $ukg-focus-border-color-on-dark;  border-style: solid; }
-@mixin ukg-focus--large-box-on-light() {  border-radius: $ukg-focus-border-radius-large; border-width: $ukg-focus-border-width-large; border-color: $ukg-focus-border-color-on-light;  border-style: solid; }
-@mixin ukg-focus--nav-item-on-dark() {  border-radius: $ukg-focus-border-radius-nav-item; border-width: $ukg-focus-border-width-large; border-color: $ukg-focus-border-color-on-dark;  border-style: solid; }
-@mixin ukg-focus--nav-item-on-light() {  border-radius: $ukg-focus-border-radius-nav-item; border-width: $ukg-focus-border-width-large; border-color: $ukg-focus-border-color-on-light;  border-style: solid; }
-@mixin ukg-focus--small-box-on-dark() {  border-radius: $ukg-focus-border-radius-small; border-width: $ukg-focus-border-width-small; border-color: $ukg-focus-border-color-on-dark;  border-style: solid; }
-@mixin ukg-focus--small-box-on-light() {  border-radius: $ukg-focus-border-radius-small; border-width: $ukg-focus-border-width-small; border-color: $ukg-focus-border-color-on-light;  border-style: solid; }
+@mixin ukg-focus--circular-on-dark() {
+  border-radius: $ukg-focus-border-radius-circular;
+  border-width: $ukg-focus-border-width-circular;
+  border-color: $ukg-focus-border-color-on-dark;
+  border-style: solid;
+}
+@mixin ukg-focus--circular-on-light() {
+  border-radius: $ukg-focus-border-radius-circular;
+  border-width: $ukg-focus-border-width-circular;
+  border-color: $ukg-focus-border-color-on-light;
+  border-style: solid;
+}
+@mixin ukg-focus--large-box-on-dark() {
+  border-radius: $ukg-focus-border-radius-large;
+  border-width: $ukg-focus-border-width-large;
+  border-color: $ukg-focus-border-color-on-dark;
+  border-style: solid;
+}
+@mixin ukg-focus--large-box-on-light() {
+  border-radius: $ukg-focus-border-radius-large;
+  border-width: $ukg-focus-border-width-large;
+  border-color: $ukg-focus-border-color-on-light;
+  border-style: solid;
+}
+@mixin ukg-focus--nav-item-on-dark() {
+  border-radius: $ukg-focus-border-radius-nav-item;
+  border-width: $ukg-focus-border-width-large;
+  border-color: $ukg-focus-border-color-on-dark;
+  border-style: solid;
+}
+@mixin ukg-focus--nav-item-on-light() {
+  border-radius: $ukg-focus-border-radius-nav-item;
+  border-width: $ukg-focus-border-width-large;
+  border-color: $ukg-focus-border-color-on-light;
+  border-style: solid;
+}
+@mixin ukg-focus--small-box-on-dark() {
+  border-radius: $ukg-focus-border-radius-small;
+  border-width: $ukg-focus-border-width-small;
+  border-color: $ukg-focus-border-color-on-dark;
+  border-style: solid;
+}
+@mixin ukg-focus--small-box-on-light() {
+  border-radius: $ukg-focus-border-radius-small;
+  border-width: $ukg-focus-border-width-small;
+  border-color: $ukg-focus-border-color-on-light;
+  border-style: solid;
+}
 
 /* Suitable for hero area headings, welcome screens or other punctual moments in an experience. Usually applied as a h1 style. */
-@mixin ukg-display-large-on-light() {  line-height: $ukg-display-large-on-light-line-height; font-family: $ukg-display-large-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-display-large-on-light-margin-bottom; margin-top: $ukg-display-large-on-light-margin-top; font-weight: $ukg-display-large-on-light-font-weight; letter-spacing: -0.0125em; font-size: $ukg-display-large-on-light-font-size;  }
+@mixin ukg-display-large-on-light() {
+  line-height: $ukg-display-large-on-light-line-height;
+  font-family: $ukg-display-large-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-display-large-on-light-margin-bottom;
+  margin-top: $ukg-display-large-on-light-margin-top;
+  font-weight: $ukg-display-large-on-light-font-weight;
+  letter-spacing: -0.0125em;
+  font-size: $ukg-display-large-on-light-font-size;
+}
 
 /* Suitable for hero area headings, welcome screens or other punctual moments in an experience. Usually applied as a h1 style. */
-@mixin ukg-display-medium-on-light() {  line-height: $ukg-display-medium-on-light-line-height; font-family: $ukg-display-medium-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-display-medium-on-light-margin-bottom; margin-top: $ukg-display-medium-on-light-margin-top; font-weight: $ukg-display-medium-on-light-font-weight; letter-spacing: -0.0125em; font-size: $ukg-display-medium-on-light-font-size;  }
+@mixin ukg-display-medium-on-light() {
+  line-height: $ukg-display-medium-on-light-line-height;
+  font-family: $ukg-display-medium-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-display-medium-on-light-margin-bottom;
+  margin-top: $ukg-display-medium-on-light-margin-top;
+  font-weight: $ukg-display-medium-on-light-font-weight;
+  letter-spacing: -0.0125em;
+  font-size: $ukg-display-medium-on-light-font-size;
+}
 
 /* Suitable for hero area headings, welcome screens or other punctual moments in an experience. Usually applied as a h1 style. */
-@mixin ukg-display-small-on-light() {  line-height: $ukg-display-small-on-light-line-height; font-family: $ukg-display-small-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-display-small-on-light-margin-bottom; margin-top: $ukg-display-small-on-light-margin-top; font-weight: $ukg-display-small-on-light-font-weight; letter-spacing: -0.0125em; font-size: $ukg-display-small-on-light-font-size;  }
+@mixin ukg-display-small-on-light() {
+  line-height: $ukg-display-small-on-light-line-height;
+  font-family: $ukg-display-small-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-display-small-on-light-margin-bottom;
+  margin-top: $ukg-display-small-on-light-margin-top;
+  font-weight: $ukg-display-small-on-light-font-weight;
+  letter-spacing: -0.0125em;
+  font-size: $ukg-display-small-on-light-font-size;
+}
 
 /* Suitable for hero area headings, welcome screens or other punctual moments in an experience. Usually applied as a h1 style. */
-@mixin ukg-display-xs-on-light() {  line-height: $ukg-display-xs-on-light-line-height; font-family: $ukg-display-xs-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-display-xs-on-light-margin-bottom; margin-top: $ukg-display-xs-on-light-margin-top; font-weight: $ukg-display-xs-on-light-font-weight; letter-spacing: -0.0125em; font-size: $ukg-display-xs-on-light-font-size;  }
+@mixin ukg-display-xs-on-light() {
+  line-height: $ukg-display-xs-on-light-line-height;
+  font-family: $ukg-display-xs-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-display-xs-on-light-margin-bottom;
+  margin-top: $ukg-display-xs-on-light-margin-top;
+  font-weight: $ukg-display-xs-on-light-font-weight;
+  letter-spacing: -0.0125em;
+  font-size: $ukg-display-xs-on-light-font-size;
+}
 
 /* Suitable for hero area headings, welcome screens or other punctual moments in an experience. Usually applied as a h1 style. */
-@mixin ukg-display-large-on-dark() {  line-height: $ukg-display-large-on-dark-line-height; font-family: $ukg-display-large-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-display-large-on-dark-margin-bottom; margin-top: $ukg-display-large-on-dark-margin-top; font-weight: $ukg-display-large-on-dark-font-weight; letter-spacing: -0.0125em; font-size: $ukg-display-large-on-dark-font-size;  }
+@mixin ukg-display-large-on-dark() {
+  line-height: $ukg-display-large-on-dark-line-height;
+  font-family: $ukg-display-large-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-display-large-on-dark-margin-bottom;
+  margin-top: $ukg-display-large-on-dark-margin-top;
+  font-weight: $ukg-display-large-on-dark-font-weight;
+  letter-spacing: -0.0125em;
+  font-size: $ukg-display-large-on-dark-font-size;
+}
 
 /* Suitable for hero area headings, welcome screens or other punctual moments in an experience. Usually applied as a h1 style. */
-@mixin ukg-display-medium-on-dark() {  line-height: $ukg-display-medium-on-dark-line-height; font-family: $ukg-display-medium-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-display-medium-on-dark-margin-bottom; margin-top: $ukg-display-medium-on-dark-margin-top; font-weight: $ukg-display-medium-on-dark-font-weight; letter-spacing: -0.0125em; font-size: $ukg-display-medium-on-dark-font-size;  }
+@mixin ukg-display-medium-on-dark() {
+  line-height: $ukg-display-medium-on-dark-line-height;
+  font-family: $ukg-display-medium-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-display-medium-on-dark-margin-bottom;
+  margin-top: $ukg-display-medium-on-dark-margin-top;
+  font-weight: $ukg-display-medium-on-dark-font-weight;
+  letter-spacing: -0.0125em;
+  font-size: $ukg-display-medium-on-dark-font-size;
+}
 
 /* Suitable for hero area headings, welcome screens or other punctual moments in an experience. Usually applied as a h1 style. */
-@mixin ukg-display-small-on-dark() {  line-height: $ukg-display-small-on-dark-line-height; font-family: $ukg-display-small-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-display-small-on-dark-margin-bottom; margin-top: $ukg-display-small-on-dark-margin-top; font-weight: $ukg-display-small-on-dark-font-weight; letter-spacing: -0.0125em; font-size: $ukg-display-small-on-dark-font-size;  }
+@mixin ukg-display-small-on-dark() {
+  line-height: $ukg-display-small-on-dark-line-height;
+  font-family: $ukg-display-small-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-display-small-on-dark-margin-bottom;
+  margin-top: $ukg-display-small-on-dark-margin-top;
+  font-weight: $ukg-display-small-on-dark-font-weight;
+  letter-spacing: -0.0125em;
+  font-size: $ukg-display-small-on-dark-font-size;
+}
 
 /* Suitable for hero area headings, welcome screens or other punctual moments in an experience. Usually applied as a h1 style. */
-@mixin ukg-display-xs-on-dark() {  line-height: $ukg-display-xs-on-dark-line-height; font-family: $ukg-display-xs-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-display-xs-on-dark-margin-bottom; margin-top: $ukg-display-xs-on-dark-margin-top; font-weight: $ukg-display-xs-on-dark-font-weight; letter-spacing: -0.0125em; font-size: $ukg-display-xs-on-dark-font-size;  }
+@mixin ukg-display-xs-on-dark() {
+  line-height: $ukg-display-xs-on-dark-line-height;
+  font-family: $ukg-display-xs-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-display-xs-on-dark-margin-bottom;
+  margin-top: $ukg-display-xs-on-dark-margin-top;
+  font-weight: $ukg-display-xs-on-dark-font-weight;
+  letter-spacing: -0.0125em;
+  font-size: $ukg-display-xs-on-dark-font-size;
+}
 
 /* The top level heading on a normal full width page, or full width form page. */
-@mixin ukg-standard-heading-1-on-light() {  line-height: $ukg-standard-heading-1-on-light-line-height; font-family: $ukg-standard-heading-1-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-standard-heading-1-on-light-margin-bottom; margin-top: $ukg-standard-heading-1-on-light-margin-top; font-weight: $ukg-standard-heading-1-on-light-font-weight; font-size: $ukg-standard-heading-1-on-light-font-size;  }
+@mixin ukg-standard-heading-1-on-light() {
+  line-height: $ukg-standard-heading-1-on-light-line-height;
+  font-family: $ukg-standard-heading-1-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-standard-heading-1-on-light-margin-bottom;
+  margin-top: $ukg-standard-heading-1-on-light-margin-top;
+  font-weight: $ukg-standard-heading-1-on-light-font-weight;
+  font-size: $ukg-standard-heading-1-on-light-font-size;
+}
 
 /* A heading designed for use below standard heading 1 (child of h1). The subheading should not be used in other circumstances. */
-@mixin ukg-standard-heading-1-subheading-on-light() {  line-height: $ukg-standard-heading-1-subheading-on-light-line-height; display: block; font-family: $ukg-standard-heading-1-subheading-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-standard-heading-1-subheading-on-light-margin-bottom; margin-top: $ukg-standard-heading-1-subheading-on-light-margin-top; font-weight: $ukg-standard-heading-1-subheading-on-light-font-weight; font-size: $ukg-standard-heading-1-subheading-on-light-font-size;  }
+@mixin ukg-standard-heading-1-subheading-on-light() {
+  line-height: $ukg-standard-heading-1-subheading-on-light-line-height;
+  display: block;
+  font-family: $ukg-standard-heading-1-subheading-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-standard-heading-1-subheading-on-light-margin-bottom;
+  margin-top: $ukg-standard-heading-1-subheading-on-light-margin-top;
+  font-weight: $ukg-standard-heading-1-subheading-on-light-font-weight;
+  font-size: $ukg-standard-heading-1-subheading-on-light-font-size;
+}
 
 /* A heading designed for use below standard heading 1 (child of h1). The subheading should not be used in other circumstances. */
-@mixin ukg-standard-heading-1-subheading-on-dark() {  line-height: $ukg-standard-heading-1-subheading-on-dark-line-height; display: block; font-family: $ukg-standard-heading-1-subheading-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-standard-heading-1-subheading-on-dark-margin-bottom; margin-top: $ukg-standard-heading-1-subheading-on-dark-margin-top; font-weight: $ukg-standard-heading-1-subheading-on-dark-font-weight; font-size: $ukg-standard-heading-1-subheading-on-dark-font-size;  }
+@mixin ukg-standard-heading-1-subheading-on-dark() {
+  line-height: $ukg-standard-heading-1-subheading-on-dark-line-height;
+  display: block;
+  font-family: $ukg-standard-heading-1-subheading-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-standard-heading-1-subheading-on-dark-margin-bottom;
+  margin-top: $ukg-standard-heading-1-subheading-on-dark-margin-top;
+  font-weight: $ukg-standard-heading-1-subheading-on-dark-font-weight;
+  font-size: $ukg-standard-heading-1-subheading-on-dark-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 1 or a Display level heading exists above. */
-@mixin ukg-standard-heading-2-on-light() {  line-height: $ukg-standard-heading-2-on-light-line-height; font-family: $ukg-standard-heading-2-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-standard-heading-2-on-light-margin-bottom; margin-top: $ukg-standard-heading-2-on-light-margin-top; font-weight: $ukg-standard-heading-2-on-light-font-weight; font-size: $ukg-standard-heading-2-on-light-font-size;  }
+@mixin ukg-standard-heading-2-on-light() {
+  line-height: $ukg-standard-heading-2-on-light-line-height;
+  font-family: $ukg-standard-heading-2-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-standard-heading-2-on-light-margin-bottom;
+  margin-top: $ukg-standard-heading-2-on-light-margin-top;
+  font-weight: $ukg-standard-heading-2-on-light-font-weight;
+  font-size: $ukg-standard-heading-2-on-light-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 2 exists above. */
-@mixin ukg-standard-heading-3-on-light() {  line-height: $ukg-standard-heading-3-on-light-line-height; font-family: $ukg-standard-heading-3-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-standard-heading-3-on-light-margin-bottom; margin-top: $ukg-standard-heading-3-on-light-margin-top; font-weight: $ukg-standard-heading-3-on-light-font-weight; font-size: $ukg-standard-heading-3-on-light-font-size;  }
+@mixin ukg-standard-heading-3-on-light() {
+  line-height: $ukg-standard-heading-3-on-light-line-height;
+  font-family: $ukg-standard-heading-3-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-standard-heading-3-on-light-margin-bottom;
+  margin-top: $ukg-standard-heading-3-on-light-margin-top;
+  font-weight: $ukg-standard-heading-3-on-light-font-weight;
+  font-size: $ukg-standard-heading-3-on-light-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 3 exists above. */
-@mixin ukg-standard-heading-4-on-light() {  line-height: $ukg-standard-heading-4-on-light-line-height; font-family: $ukg-standard-heading-4-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-standard-heading-4-on-light-margin-bottom; margin-top: $ukg-standard-heading-4-on-light-margin-top; font-weight: $ukg-standard-heading-4-on-light-font-weight; font-size: $ukg-standard-heading-4-on-light-font-size;  }
+@mixin ukg-standard-heading-4-on-light() {
+  line-height: $ukg-standard-heading-4-on-light-line-height;
+  font-family: $ukg-standard-heading-4-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-standard-heading-4-on-light-margin-bottom;
+  margin-top: $ukg-standard-heading-4-on-light-margin-top;
+  font-weight: $ukg-standard-heading-4-on-light-font-weight;
+  font-size: $ukg-standard-heading-4-on-light-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 4 exists above. */
-@mixin ukg-standard-heading-5-on-light() {  line-height: $ukg-standard-heading-5-on-light-line-height; font-family: $ukg-standard-heading-5-on-light-font-family; color: rgba(0,0,0,.87); margin-bottom: $ukg-standard-heading-5-on-light-margin-bottom; margin-top: $ukg-standard-heading-5-on-light-margin-top; font-weight: $ukg-standard-heading-5-on-light-font-weight; font-size: $ukg-standard-heading-5-on-light-font-size;  }
+@mixin ukg-standard-heading-5-on-light() {
+  line-height: $ukg-standard-heading-5-on-light-line-height;
+  font-family: $ukg-standard-heading-5-on-light-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: $ukg-standard-heading-5-on-light-margin-bottom;
+  margin-top: $ukg-standard-heading-5-on-light-margin-top;
+  font-weight: $ukg-standard-heading-5-on-light-font-weight;
+  font-size: $ukg-standard-heading-5-on-light-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 5 exists above */
-@mixin ukg-standard-heading-6-on-light() {  line-height: $ukg-standard-heading-6-on-light-line-height; font-family: $ukg-standard-heading-6-on-light-font-family; color: rgba(0,0,0,.87); margin-bottom: $ukg-standard-heading-6-on-light-margin-bottom; margin-top: $ukg-standard-heading-6-on-light-margin-top; font-weight: $ukg-standard-heading-6-on-light-font-weight; font-size: $ukg-standard-heading-6-on-light-font-size;  }
+@mixin ukg-standard-heading-6-on-light() {
+  line-height: $ukg-standard-heading-6-on-light-line-height;
+  font-family: $ukg-standard-heading-6-on-light-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: $ukg-standard-heading-6-on-light-margin-bottom;
+  margin-top: $ukg-standard-heading-6-on-light-margin-top;
+  font-weight: $ukg-standard-heading-6-on-light-font-weight;
+  font-size: $ukg-standard-heading-6-on-light-font-size;
+}
 
 /* The top level heading on a normal full width page, or full width form page. */
-@mixin ukg-standard-heading-1-on-dark() {  line-height: $ukg-standard-heading-1-on-dark-line-height; font-family: $ukg-standard-heading-1-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-standard-heading-1-on-dark-margin-bottom; margin-top: $ukg-standard-heading-1-on-dark-margin-top; font-weight: $ukg-standard-heading-1-on-dark-font-weight; font-size: $ukg-standard-heading-1-on-dark-font-size;  }
+@mixin ukg-standard-heading-1-on-dark() {
+  line-height: $ukg-standard-heading-1-on-dark-line-height;
+  font-family: $ukg-standard-heading-1-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-standard-heading-1-on-dark-margin-bottom;
+  margin-top: $ukg-standard-heading-1-on-dark-margin-top;
+  font-weight: $ukg-standard-heading-1-on-dark-font-weight;
+  font-size: $ukg-standard-heading-1-on-dark-font-size;
+}
 
 /* A heading designed for use below standard heading 1 (child of h1). The subheading should not be used in other circumstances. */
-@mixin ukg-standard-header-1-subheading-on-dark() {  line-height: $ukg-standard-header-1-subheading-on-dark-line-height; display: block; font-family: $ukg-standard-header-1-subheading-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-standard-header-1-subheading-on-dark-margin-bottom; margin-top: $ukg-standard-header-1-subheading-on-dark-margin-top; font-weight: $ukg-standard-header-1-subheading-on-dark-font-weight; font-size: $ukg-standard-header-1-subheading-on-dark-font-size;  }
+@mixin ukg-standard-header-1-subheading-on-dark() {
+  line-height: $ukg-standard-header-1-subheading-on-dark-line-height;
+  display: block;
+  font-family: $ukg-standard-header-1-subheading-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-standard-header-1-subheading-on-dark-margin-bottom;
+  margin-top: $ukg-standard-header-1-subheading-on-dark-margin-top;
+  font-weight: $ukg-standard-header-1-subheading-on-dark-font-weight;
+  font-size: $ukg-standard-header-1-subheading-on-dark-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 1 or a Display level heading exists above. */
-@mixin ukg-standard-heading-2-on-dark() {  line-height: $ukg-standard-heading-2-on-dark-line-height; font-family: $ukg-standard-heading-2-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-standard-heading-2-on-dark-margin-bottom; margin-top: $ukg-standard-heading-2-on-dark-margin-top; font-weight: $ukg-standard-heading-2-on-dark-font-weight; font-size: $ukg-standard-heading-2-on-dark-font-size;  }
+@mixin ukg-standard-heading-2-on-dark() {
+  line-height: $ukg-standard-heading-2-on-dark-line-height;
+  font-family: $ukg-standard-heading-2-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-standard-heading-2-on-dark-margin-bottom;
+  margin-top: $ukg-standard-heading-2-on-dark-margin-top;
+  font-weight: $ukg-standard-heading-2-on-dark-font-weight;
+  font-size: $ukg-standard-heading-2-on-dark-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 2 exists above. */
-@mixin ukg-standard-heading-3-on-dark() {  line-height: $ukg-standard-heading-3-on-dark-line-height; font-family: $ukg-standard-heading-3-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-standard-heading-3-on-dark-margin-bottom; margin-top: $ukg-standard-heading-3-on-dark-margin-top; font-weight: $ukg-standard-heading-3-on-dark-font-weight; font-size: $ukg-standard-heading-3-on-dark-font-size;  }
+@mixin ukg-standard-heading-3-on-dark() {
+  line-height: $ukg-standard-heading-3-on-dark-line-height;
+  font-family: $ukg-standard-heading-3-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-standard-heading-3-on-dark-margin-bottom;
+  margin-top: $ukg-standard-heading-3-on-dark-margin-top;
+  font-weight: $ukg-standard-heading-3-on-dark-font-weight;
+  font-size: $ukg-standard-heading-3-on-dark-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 3 exists above. */
-@mixin ukg-standard-heading-4-on-dark() {  line-height: $ukg-standard-heading-4-on-dark-line-height; font-family: $ukg-standard-heading-4-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-standard-heading-4-on-dark-margin-bottom; margin-top: $ukg-standard-heading-4-on-dark-margin-top; font-weight: $ukg-standard-heading-4-on-dark-font-weight; font-size: $ukg-standard-heading-4-on-dark-font-size;  }
+@mixin ukg-standard-heading-4-on-dark() {
+  line-height: $ukg-standard-heading-4-on-dark-line-height;
+  font-family: $ukg-standard-heading-4-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-standard-heading-4-on-dark-margin-bottom;
+  margin-top: $ukg-standard-heading-4-on-dark-margin-top;
+  font-weight: $ukg-standard-heading-4-on-dark-font-weight;
+  font-size: $ukg-standard-heading-4-on-dark-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 4 exists above. */
-@mixin ukg-standard-heading-5-on-dark() {  line-height: $ukg-standard-heading-5-on-dark-line-height; font-family: $ukg-standard-heading-5-on-dark-font-family; color: #FFFFFF; margin-bottom: $ukg-standard-heading-5-on-dark-margin-bottom; margin-top: $ukg-standard-heading-5-on-dark-margin-top; font-weight: $ukg-standard-heading-5-on-dark-font-weight; font-size: $ukg-standard-heading-5-on-dark-font-size;  }
+@mixin ukg-standard-heading-5-on-dark() {
+  line-height: $ukg-standard-heading-5-on-dark-line-height;
+  font-family: $ukg-standard-heading-5-on-dark-font-family;
+  color: #ffffff;
+  margin-bottom: $ukg-standard-heading-5-on-dark-margin-bottom;
+  margin-top: $ukg-standard-heading-5-on-dark-margin-top;
+  font-weight: $ukg-standard-heading-5-on-dark-font-weight;
+  font-size: $ukg-standard-heading-5-on-dark-font-size;
+}
 
 /* Page heading only to be used when a Standard Heading 5 exists above */
-@mixin ukg-standard-heading-6-on-dark() {  line-height: $ukg-standard-heading-6-on-dark-line-height; font-family: $ukg-standard-heading-6-on-dark-font-family; color: #FFFFFF; margin-bottom: $ukg-standard-heading-6-on-dark-margin-bottom; margin-top: $ukg-standard-heading-6-on-dark-margin-top; font-weight: $ukg-standard-heading-6-on-dark-font-weight; font-size: $ukg-standard-heading-6-on-dark-font-size;  }
+@mixin ukg-standard-heading-6-on-dark() {
+  line-height: $ukg-standard-heading-6-on-dark-line-height;
+  font-family: $ukg-standard-heading-6-on-dark-font-family;
+  color: #ffffff;
+  margin-bottom: $ukg-standard-heading-6-on-dark-margin-bottom;
+  margin-top: $ukg-standard-heading-6-on-dark-margin-top;
+  font-weight: $ukg-standard-heading-6-on-dark-font-weight;
+  font-size: $ukg-standard-heading-6-on-dark-font-size;
+}
 
 /* The heading used in small box components such as cards, content containers and dialogs. */
-@mixin ukg-heading-small-box-on-light() {  line-height: $ukg-heading-small-box-on-light-line-height; font-family: $ukg-heading-small-box-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-heading-small-box-on-light-margin-bottom; margin-top: $ukg-heading-small-box-on-light-margin-top; font-weight: $ukg-heading-small-box-on-light-font-weight; font-size: $ukg-heading-small-box-on-light-font-size;  }
+@mixin ukg-heading-small-box-on-light() {
+  line-height: $ukg-heading-small-box-on-light-line-height;
+  font-family: $ukg-heading-small-box-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-heading-small-box-on-light-margin-bottom;
+  margin-top: $ukg-heading-small-box-on-light-margin-top;
+  font-weight: $ukg-heading-small-box-on-light-font-weight;
+  font-size: $ukg-heading-small-box-on-light-font-size;
+}
 
 /* The heading used in small box components such as cards, content containers and dialogs. */
-@mixin ukg-heading-small-box-on-dark() {  line-height: $ukg-heading-small-box-on-dark-line-height; font-family: $ukg-heading-small-box-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-heading-small-box-on-dark-margin-bottom; margin-top: $ukg-heading-small-box-on-dark-margin-top; font-weight: $ukg-heading-small-box-on-dark-font-weight; font-size: $ukg-heading-small-box-on-dark-font-size;  }
+@mixin ukg-heading-small-box-on-dark() {
+  line-height: $ukg-heading-small-box-on-dark-line-height;
+  font-family: $ukg-heading-small-box-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-heading-small-box-on-dark-margin-bottom;
+  margin-top: $ukg-heading-small-box-on-dark-margin-top;
+  font-weight: $ukg-heading-small-box-on-dark-font-weight;
+  font-size: $ukg-heading-small-box-on-dark-font-size;
+}
 
 /* Used for paragraph text when introducing a page, giving high level instructions, or for areas of extended reading. Max width is 37.5rem */
-@mixin ukg-body-text-on-light() {  line-height: $ukg-body-text-on-light-line-height; font-family: $ukg-body-text-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-body-text-on-light-margin-bottom; margin-top: $ukg-body-text-on-light-margin-top; font-weight: $ukg-body-text-on-light-font-weight; max-width: 37.5rem; font-size: $ukg-body-text-on-light-font-size;  }
+@mixin ukg-body-text-on-light() {
+  line-height: $ukg-body-text-on-light-line-height;
+  font-family: $ukg-body-text-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-body-text-on-light-margin-bottom;
+  margin-top: $ukg-body-text-on-light-margin-top;
+  font-weight: $ukg-body-text-on-light-font-weight;
+  max-width: 37.5rem;
+  font-size: $ukg-body-text-on-light-font-size;
+}
 
 /* Used for paragraph text when introducing a page, giving high level instructions, or for areas of extended reading. Max width is 37.5rem */
-@mixin ukg-body-text-on-dark() {  line-height: $ukg-body-text-on-dark-line-height; font-family: $ukg-body-text-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-body-text-on-dark-margin-bottom; margin-top: $ukg-body-text-on-dark-margin-top; font-weight: $ukg-body-text-on-dark-font-weight; max-width: 37.5rem; font-size: $ukg-body-text-on-dark-font-size;  }
+@mixin ukg-body-text-on-dark() {
+  line-height: $ukg-body-text-on-dark-line-height;
+  font-family: $ukg-body-text-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-body-text-on-dark-margin-bottom;
+  margin-top: $ukg-body-text-on-dark-margin-top;
+  font-weight: $ukg-body-text-on-dark-font-weight;
+  max-width: 37.5rem;
+  font-size: $ukg-body-text-on-dark-font-size;
+}
 
 /* Use for paragraph text that should recede slightly. May be used for short disclosures of no more than three lines. */
-@mixin ukg-small-text-on-light() {  line-height: $ukg-small-text-on-light-line-height; font-family: $ukg-small-text-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-small-text-on-light-margin-bottom; margin-top: $ukg-small-text-on-light-margin-top; font-weight: $ukg-small-text-on-light-font-weight; font-size: $ukg-small-text-on-light-font-size;  }
+@mixin ukg-small-text-on-light() {
+  line-height: $ukg-small-text-on-light-line-height;
+  font-family: $ukg-small-text-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-small-text-on-light-margin-bottom;
+  margin-top: $ukg-small-text-on-light-margin-top;
+  font-weight: $ukg-small-text-on-light-font-weight;
+  font-size: $ukg-small-text-on-light-font-size;
+}
 
 /* Use for paragraph text that should recede slightly. May be used for short disclosures of no more than three lines. */
-@mixin ukg-small-text-on-dark() {  line-height: $ukg-small-text-on-dark-line-height; font-family: $ukg-small-text-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-small-text-on-dark-margin-bottom; margin-top: $ukg-small-text-on-dark-margin-top; font-weight: $ukg-small-text-on-dark-font-weight; font-size: $ukg-small-text-on-dark-font-size;  }
+@mixin ukg-small-text-on-dark() {
+  line-height: $ukg-small-text-on-dark-line-height;
+  font-family: $ukg-small-text-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-small-text-on-dark-margin-bottom;
+  margin-top: $ukg-small-text-on-dark-margin-top;
+  font-weight: $ukg-small-text-on-dark-font-weight;
+  font-size: $ukg-small-text-on-dark-font-size;
+}
 
 /* For unordered lists, generally preceeded by a brief introduction of body copy. */
-@mixin ukg-unordered-list-on-light() {  line-height: $ukg-unordered-list-on-light-line-height; font-family: $ukg-unordered-list-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-unordered-list-on-light-margin-bottom; margin-top: $ukg-unordered-list-on-light-margin-top; font-weight: $ukg-unordered-list-on-light-font-weight; font-size: $ukg-unordered-list-on-light-font-size;  }
+@mixin ukg-unordered-list-on-light() {
+  line-height: $ukg-unordered-list-on-light-line-height;
+  font-family: $ukg-unordered-list-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-unordered-list-on-light-margin-bottom;
+  margin-top: $ukg-unordered-list-on-light-margin-top;
+  font-weight: $ukg-unordered-list-on-light-font-weight;
+  font-size: $ukg-unordered-list-on-light-font-size;
+}
 
 /* For unordered lists, generally preceeded by a brief introduction of body copy. */
-@mixin ukg-unordered-list-on-dark() {  line-height: $ukg-unordered-list-on-dark-line-height; font-family: $ukg-unordered-list-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-unordered-list-on-dark-margin-bottom; margin-top: $ukg-unordered-list-on-dark-margin-top; font-weight: $ukg-unordered-list-on-dark-font-weight; font-size: $ukg-unordered-list-on-dark-font-size;  }
+@mixin ukg-unordered-list-on-dark() {
+  line-height: $ukg-unordered-list-on-dark-line-height;
+  font-family: $ukg-unordered-list-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-unordered-list-on-dark-margin-bottom;
+  margin-top: $ukg-unordered-list-on-dark-margin-top;
+  font-weight: $ukg-unordered-list-on-dark-font-weight;
+  font-size: $ukg-unordered-list-on-dark-font-size;
+}
 
 /* For prioritized lists, generally preceeded by a brief introduction of body copy. */
-@mixin ukg-ordered-list-on-light() {  line-height: $ukg-ordered-list-on-light-line-height; font-family: $ukg-ordered-list-on-light-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-ordered-list-on-light-margin-bottom; margin-top: $ukg-ordered-list-on-light-margin-top; font-weight: $ukg-ordered-list-on-light-font-weight; font-size: $ukg-ordered-list-on-light-font-size;  }
+@mixin ukg-ordered-list-on-light() {
+  line-height: $ukg-ordered-list-on-light-line-height;
+  font-family: $ukg-ordered-list-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-ordered-list-on-light-margin-bottom;
+  margin-top: $ukg-ordered-list-on-light-margin-top;
+  font-weight: $ukg-ordered-list-on-light-font-weight;
+  font-size: $ukg-ordered-list-on-light-font-size;
+}
 
 /* For prioritized lists, generally preceeded by a brief introduction of body copy. */
-@mixin ukg-ordered-list-on-dark() {  line-height: $ukg-ordered-list-on-dark-line-height; font-family: $ukg-ordered-list-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-ordered-list-on-dark-margin-bottom; margin-top: $ukg-ordered-list-on-dark-margin-top; font-weight: $ukg-ordered-list-on-dark-font-weight; font-size: $ukg-ordered-list-on-dark-font-size;  }
+@mixin ukg-ordered-list-on-dark() {
+  line-height: $ukg-ordered-list-on-dark-line-height;
+  font-family: $ukg-ordered-list-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-ordered-list-on-dark-margin-bottom;
+  margin-top: $ukg-ordered-list-on-dark-margin-top;
+  font-weight: $ukg-ordered-list-on-dark-font-weight;
+  font-size: $ukg-ordered-list-on-dark-font-size;
+}
 
 /* Text inside either an unordered or prioritized list. */
-@mixin ukg-list-item-text-on-light() {  margin-bottom: $ukg-list-item-text-on-light-margin-bottom; color: $ukg-text-high-emphasis-on-light;  }
+@mixin ukg-list-item-text-on-light() {
+  margin-bottom: $ukg-list-item-text-on-light-margin-bottom;
+  color: $ukg-text-high-emphasis-on-light;
+}
 
 /* Text inside either an unordered or prioritized list. */
-@mixin ukg-list-item-text-on-dark() {  margin-bottom: $ukg-list-item-text-on-dark-margin-bottom; color: $ukg-text-high-emphasis-on-dark;  }
+@mixin ukg-list-item-text-on-dark() {
+  margin-bottom: $ukg-list-item-text-on-dark-margin-bottom;
+  color: $ukg-text-high-emphasis-on-dark;
+}
 
 /* Used to call special attention to a quote. Can be used with or without a signature. */
-@mixin ukg-blockquote-text-on-light() {  line-height: $ukg-blockquote-text-on-light-line-height; font-family: $ukg-blockquote-text-on-light-font-family; padding-left: $ukg-spacing-s; color: $ukg-text-high-emphasis-on-light; border-left: 1px solid $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-blockquote-text-on-light-margin-bottom; font-style: italic; margin-top: $ukg-blockquote-text-on-light-margin-top; font-weight: $ukg-blockquote-text-on-light-font-weight; font-size: $ukg-blockquote-text-on-light-font-size;  }
+@mixin ukg-blockquote-text-on-light() {
+  line-height: $ukg-blockquote-text-on-light-line-height;
+  font-family: $ukg-blockquote-text-on-light-font-family;
+  padding-left: $ukg-spacing-s;
+  color: $ukg-text-high-emphasis-on-light;
+  border-left: 1px solid $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-blockquote-text-on-light-margin-bottom;
+  font-style: italic;
+  margin-top: $ukg-blockquote-text-on-light-margin-top;
+  font-weight: $ukg-blockquote-text-on-light-font-weight;
+  font-size: $ukg-blockquote-text-on-light-font-size;
+}
 
 /* Used to call special attention to a quote. Can be used with or without a signature. */
-@mixin ukg-blockquote-text-on-dark() {  line-height: $ukg-blockquote-text-on-dark-line-height; font-family: $ukg-blockquote-text-on-dark-font-family; padding-left: $ukg-spacing-s; color: $ukg-text-high-emphasis-on-dark; border-left: 1px solid $ukg-text-high-emphasis-on-dark; margin-bottom: $ukg-blockquote-text-on-dark-margin-bottom; font-style: italic; margin-top: $ukg-blockquote-text-on-dark-margin-top; font-weight: $ukg-blockquote-text-on-dark-font-weight; font-size: $ukg-blockquote-text-on-dark-font-size;  }
+@mixin ukg-blockquote-text-on-dark() {
+  line-height: $ukg-blockquote-text-on-dark-line-height;
+  font-family: $ukg-blockquote-text-on-dark-font-family;
+  padding-left: $ukg-spacing-s;
+  color: $ukg-text-high-emphasis-on-dark;
+  border-left: 1px solid $ukg-text-high-emphasis-on-dark;
+  margin-bottom: $ukg-blockquote-text-on-dark-margin-bottom;
+  font-style: italic;
+  margin-top: $ukg-blockquote-text-on-dark-margin-top;
+  font-weight: $ukg-blockquote-text-on-dark-font-weight;
+  font-size: $ukg-blockquote-text-on-dark-font-size;
+}
 
 /* Signature for a blockquote */
-@mixin ukg-blockquote-signature-on-light() {  line-height: $ukg-blockquote-signature-on-light-line-height; font-family: $ukg-blockquote-signature-on-light-font-family; color: $ukg-text-high-emphasis-on-light; font-style: normal; margin-top: $ukg-blockquote-signature-on-light-margin-top; font-weight: $ukg-blockquote-signature-on-light-font-weight; font-size: $ukg-blockquote-signature-on-light-font-size;  }
+@mixin ukg-blockquote-signature-on-light() {
+  line-height: $ukg-blockquote-signature-on-light-line-height;
+  font-family: $ukg-blockquote-signature-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  font-style: normal;
+  margin-top: $ukg-blockquote-signature-on-light-margin-top;
+  font-weight: $ukg-blockquote-signature-on-light-font-weight;
+  font-size: $ukg-blockquote-signature-on-light-font-size;
+}
 
 /* Signature for a blockquote */
-@mixin ukg-blockquote-signature-on-dark() {  line-height: $ukg-blockquote-signature-on-dark-line-height; font-family: $ukg-blockquote-signature-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; font-style: normal; margin-top: $ukg-blockquote-signature-on-dark-margin-top; font-weight: $ukg-blockquote-signature-on-dark-font-weight; font-size: $ukg-blockquote-signature-on-dark-font-size;  }
+@mixin ukg-blockquote-signature-on-dark() {
+  line-height: $ukg-blockquote-signature-on-dark-line-height;
+  font-family: $ukg-blockquote-signature-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  font-style: normal;
+  margin-top: $ukg-blockquote-signature-on-dark-margin-top;
+  font-weight: $ukg-blockquote-signature-on-dark-font-weight;
+  font-size: $ukg-blockquote-signature-on-dark-font-size;
+}
 
 /* Used for inline quotes. */
-@mixin ukg-quote-text-on-light() {  line-height: $ukg-quote-text-on-light-line-height; font-family: $ukg-quote-text-on-light-font-family; color: $ukg-text-high-emphasis-on-light; font-style: italic; font-weight: $ukg-quote-text-on-light-font-weight; font-size: $ukg-quote-text-on-light-font-size;  }
+@mixin ukg-quote-text-on-light() {
+  line-height: $ukg-quote-text-on-light-line-height;
+  font-family: $ukg-quote-text-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  font-style: italic;
+  font-weight: $ukg-quote-text-on-light-font-weight;
+  font-size: $ukg-quote-text-on-light-font-size;
+}
 
 /* Used for inline quotes. */
-@mixin ukg-quote-text-on-dark() {  line-height: $ukg-quote-text-on-dark-line-height; font-family: $ukg-quote-text-on-dark-font-family; color: $ukg-text-high-emphasis-on-dark; font-style: italic; font-weight: $ukg-quote-text-on-dark-font-weight; font-size: $ukg-quote-text-on-dark-font-size;  }
+@mixin ukg-quote-text-on-dark() {
+  line-height: $ukg-quote-text-on-dark-line-height;
+  font-family: $ukg-quote-text-on-dark-font-family;
+  color: $ukg-text-high-emphasis-on-dark;
+  font-style: italic;
+  font-weight: $ukg-quote-text-on-dark-font-weight;
+  font-size: $ukg-quote-text-on-dark-font-size;
+}
 
 /* An inline highlight style */
-@mixin ukg-mark-text-on-light() {  font-family: $ukg-mark-text-on-light-font-family; background-color: $ukg-mark-text-on-light-background-color; color: #FFFFFF;  }
+@mixin ukg-mark-text-on-light() {
+  font-family: $ukg-mark-text-on-light-font-family;
+  background-color: $ukg-mark-text-on-light-background-color;
+  color: #ffffff;
+}
 
 /* An inline highlight style */
-@mixin ukg-mark-text-on-dark() {  font-family: $ukg-mark-text-on-dark-font-family; background-color: $ukg-mark-text-on-dark-background-color; color: $ukg-text-high-emphasis-on-light;  }
+@mixin ukg-mark-text-on-dark() {
+  font-family: $ukg-mark-text-on-dark-font-family;
+  background-color: $ukg-mark-text-on-dark-background-color;
+  color: $ukg-text-high-emphasis-on-light;
+}
 
 /* An inline bold style. */
-@mixin ukg-bold-text-on-light() {  font-weight: $ukg-bold-text-on-light-font-weight; font-family: $ukg-bold-text-on-light-font-family; color: $ukg-text-high-emphasis-on-light;  }
+@mixin ukg-bold-text-on-light() {
+  font-weight: $ukg-bold-text-on-light-font-weight;
+  font-family: $ukg-bold-text-on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+}
 
 /* An inline bold style. */
-@mixin ukg-bold-text-on-dark() {  font-weight: $ukg-bold-text-on-dark-font-weight; color: $ukg-text-high-emphasis-on-dark;  }
+@mixin ukg-bold-text-on-dark() {
+  font-weight: $ukg-bold-text-on-dark-font-weight;
+  color: $ukg-text-high-emphasis-on-dark;
+}
 
 /* An inline italic style. */
-@mixin ukg-italic-text-on-light() {  font-style: italic; color: $ukg-text-high-emphasis-on-light;  }
+@mixin ukg-italic-text-on-light() {
+  font-style: italic;
+  color: $ukg-text-high-emphasis-on-light;
+}
 
 /* An inline italic style. */
-@mixin ukg-italic-text-on-dark() {  font-style: italic; color: $ukg-text-high-emphasis-on-dark;  }
+@mixin ukg-italic-text-on-dark() {
+  font-style: italic;
+  color: $ukg-text-high-emphasis-on-dark;
+}
 
 /* Text a user types or selects in a form field. */
-@mixin ukg-active-form-text() {  line-height: $ukg-active-form-text-line-height; font-family: $ukg-active-form-text-font-family; color: rgba(0,0,0,.87); font-weight: $ukg-active-form-text-font-weight; font-size: $ukg-active-form-text-font-size;  }
+@mixin ukg-active-form-text() {
+  line-height: $ukg-active-form-text-line-height;
+  font-family: $ukg-active-form-text-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-active-form-text-font-weight;
+  font-size: $ukg-active-form-text-font-size;
+}
 
 /* Used for form hints that appear inside a form field. */
-@mixin ukg-hint-form-text() {  line-height: $ukg-hint-form-text-line-height; font-family: $ukg-hint-form-text-font-family; color: rgba(0,0,0,0.6); font-weight: $ukg-hint-form-text-font-weight; font-size: $ukg-hint-form-text-font-size;  }
+@mixin ukg-hint-form-text() {
+  line-height: $ukg-hint-form-text-line-height;
+  font-family: $ukg-hint-form-text-font-family;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: $ukg-hint-form-text-font-weight;
+  font-size: $ukg-hint-form-text-font-size;
+}
 
 /* Used for disabled values in a form field. */
-@mixin ukg-disabled-form-text() {  line-height: $ukg-disabled-form-text-line-height; font-family: $ukg-disabled-form-text-font-family; color: rgba(0,0,0,.38); font-weight: $ukg-disabled-form-text-font-weight; font-size: $ukg-disabled-form-text-font-size;  }
+@mixin ukg-disabled-form-text() {
+  line-height: $ukg-disabled-form-text-line-height;
+  font-family: $ukg-disabled-form-text-font-family;
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: $ukg-disabled-form-text-font-weight;
+  font-size: $ukg-disabled-form-text-font-size;
+}
 
 /* Text used in button. */
-@mixin ukg-button-text() {  font-size: $ukg-button-text-font-size; line-height: $ukg-button-text-line-height; font-weight: $ukg-button-text-font-weight; font-family: $ukg-button-text-font-family;  }
+@mixin ukg-button-text() {
+  font-size: $ukg-button-text-font-size;
+  line-height: $ukg-button-text-line-height;
+  font-weight: $ukg-button-text-font-weight;
+  font-family: $ukg-button-text-font-family;
+}
 
 /* Text representing a link to another page or application */
-@mixin ukg-anchor-link() {  font-family: $ukg-anchor-link-font-family; color: $ukg-action-text; text-decoration: underline; cursor: pointer;  }
+@mixin ukg-anchor-link() {
+  font-family: $ukg-anchor-link-font-family;
+  color: $ukg-action-text;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 /* Text representing a link to another page or application */
-@mixin ukg-anchor-link-visited() {  font-family: $ukg-anchor-link-visited-font-family; color: $ukg-action-text; cursor: pointer; text-decoration: underline;  }
+@mixin ukg-anchor-link-visited() {
+  font-family: $ukg-anchor-link-visited-font-family;
+  color: $ukg-action-text;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* Text representing a link to another page or application */
-@mixin ukg-anchor-link-hover() {  font-family: $ukg-anchor-link-hover-font-family; color: $ukg-action-text-hover; cursor: pointer; text-decoration: underline;  }
+@mixin ukg-anchor-link-hover() {
+  font-family: $ukg-anchor-link-hover-font-family;
+  color: $ukg-action-text-hover;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* Text representing a link to another page or application */
-@mixin ukg-anchor-link-active() {  font-family: $ukg-anchor-link-active-font-family; color: $ukg-action-text-active; cursor: pointer; text-decoration: underline;  }
+@mixin ukg-anchor-link-active() {
+  font-family: $ukg-anchor-link-active-font-family;
+  color: $ukg-action-text-active;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* Text representing a block and/or snippet of code */
-@mixin ukg-code-text() {  font-family: $ukg-code-text-font-family; font-size: $ukg-code-text-font-size; line-height: $ukg-code-text-line-height; font-weight: $ukg-code-text-font-weight;  }
+@mixin ukg-code-text() {
+  font-family: $ukg-code-text-font-family;
+  font-size: $ukg-code-text-font-size;
+  line-height: $ukg-code-text-line-height;
+  font-weight: $ukg-code-text-font-weight;
+}
 
 /* Styling for a navigation heading on a light surface */
-@mixin ukg-nav-heading-on-light() {  line-height: $ukg-nav-heading-on-light-line-height; font-family: $ukg-nav-heading-on-light-font-family; color: rgba(0,0,0,.87); font-weight: $ukg-nav-heading-on-light-font-weight; font-size: $ukg-nav-heading-on-light-font-size;  }
+@mixin ukg-nav-heading-on-light() {
+  line-height: $ukg-nav-heading-on-light-line-height;
+  font-family: $ukg-nav-heading-on-light-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-nav-heading-on-light-font-weight;
+  font-size: $ukg-nav-heading-on-light-font-size;
+}
 
 /* Idle styling for an nav item, on a light surface */
-@mixin ukg-nav-idle-on-light() {  line-height: $ukg-nav-idle-on-light-line-height; font-family: $ukg-nav-idle-on-light-font-family; color: rgba(0,0,0,0.72); font-weight: $ukg-nav-idle-on-light-font-weight; font-size: $ukg-nav-idle-on-light-font-size;  }
+@mixin ukg-nav-idle-on-light() {
+  line-height: $ukg-nav-idle-on-light-line-height;
+  font-family: $ukg-nav-idle-on-light-font-family;
+  color: rgba(0, 0, 0, 0.72);
+  font-weight: $ukg-nav-idle-on-light-font-weight;
+  font-size: $ukg-nav-idle-on-light-font-size;
+}
 
 /* Styling for a selected nav item, on a light surface */
-@mixin ukg-nav-selected-on-light() {  line-height: $ukg-nav-selected-on-light-line-height; font-family: $ukg-nav-selected-on-light-font-family; color: rgba(0,0,0,.87); font-weight: $ukg-nav-selected-on-light-font-weight; font-size: $ukg-nav-selected-on-light-font-size;  }
+@mixin ukg-nav-selected-on-light() {
+  line-height: $ukg-nav-selected-on-light-line-height;
+  font-family: $ukg-nav-selected-on-light-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-nav-selected-on-light-font-weight;
+  font-size: $ukg-nav-selected-on-light-font-size;
+}
 
 /* Styling for a disabled nav item, on a light surface */
-@mixin ukg-nav-disabled-on-light() {  line-height: $ukg-nav-disabled-on-light-line-height; font-family: $ukg-nav-disabled-on-light-font-family; color: rgba(0,0,0,0.6); font-weight: $ukg-nav-disabled-on-light-font-weight; font-size: $ukg-nav-disabled-on-light-font-size;  }
+@mixin ukg-nav-disabled-on-light() {
+  line-height: $ukg-nav-disabled-on-light-line-height;
+  font-family: $ukg-nav-disabled-on-light-font-family;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: $ukg-nav-disabled-on-light-font-weight;
+  font-size: $ukg-nav-disabled-on-light-font-size;
+}
 
 /* Styling for a navigation section on a light surface. Used to categorize a group of nav items */
-@mixin ukg-nav-section-title-on-light() {  line-height: $ukg-nav-section-title-on-light-line-height; font-family: $ukg-nav-section-title-on-light-font-family; color: rgba(0,0,0,0.6); font-style: italic; font-weight: $ukg-nav-section-title-on-light-font-weight; font-size: $ukg-nav-section-title-on-light-font-size;  }
+@mixin ukg-nav-section-title-on-light() {
+  line-height: $ukg-nav-section-title-on-light-line-height;
+  font-family: $ukg-nav-section-title-on-light-font-family;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  font-weight: $ukg-nav-section-title-on-light-font-weight;
+  font-size: $ukg-nav-section-title-on-light-font-size;
+}
 
 /* Styling for a navigation heading on a dark surface */
-@mixin ukg-nav-heading-on-dark() {  line-height: $ukg-nav-heading-on-dark-line-height; font-family: $ukg-nav-heading-on-dark-font-family; color: rgba(255,255,255,1); font-weight: $ukg-nav-heading-on-dark-font-weight; font-size: $ukg-nav-heading-on-dark-font-size;  }
+@mixin ukg-nav-heading-on-dark() {
+  line-height: $ukg-nav-heading-on-dark-line-height;
+  font-family: $ukg-nav-heading-on-dark-font-family;
+  color: rgba(255, 255, 255, 1);
+  font-weight: $ukg-nav-heading-on-dark-font-weight;
+  font-size: $ukg-nav-heading-on-dark-font-size;
+}
 
 /* Idle styling for an nav item, on a dark surface */
-@mixin ukg-nav-idle-on-dark() {  line-height: $ukg-nav-idle-on-dark-line-height; font-family: $ukg-nav-idle-on-dark-font-family; color: rgba(255,255,255,.82); font-weight: $ukg-nav-idle-on-dark-font-weight; font-size: $ukg-nav-idle-on-dark-font-size;  }
+@mixin ukg-nav-idle-on-dark() {
+  line-height: $ukg-nav-idle-on-dark-line-height;
+  font-family: $ukg-nav-idle-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: $ukg-nav-idle-on-dark-font-weight;
+  font-size: $ukg-nav-idle-on-dark-font-size;
+}
 
 /* Styling for a selected nav item, on a dark surface */
-@mixin ukg-nav-selected-on-dark() {  line-height: $ukg-nav-selected-on-dark-line-height; font-family: $ukg-nav-selected-on-dark-font-family; color: rgba(255,255,255,1); font-weight: $ukg-nav-selected-on-dark-font-weight; font-size: $ukg-nav-selected-on-dark-font-size;  }
+@mixin ukg-nav-selected-on-dark() {
+  line-height: $ukg-nav-selected-on-dark-line-height;
+  font-family: $ukg-nav-selected-on-dark-font-family;
+  color: rgba(255, 255, 255, 1);
+  font-weight: $ukg-nav-selected-on-dark-font-weight;
+  font-size: $ukg-nav-selected-on-dark-font-size;
+}
 
 /* Styling for a disabled nav item, on a dark surface */
-@mixin ukg-nav-disabled-on-dark() {  line-height: $ukg-nav-disabled-on-dark-line-height; font-family: $ukg-nav-disabled-on-dark-font-family; color: rgba(255,255,255,0.70); font-weight: $ukg-nav-disabled-on-dark-font-weight; font-size: $ukg-nav-disabled-on-dark-font-size;  }
+@mixin ukg-nav-disabled-on-dark() {
+  line-height: $ukg-nav-disabled-on-dark-line-height;
+  font-family: $ukg-nav-disabled-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: $ukg-nav-disabled-on-dark-font-weight;
+  font-size: $ukg-nav-disabled-on-dark-font-size;
+}
 
 /* Styling for a navigation section on a dark surface. Used to categorize a group of nav items */
-@mixin ukg-nav-section-title-on-dark() {  line-height: $ukg-nav-section-title-on-dark-line-height; font-family: $ukg-nav-section-title-on-dark-font-family; color: rgba(255,255,255,0.70); font-style: italic; font-weight: $ukg-nav-section-title-on-dark-font-weight; font-size: $ukg-nav-section-title-on-dark-font-size;  }
+@mixin ukg-nav-section-title-on-dark() {
+  line-height: $ukg-nav-section-title-on-dark-line-height;
+  font-family: $ukg-nav-section-title-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  font-weight: $ukg-nav-section-title-on-dark-font-weight;
+  font-size: $ukg-nav-section-title-on-dark-font-size;
+}
 
 /* Use for xs data-oriented snippets of text that need higher visibility. */
-@mixin ukg-metadata-high-emphasis() {  line-height: $ukg-metadata-high-emphasis-line-height; font-family: $ukg-metadata-high-emphasis-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-metadata-high-emphasis-font-weight; font-size: $ukg-metadata-high-emphasis-font-size;  }
+@mixin ukg-metadata-high-emphasis() {
+  line-height: $ukg-metadata-high-emphasis-line-height;
+  font-family: $ukg-metadata-high-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-metadata-high-emphasis-font-weight;
+  font-size: $ukg-metadata-high-emphasis-font-size;
+}
 
 /* Use for xs data-oriented snippets of text.  */
-@mixin ukg-metadata-mid-emphasis() {  line-height: $ukg-metadata-mid-emphasis-line-height; font-family: $ukg-metadata-mid-emphasis-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-metadata-mid-emphasis-font-weight; font-size: $ukg-metadata-mid-emphasis-font-size;  }
+@mixin ukg-metadata-mid-emphasis() {
+  line-height: $ukg-metadata-mid-emphasis-line-height;
+  font-family: $ukg-metadata-mid-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-metadata-mid-emphasis-font-weight;
+  font-size: $ukg-metadata-mid-emphasis-font-size;
+}
 
 /* Used for metadata that needs to receed slightly. */
-@mixin ukg-metadata-low-emphasis() {  line-height: $ukg-metadata-low-emphasis-line-height; font-family: $ukg-metadata-low-emphasis-font-family; color: rgba(0,0,0,0.6); font-weight: $ukg-metadata-low-emphasis-font-weight; font-size: $ukg-metadata-low-emphasis-font-size;  }
+@mixin ukg-metadata-low-emphasis() {
+  line-height: $ukg-metadata-low-emphasis-line-height;
+  font-family: $ukg-metadata-low-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: $ukg-metadata-low-emphasis-font-weight;
+  font-size: $ukg-metadata-low-emphasis-font-size;
+}
 
 /* Use for metadata inside components that are disabled. */
-@mixin ukg-metadata-disabled() {  line-height: $ukg-metadata-disabled-line-height; font-family: $ukg-metadata-disabled-font-family; color: rgba(0,0,0,0.38); font-weight: $ukg-metadata-disabled-font-weight; font-size: $ukg-metadata-disabled-font-size;  }
+@mixin ukg-metadata-disabled() {
+  line-height: $ukg-metadata-disabled-line-height;
+  font-family: $ukg-metadata-disabled-font-family;
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: $ukg-metadata-disabled-font-weight;
+  font-size: $ukg-metadata-disabled-font-size;
+}
 
 /* Use for xs data-oriented snippets of text that need higher visibility. */
-@mixin ukg-metadata-high-emphasis-on-dark() {  line-height: $ukg-metadata-high-emphasis-on-dark-line-height; font-family: $ukg-metadata-high-emphasis-on-dark-font-family; color: rgba(255,255,255,0.87); font-weight: $ukg-metadata-high-emphasis-on-dark-font-weight; font-size: $ukg-metadata-high-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-high-emphasis-on-dark() {
+  line-height: $ukg-metadata-high-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-high-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: $ukg-metadata-high-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-high-emphasis-on-dark-font-size;
+}
 
 /* Use for xs data-oriented snippets of text.  */
-@mixin ukg-metadata-mid-emphasis-on-dark() {  line-height: $ukg-metadata-mid-emphasis-on-dark-line-height; font-family: $ukg-metadata-mid-emphasis-on-dark-font-family; color: rgba(255,255,255,0.87); font-weight: $ukg-metadata-mid-emphasis-on-dark-font-weight; font-size: $ukg-metadata-mid-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-mid-emphasis-on-dark() {
+  line-height: $ukg-metadata-mid-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-mid-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: $ukg-metadata-mid-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-mid-emphasis-on-dark-font-size;
+}
 
 /* Used for metadata that needs to receed slightly. */
-@mixin ukg-metadata-low-emphasis-on-dark() {  line-height: $ukg-metadata-low-emphasis-on-dark-line-height; font-family: $ukg-metadata-low-emphasis-on-dark-font-family; color: rgba(255,255,255,0.7); font-weight: $ukg-metadata-low-emphasis-on-dark-font-weight; font-size: $ukg-metadata-low-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-low-emphasis-on-dark() {
+  line-height: $ukg-metadata-low-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-low-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: $ukg-metadata-low-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-low-emphasis-on-dark-font-size;
+}
 
 /* Use for metadata inside components that are disabled. */
-@mixin ukg-metadata-disabled-on-dark() {  line-height: $ukg-metadata-disabled-on-dark-line-height; font-family: $ukg-metadata-disabled-on-dark-font-family; color: rgba(255,255,255,0.38); font-weight: $ukg-metadata-disabled-on-dark-font-weight; font-size: $ukg-metadata-disabled-on-dark-font-size;  }
+@mixin ukg-metadata-disabled-on-dark() {
+  line-height: $ukg-metadata-disabled-on-dark-line-height;
+  font-family: $ukg-metadata-disabled-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: $ukg-metadata-disabled-on-dark-font-weight;
+  font-size: $ukg-metadata-disabled-on-dark-font-size;
+}
 
 /* Use for xs data-oriented snippets of text that need higher visibility. */
-@mixin ukg-metadata-xs-high-emphasis() {  line-height: $ukg-metadata-xs-high-emphasis-line-height; font-family: $ukg-metadata-xs-high-emphasis-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-metadata-xs-high-emphasis-font-weight; font-size: $ukg-metadata-xs-high-emphasis-font-size;  }
+@mixin ukg-metadata-xs-high-emphasis() {
+  line-height: $ukg-metadata-xs-high-emphasis-line-height;
+  font-family: $ukg-metadata-xs-high-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-metadata-xs-high-emphasis-font-weight;
+  font-size: $ukg-metadata-xs-high-emphasis-font-size;
+}
 
 /* Use for xs data-oriented snippets of text.  */
-@mixin ukg-metadata-xs-mid-emphasis() {  line-height: $ukg-metadata-xs-mid-emphasis-line-height; font-family: $ukg-metadata-xs-mid-emphasis-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-metadata-xs-mid-emphasis-font-weight; font-size: $ukg-metadata-xs-mid-emphasis-font-size;  }
+@mixin ukg-metadata-xs-mid-emphasis() {
+  line-height: $ukg-metadata-xs-mid-emphasis-line-height;
+  font-family: $ukg-metadata-xs-mid-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-metadata-xs-mid-emphasis-font-weight;
+  font-size: $ukg-metadata-xs-mid-emphasis-font-size;
+}
 
 /* Used for metadata that needs to receed slightly. */
-@mixin ukg-metadata-xs-low-emphasis() {  line-height: $ukg-metadata-xs-low-emphasis-line-height; font-family: $ukg-metadata-xs-low-emphasis-font-family; color: rgba(0,0,0,0.6); font-weight: $ukg-metadata-xs-low-emphasis-font-weight; font-size: $ukg-metadata-xs-low-emphasis-font-size;  }
+@mixin ukg-metadata-xs-low-emphasis() {
+  line-height: $ukg-metadata-xs-low-emphasis-line-height;
+  font-family: $ukg-metadata-xs-low-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: $ukg-metadata-xs-low-emphasis-font-weight;
+  font-size: $ukg-metadata-xs-low-emphasis-font-size;
+}
 
 /* Use for metadata inside components that are disabled. */
-@mixin ukg-metadata-xs-disabled() {  line-height: $ukg-metadata-xs-disabled-line-height; font-family: $ukg-metadata-xs-disabled-font-family; color: rgba(0,0,0,0.38); font-weight: $ukg-metadata-xs-disabled-font-weight; font-size: $ukg-metadata-xs-disabled-font-size;  }
+@mixin ukg-metadata-xs-disabled() {
+  line-height: $ukg-metadata-xs-disabled-line-height;
+  font-family: $ukg-metadata-xs-disabled-font-family;
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: $ukg-metadata-xs-disabled-font-weight;
+  font-size: $ukg-metadata-xs-disabled-font-size;
+}
 
 /* Use for xs data-oriented snippets of text that need higher visibility. */
-@mixin ukg-metadata-xs-high-emphasis-on-dark() {  line-height: $ukg-metadata-xs-high-emphasis-on-dark-line-height; font-family: $ukg-metadata-xs-high-emphasis-on-dark-font-family; color: rgba(255,255,255,0.87); font-weight: $ukg-metadata-xs-high-emphasis-on-dark-font-weight; font-size: $ukg-metadata-xs-high-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-xs-high-emphasis-on-dark() {
+  line-height: $ukg-metadata-xs-high-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-xs-high-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: $ukg-metadata-xs-high-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-xs-high-emphasis-on-dark-font-size;
+}
 
 /* Use for xs data-oriented snippets of text.  */
-@mixin ukg-metadata-xs-mid-emphasis-on-dark() {  line-height: $ukg-metadata-xs-mid-emphasis-on-dark-line-height; font-family: $ukg-metadata-xs-mid-emphasis-on-dark-font-family; color: rgba(255,255,255,0.87); font-weight: $ukg-metadata-xs-mid-emphasis-on-dark-font-weight; font-size: $ukg-metadata-xs-mid-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-xs-mid-emphasis-on-dark() {
+  line-height: $ukg-metadata-xs-mid-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-xs-mid-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: $ukg-metadata-xs-mid-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-xs-mid-emphasis-on-dark-font-size;
+}
 
 /* Used for metadata that needs to receed slightly. */
-@mixin ukg-metadata-xs-low-emphasis-on-dark() {  line-height: $ukg-metadata-xs-low-emphasis-on-dark-line-height; font-family: $ukg-metadata-xs-low-emphasis-on-dark-font-family; color: rgba(255,255,255,0.7); font-weight: $ukg-metadata-xs-low-emphasis-on-dark-font-weight; font-size: $ukg-metadata-xs-low-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-xs-low-emphasis-on-dark() {
+  line-height: $ukg-metadata-xs-low-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-xs-low-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: $ukg-metadata-xs-low-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-xs-low-emphasis-on-dark-font-size;
+}
 
 /* Use for metadata inside components that are disabled. */
-@mixin ukg-metadata-xs-disabled-on-dark() {  line-height: $ukg-metadata-xs-disabled-on-dark-line-height; font-family: $ukg-metadata-xs-disabled-on-dark-font-family; color: rgba(255,255,255,0.38); font-weight: $ukg-metadata-xs-disabled-on-dark-font-weight; font-size: $ukg-metadata-xs-disabled-on-dark-font-size;  }
+@mixin ukg-metadata-xs-disabled-on-dark() {
+  line-height: $ukg-metadata-xs-disabled-on-dark-line-height;
+  font-family: $ukg-metadata-xs-disabled-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: $ukg-metadata-xs-disabled-on-dark-font-weight;
+  font-size: $ukg-metadata-xs-disabled-on-dark-font-size;
+}
 
 /* Used for child metadata or metadata labels. */
-@mixin ukg-metadata-small-high-emphasis() {  line-height: $ukg-metadata-small-high-emphasis-line-height; font-family: $ukg-metadata-small-high-emphasis-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-metadata-small-high-emphasis-font-weight; font-size: $ukg-metadata-small-high-emphasis-font-size;  }
+@mixin ukg-metadata-small-high-emphasis() {
+  line-height: $ukg-metadata-small-high-emphasis-line-height;
+  font-family: $ukg-metadata-small-high-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-metadata-small-high-emphasis-font-weight;
+  font-size: $ukg-metadata-small-high-emphasis-font-size;
+}
 
 /* Used for child metadata or metadata labels. */
-@mixin ukg-metadata-small-high-emphasis-on-dark() {  line-height: $ukg-metadata-small-high-emphasis-on-dark-line-height; font-family: $ukg-metadata-small-high-emphasis-on-dark-font-family; color: rgba(255,255,255,0.87); font-weight: $ukg-metadata-small-high-emphasis-on-dark-font-weight; font-size: $ukg-metadata-small-high-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-small-high-emphasis-on-dark() {
+  line-height: $ukg-metadata-small-high-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-small-high-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: $ukg-metadata-small-high-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-small-high-emphasis-on-dark-font-size;
+}
 
 /* Used for child metadata or metadata labels. */
-@mixin ukg-metadata-small-mid-emphasis() {  line-height: $ukg-metadata-small-mid-emphasis-line-height; font-family: $ukg-metadata-small-mid-emphasis-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-metadata-small-mid-emphasis-font-weight; font-size: $ukg-metadata-small-mid-emphasis-font-size;  }
+@mixin ukg-metadata-small-mid-emphasis() {
+  line-height: $ukg-metadata-small-mid-emphasis-line-height;
+  font-family: $ukg-metadata-small-mid-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-metadata-small-mid-emphasis-font-weight;
+  font-size: $ukg-metadata-small-mid-emphasis-font-size;
+}
 
 /* Used for child metadata or metadata labels. */
-@mixin ukg-metadata-small-mid-emphasis-on-dark() {  line-height: $ukg-metadata-small-mid-emphasis-on-dark-line-height; font-family: $ukg-metadata-small-mid-emphasis-on-dark-font-family; color: rgba(255,255,255,0.87); font-weight: $ukg-metadata-small-mid-emphasis-on-dark-font-weight; font-size: $ukg-metadata-small-mid-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-small-mid-emphasis-on-dark() {
+  line-height: $ukg-metadata-small-mid-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-small-mid-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: $ukg-metadata-small-mid-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-small-mid-emphasis-on-dark-font-size;
+}
 
 /* Used for child metadata that needs to recede slightly. */
-@mixin ukg-metadata-small-low-emphasis() {  line-height: $ukg-metadata-small-low-emphasis-line-height; font-family: $ukg-metadata-small-low-emphasis-font-family; color: rgba(0,0,0,0.6); font-weight: $ukg-metadata-small-low-emphasis-font-weight; font-size: $ukg-metadata-small-low-emphasis-font-size;  }
+@mixin ukg-metadata-small-low-emphasis() {
+  line-height: $ukg-metadata-small-low-emphasis-line-height;
+  font-family: $ukg-metadata-small-low-emphasis-font-family;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: $ukg-metadata-small-low-emphasis-font-weight;
+  font-size: $ukg-metadata-small-low-emphasis-font-size;
+}
 
 /* Used for child metadata that needs to recede slightly. */
-@mixin ukg-metadata-small-low-emphasis-on-dark() {  line-height: $ukg-metadata-small-low-emphasis-on-dark-line-height; font-family: $ukg-metadata-small-low-emphasis-on-dark-font-family; color: rgba(255,255,255,0.6); font-weight: $ukg-metadata-small-low-emphasis-on-dark-font-weight; font-size: $ukg-metadata-small-low-emphasis-on-dark-font-size;  }
+@mixin ukg-metadata-small-low-emphasis-on-dark() {
+  line-height: $ukg-metadata-small-low-emphasis-on-dark-line-height;
+  font-family: $ukg-metadata-small-low-emphasis-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: $ukg-metadata-small-low-emphasis-on-dark-font-weight;
+  font-size: $ukg-metadata-small-low-emphasis-on-dark-font-size;
+}
 
 /* Use for metadata inside components that are disabled. */
-@mixin ukg-metadata-small-disabled() {  line-height: $ukg-metadata-small-disabled-line-height; font-family: $ukg-metadata-small-disabled-font-family; color: rgba(0,0,0,0.38); font-weight: $ukg-metadata-small-disabled-font-weight; font-size: $ukg-metadata-small-disabled-font-size;  }
+@mixin ukg-metadata-small-disabled() {
+  line-height: $ukg-metadata-small-disabled-line-height;
+  font-family: $ukg-metadata-small-disabled-font-family;
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: $ukg-metadata-small-disabled-font-weight;
+  font-size: $ukg-metadata-small-disabled-font-size;
+}
 
 /* Use for metadata inside components that are disabled. */
-@mixin ukg-metadata-small-disabled-on-dark() {  line-height: $ukg-metadata-small-disabled-on-dark-line-height; font-family: $ukg-metadata-small-disabled-on-dark-font-family; color: rgba(255,255,255,0.38); font-weight: $ukg-metadata-small-disabled-on-dark-font-weight; font-size: $ukg-metadata-small-disabled-on-dark-font-size;  }
+@mixin ukg-metadata-small-disabled-on-dark() {
+  line-height: $ukg-metadata-small-disabled-on-dark-line-height;
+  font-family: $ukg-metadata-small-disabled-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: $ukg-metadata-small-disabled-on-dark-font-weight;
+  font-size: $ukg-metadata-small-disabled-on-dark-font-size;
+}
 
 /* Use when metadata needs to convey importance. */
-@mixin ukg-metadata-small-important-text() {  line-height: $ukg-metadata-small-important-text-line-height; font-family: $ukg-metadata-small-important-text-font-family; color: #DC0C22; opacity: .87; font-weight: $ukg-metadata-small-important-text-font-weight; font-size: $ukg-metadata-small-important-text-font-size;  }
+@mixin ukg-metadata-small-important-text() {
+  line-height: $ukg-metadata-small-important-text-line-height;
+  font-family: $ukg-metadata-small-important-text-font-family;
+  color: #dc0c22;
+  opacity: 0.87;
+  font-weight: $ukg-metadata-small-important-text-font-weight;
+  font-size: $ukg-metadata-small-important-text-font-size;
+}
 
 /* Use for mid-emphasis metadata when a small width is needed */
-@mixin ukg-metadata-small-mid-emphasis-condensed-on-dark() {  line-height: $ukg-metadata-small-mid-emphasis-condensed-on-dark-line-height; font-family: $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-family; color: rgba(255,255,255,0.87); font-weight: $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-weight; font-size: $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-size;  }
+@mixin ukg-metadata-small-mid-emphasis-condensed-on-dark() {
+  line-height: $ukg-metadata-small-mid-emphasis-condensed-on-dark-line-height;
+  font-family: $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-weight;
+  font-size: $ukg-metadata-small-mid-emphasis-condensed-on-dark-font-size;
+}
 
 /* Use for mid-emphasis metadata when a small width is needed */
-@mixin ukg-metadata-small-mid-emphasis-condensed-on-light() {  line-height: $ukg-metadata-small-mid-emphasis-condensed-on-light-line-height; font-family: $ukg-metadata-small-mid-emphasis-condensed-on-light-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-metadata-small-mid-emphasis-condensed-on-light-font-weight; font-size: $ukg-metadata-small-mid-emphasis-condensed-on-light-font-size;  }
+@mixin ukg-metadata-small-mid-emphasis-condensed-on-light() {
+  line-height: $ukg-metadata-small-mid-emphasis-condensed-on-light-line-height;
+  font-family: $ukg-metadata-small-mid-emphasis-condensed-on-light-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-metadata-small-mid-emphasis-condensed-on-light-font-weight;
+  font-size: $ukg-metadata-small-mid-emphasis-condensed-on-light-font-size;
+}
 
 /* Use for low-emphasis metadata when a small width is needed */
-@mixin ukg-metadata-small-low-emphasis-condensed-on-dark() {  line-height: $ukg-metadata-small-low-emphasis-condensed-on-dark-line-height; font-family: $ukg-metadata-small-low-emphasis-condensed-on-dark-font-family; color: rgba(255,255,255,0.6); font-weight: $ukg-metadata-small-low-emphasis-condensed-on-dark-font-weight; font-size: $ukg-metadata-small-low-emphasis-condensed-on-dark-font-size;  }
+@mixin ukg-metadata-small-low-emphasis-condensed-on-dark() {
+  line-height: $ukg-metadata-small-low-emphasis-condensed-on-dark-line-height;
+  font-family: $ukg-metadata-small-low-emphasis-condensed-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: $ukg-metadata-small-low-emphasis-condensed-on-dark-font-weight;
+  font-size: $ukg-metadata-small-low-emphasis-condensed-on-dark-font-size;
+}
 
 /* Use for low-emphasis metadata when a small width is needed */
-@mixin ukg-metadata-small-low-emphasis-condensed-on-light() {  line-height: $ukg-metadata-small-low-emphasis-condensed-on-light-line-height; font-family: $ukg-metadata-small-low-emphasis-condensed-on-light-font-family; color: rgba(0,0,0,0.6); font-weight: $ukg-metadata-small-low-emphasis-condensed-on-light-font-weight; font-size: $ukg-metadata-small-low-emphasis-condensed-on-light-font-size;  }
+@mixin ukg-metadata-small-low-emphasis-condensed-on-light() {
+  line-height: $ukg-metadata-small-low-emphasis-condensed-on-light-line-height;
+  font-family: $ukg-metadata-small-low-emphasis-condensed-on-light-font-family;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: $ukg-metadata-small-low-emphasis-condensed-on-light-font-weight;
+  font-size: $ukg-metadata-small-low-emphasis-condensed-on-light-font-size;
+}
 
 /* Used for buttons on light surfaces. */
-@mixin ukg-button-text-enabled-on-light() {  line-height: $ukg-button-text-enabled-on-light-line-height; font-family: $ukg-button-text-enabled-on-light-font-family; color: $ukg-action-text; font-weight: $ukg-button-text-enabled-on-light-font-weight; font-size: $ukg-button-text-enabled-on-light-font-size;  }
+@mixin ukg-button-text-enabled-on-light() {
+  line-height: $ukg-button-text-enabled-on-light-line-height;
+  font-family: $ukg-button-text-enabled-on-light-font-family;
+  color: $ukg-action-text;
+  font-weight: $ukg-button-text-enabled-on-light-font-weight;
+  font-size: $ukg-button-text-enabled-on-light-font-size;
+}
 
 /* Used for disabled buttons on light surfaces. */
-@mixin ukg-button-text-disabled-on-light() {  line-height: $ukg-button-text-disabled-on-light-line-height; font-family: $ukg-button-text-disabled-on-light-font-family; color: rgba(0,0,0,.38); font-weight: $ukg-button-text-disabled-on-light-font-weight; font-size: $ukg-button-text-disabled-on-light-font-size;  }
+@mixin ukg-button-text-disabled-on-light() {
+  line-height: $ukg-button-text-disabled-on-light-line-height;
+  font-family: $ukg-button-text-disabled-on-light-font-family;
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: $ukg-button-text-disabled-on-light-font-weight;
+  font-size: $ukg-button-text-disabled-on-light-font-size;
+}
 
 /* Used for large buttons on light surfaces. */
-@mixin ukg-button-text-large-enabled-on-light() {  line-height: $ukg-button-text-large-enabled-on-light-line-height; font-family: $ukg-button-text-large-enabled-on-light-font-family; color: $ukg-action-text; font-weight: $ukg-button-text-large-enabled-on-light-font-weight; font-size: $ukg-button-text-large-enabled-on-light-font-size;  }
+@mixin ukg-button-text-large-enabled-on-light() {
+  line-height: $ukg-button-text-large-enabled-on-light-line-height;
+  font-family: $ukg-button-text-large-enabled-on-light-font-family;
+  color: $ukg-action-text;
+  font-weight: $ukg-button-text-large-enabled-on-light-font-weight;
+  font-size: $ukg-button-text-large-enabled-on-light-font-size;
+}
 
 /* Used for disabled buttons on light surfaces. */
-@mixin ukg-button-text-large-disabled-on-light() {  line-height: $ukg-button-text-large-disabled-on-light-line-height; font-family: $ukg-button-text-large-disabled-on-light-font-family; color: rgba(0,0,0,.38); font-weight: $ukg-button-text-large-disabled-on-light-font-weight; font-size: $ukg-button-text-large-disabled-on-light-font-size;  }
+@mixin ukg-button-text-large-disabled-on-light() {
+  line-height: $ukg-button-text-large-disabled-on-light-line-height;
+  font-family: $ukg-button-text-large-disabled-on-light-font-family;
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: $ukg-button-text-large-disabled-on-light-font-weight;
+  font-size: $ukg-button-text-large-disabled-on-light-font-size;
+}
 
 /* Used for buttons on light surfaces. */
-@mixin ukg-button-text-enabled-on-dark() {  line-height: $ukg-button-text-enabled-on-dark-line-height; font-family: $ukg-button-text-enabled-on-dark-font-family; color: rgba(255,255,255, 1); font-weight: $ukg-button-text-enabled-on-dark-font-weight; font-size: $ukg-button-text-enabled-on-dark-font-size;  }
+@mixin ukg-button-text-enabled-on-dark() {
+  line-height: $ukg-button-text-enabled-on-dark-line-height;
+  font-family: $ukg-button-text-enabled-on-dark-font-family;
+  color: rgba(255, 255, 255, 1);
+  font-weight: $ukg-button-text-enabled-on-dark-font-weight;
+  font-size: $ukg-button-text-enabled-on-dark-font-size;
+}
 
 /* Used for disabled buttons on light surfaces. */
-@mixin ukg-button-text-disabled-on-dark() {  line-height: $ukg-button-text-disabled-on-dark-line-height; font-family: $ukg-button-text-disabled-on-dark-font-family; color: rgba(255,255,255,.38); font-weight: $ukg-button-text-disabled-on-dark-font-weight; font-size: $ukg-button-text-disabled-on-dark-font-size;  }
+@mixin ukg-button-text-disabled-on-dark() {
+  line-height: $ukg-button-text-disabled-on-dark-line-height;
+  font-family: $ukg-button-text-disabled-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: $ukg-button-text-disabled-on-dark-font-weight;
+  font-size: $ukg-button-text-disabled-on-dark-font-size;
+}
 
 /* Used for large buttons on light surfaces. */
-@mixin ukg-button-text-large-enabled-on-dark() {  line-height: $ukg-button-text-large-enabled-on-dark-line-height; font-family: $ukg-button-text-large-enabled-on-dark-font-family; color: rgba(255,255,255, 1); font-weight: $ukg-button-text-large-enabled-on-dark-font-weight; font-size: $ukg-button-text-large-enabled-on-dark-font-size;  }
+@mixin ukg-button-text-large-enabled-on-dark() {
+  line-height: $ukg-button-text-large-enabled-on-dark-line-height;
+  font-family: $ukg-button-text-large-enabled-on-dark-font-family;
+  color: rgba(255, 255, 255, 1);
+  font-weight: $ukg-button-text-large-enabled-on-dark-font-weight;
+  font-size: $ukg-button-text-large-enabled-on-dark-font-size;
+}
 
 /* Used for disabled buttons on light surfaces. */
-@mixin ukg-button-text-large-disabled-on-dark() {  line-height: $ukg-button-text-large-disabled-on-dark-line-height; font-family: $ukg-button-text-large-disabled-on-dark-font-family; color: rgba(255,255,255,.38); font-weight: $ukg-button-text-large-disabled-on-dark-font-weight; font-size: $ukg-button-text-large-disabled-on-dark-font-size;  }
+@mixin ukg-button-text-large-disabled-on-dark() {
+  line-height: $ukg-button-text-large-disabled-on-dark-line-height;
+  font-family: $ukg-button-text-large-disabled-on-dark-font-family;
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: $ukg-button-text-large-disabled-on-dark-font-weight;
+  font-size: $ukg-button-text-large-disabled-on-dark-font-size;
+}
 
 /* Used for some buttons on dark surfaces. */
-@mixin ukg-button-text-monochrome-on-light() {  line-height: $ukg-button-text-monochrome-on-light-line-height; font-family: $ukg-button-text-monochrome-on-light-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-button-text-monochrome-on-light-font-weight; font-size: $ukg-button-text-monochrome-on-light-font-size;  }
+@mixin ukg-button-text-monochrome-on-light() {
+  line-height: $ukg-button-text-monochrome-on-light-line-height;
+  font-family: $ukg-button-text-monochrome-on-light-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-button-text-monochrome-on-light-font-weight;
+  font-size: $ukg-button-text-monochrome-on-light-font-size;
+}
 
 /* Used for some buttons on dark surfaces. */
-@mixin ukg-button-text-large-monochrome-on-light() {  line-height: $ukg-button-text-large-monochrome-on-light-line-height; font-family: $ukg-button-text-large-monochrome-on-light-font-family; color: rgba(0,0,0,0.87); font-weight: $ukg-button-text-large-monochrome-on-light-font-weight; font-size: $ukg-button-text-large-monochrome-on-light-font-size;  }
+@mixin ukg-button-text-large-monochrome-on-light() {
+  line-height: $ukg-button-text-large-monochrome-on-light-line-height;
+  font-family: $ukg-button-text-large-monochrome-on-light-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: $ukg-button-text-large-monochrome-on-light-font-weight;
+  font-size: $ukg-button-text-large-monochrome-on-light-font-size;
+}
 
 /* Used for enabled values a person enters into a form field. */
-@mixin ukg-form-input-enabled() {  line-height: $ukg-form-input-enabled-line-height; font-family: $ukg-form-input-enabled-font-family; color: $ukg-text-high-emphasis-on-light; font-weight: $ukg-form-input-enabled-font-weight; font-size: $ukg-form-input-enabled-font-size;  }
+@mixin ukg-form-input-enabled() {
+  line-height: $ukg-form-input-enabled-line-height;
+  font-family: $ukg-form-input-enabled-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  font-weight: $ukg-form-input-enabled-font-weight;
+  font-size: $ukg-form-input-enabled-font-size;
+}
 
 /* Used for small enabled values a person enters into a form field. */
-@mixin ukg-form-input-enabled-small() {  line-height: $ukg-form-input-enabled-small-line-height; font-family: $ukg-form-input-enabled-small-font-family; color: $ukg-text-high-emphasis-on-light; font-weight: $ukg-form-input-enabled-small-font-weight; font-size: $ukg-form-input-enabled-small-font-size;  }
+@mixin ukg-form-input-enabled-small() {
+  line-height: $ukg-form-input-enabled-small-line-height;
+  font-family: $ukg-form-input-enabled-small-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  font-weight: $ukg-form-input-enabled-small-font-weight;
+  font-size: $ukg-form-input-enabled-small-font-size;
+}
 
 /* Used for form hints that appear inside a form field. */
-@mixin ukg-form-input-hint() {  line-height: $ukg-form-input-hint-line-height; font-family: $ukg-form-input-hint-font-family; color: $ukg-text-low-emphasis-on-light; font-weight: $ukg-form-input-hint-font-weight; font-size: $ukg-form-input-hint-font-size;  }
+@mixin ukg-form-input-hint() {
+  line-height: $ukg-form-input-hint-line-height;
+  font-family: $ukg-form-input-hint-font-family;
+  color: $ukg-text-low-emphasis-on-light;
+  font-weight: $ukg-form-input-hint-font-weight;
+  font-size: $ukg-form-input-hint-font-size;
+}
 
 /* Used for form hints that appear inside a form field. */
-@mixin ukg-form-input-hint-small() {  line-height: $ukg-form-input-hint-small-line-height; font-family: $ukg-form-input-hint-small-font-family; color: $ukg-text-low-emphasis-on-light; font-weight: $ukg-form-input-hint-small-font-weight; font-size: $ukg-form-input-hint-small-font-size;  }
+@mixin ukg-form-input-hint-small() {
+  line-height: $ukg-form-input-hint-small-line-height;
+  font-family: $ukg-form-input-hint-small-font-family;
+  color: $ukg-text-low-emphasis-on-light;
+  font-weight: $ukg-form-input-hint-small-font-weight;
+  font-size: $ukg-form-input-hint-small-font-size;
+}
 
 /* Used for disabled values in a form field. */
-@mixin ukg-form-input-disabled() {  line-height: $ukg-form-input-disabled-line-height; font-family: $ukg-form-input-disabled-font-family; color: $ukg-text-disabled-on-light; font-weight: $ukg-form-input-disabled-font-weight; font-size: $ukg-form-input-disabled-font-size;  }
+@mixin ukg-form-input-disabled() {
+  line-height: $ukg-form-input-disabled-line-height;
+  font-family: $ukg-form-input-disabled-font-family;
+  color: $ukg-text-disabled-on-light;
+  font-weight: $ukg-form-input-disabled-font-weight;
+  font-size: $ukg-form-input-disabled-font-size;
+}
 
 /* Used for disabled values in a form field. */
-@mixin ukg-form-input-disabled-small() {  line-height: $ukg-form-input-disabled-small-line-height; font-family: $ukg-form-input-disabled-small-font-family; color: $ukg-text-disabled-on-light; font-weight: $ukg-form-input-disabled-small-font-weight; font-size: $ukg-form-input-disabled-small-font-size;  }
+@mixin ukg-form-input-disabled-small() {
+  line-height: $ukg-form-input-disabled-small-line-height;
+  font-family: $ukg-form-input-disabled-small-font-family;
+  color: $ukg-text-disabled-on-light;
+  font-weight: $ukg-form-input-disabled-small-font-weight;
+  font-size: $ukg-form-input-disabled-small-font-size;
+}
 
 /* Idle state for label outside an input field. */
-@mixin ukg-form-label-large-idle() {  line-height: $ukg-form-label-large-idle-line-height; font-family: $ukg-form-label-large-idle-font-family; color: $ukg-text-low-emphasis-on-light; font-weight: $ukg-form-label-large-idle-font-weight; font-size: $ukg-form-label-large-idle-font-size;  }
+@mixin ukg-form-label-large-idle() {
+  line-height: $ukg-form-label-large-idle-line-height;
+  font-family: $ukg-form-label-large-idle-font-family;
+  color: $ukg-text-low-emphasis-on-light;
+  font-weight: $ukg-form-label-large-idle-font-weight;
+  font-size: $ukg-form-label-large-idle-font-size;
+}
 
 /* Focus state for a label outside an input field. */
-@mixin ukg-form-label-large-focused() {  line-height: $ukg-form-label-large-focused-line-height; font-family: $ukg-form-label-large-focused-font-family; color: $ukg-action-text; font-weight: $ukg-form-label-large-focused-font-weight; font-size: $ukg-form-label-large-focused-font-size;  }
+@mixin ukg-form-label-large-focused() {
+  line-height: $ukg-form-label-large-focused-line-height;
+  font-family: $ukg-form-label-large-focused-font-family;
+  color: $ukg-action-text;
+  font-weight: $ukg-form-label-large-focused-font-weight;
+  font-size: $ukg-form-label-large-focused-font-size;
+}
 
 /* Disabled state for a label outside an input field. */
-@mixin ukg-form-label-large-disabled() {  line-height: $ukg-form-label-large-disabled-line-height; font-family: $ukg-form-label-large-disabled-font-family; color: $ukg-text-disabled-on-light; font-weight: $ukg-form-label-large-disabled-font-weight; font-size: $ukg-form-label-large-disabled-font-size;  }
+@mixin ukg-form-label-large-disabled() {
+  line-height: $ukg-form-label-large-disabled-line-height;
+  font-family: $ukg-form-label-large-disabled-font-family;
+  color: $ukg-text-disabled-on-light;
+  font-weight: $ukg-form-label-large-disabled-font-weight;
+  font-size: $ukg-form-label-large-disabled-font-size;
+}
 
 /* Style for a label inside an input field when it has focus. */
-@mixin ukg-form-label-small-focused() {  line-height: $ukg-form-label-small-focused-line-height; font-family: $ukg-form-label-small-focused-font-family; color: $ukg-action-text; font-weight: $ukg-form-label-small-focused-font-weight; font-size: $ukg-form-label-small-focused-font-size;  }
+@mixin ukg-form-label-small-focused() {
+  line-height: $ukg-form-label-small-focused-line-height;
+  font-family: $ukg-form-label-small-focused-font-family;
+  color: $ukg-action-text;
+  font-weight: $ukg-form-label-small-focused-font-weight;
+  font-size: $ukg-form-label-small-focused-font-size;
+}
 
 /* Date input text style when enabled. */
-@mixin ukg-form-input-monospaced-enabled() {  line-height: $ukg-form-input-monospaced-enabled-line-height; font-family: $ukg-form-input-monospaced-enabled-font-family; color: $ukg-text-high-emphasis-on-light; font-weight: $ukg-form-input-monospaced-enabled-font-weight; font-size: $ukg-form-input-monospaced-enabled-font-size;  }
+@mixin ukg-form-input-monospaced-enabled() {
+  line-height: $ukg-form-input-monospaced-enabled-line-height;
+  font-family: $ukg-form-input-monospaced-enabled-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  font-weight: $ukg-form-input-monospaced-enabled-font-weight;
+  font-size: $ukg-form-input-monospaced-enabled-font-size;
+}
 
 /* Used for enabled values a person enters into a form date field. */
-@mixin ukg-form-input-monospaced-enabled-small() {  line-height: $ukg-form-input-monospaced-enabled-small-line-height; font-family: $ukg-form-input-monospaced-enabled-small-font-family; color: $ukg-text-high-emphasis-on-light; font-weight: $ukg-form-input-monospaced-enabled-small-font-weight; font-size: $ukg-form-input-monospaced-enabled-small-font-size;  }
+@mixin ukg-form-input-monospaced-enabled-small() {
+  line-height: $ukg-form-input-monospaced-enabled-small-line-height;
+  font-family: $ukg-form-input-monospaced-enabled-small-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  font-weight: $ukg-form-input-monospaced-enabled-small-font-weight;
+  font-size: $ukg-form-input-monospaced-enabled-small-font-size;
+}
 
 /* Used for hint text inside a date input. */
-@mixin ukg-form-input-monospaced-hint() {  line-height: $ukg-form-input-monospaced-hint-line-height; font-family: $ukg-form-input-monospaced-hint-font-family; color: $ukg-text-low-emphasis-on-light; font-weight: $ukg-form-input-monospaced-hint-font-weight; font-size: $ukg-form-input-monospaced-hint-font-size;  }
+@mixin ukg-form-input-monospaced-hint() {
+  line-height: $ukg-form-input-monospaced-hint-line-height;
+  font-family: $ukg-form-input-monospaced-hint-font-family;
+  color: $ukg-text-low-emphasis-on-light;
+  font-weight: $ukg-form-input-monospaced-hint-font-weight;
+  font-size: $ukg-form-input-monospaced-hint-font-size;
+}
 
 /* Used for form hints that appear inside a form date field. */
-@mixin ukg-form-input-monospaced-hint-small() {  line-height: $ukg-form-input-monospaced-hint-small-line-height; font-family: $ukg-form-input-monospaced-hint-small-font-family; color: $ukg-text-low-emphasis-on-light; font-weight: $ukg-form-input-monospaced-hint-small-font-weight; font-size: $ukg-form-input-monospaced-hint-small-font-size;  }
+@mixin ukg-form-input-monospaced-hint-small() {
+  line-height: $ukg-form-input-monospaced-hint-small-line-height;
+  font-family: $ukg-form-input-monospaced-hint-small-font-family;
+  color: $ukg-text-low-emphasis-on-light;
+  font-weight: $ukg-form-input-monospaced-hint-small-font-weight;
+  font-size: $ukg-form-input-monospaced-hint-small-font-size;
+}
 
 /* Date input text style when disabled. */
-@mixin ukg-form-input-monospaced-disabled() {  line-height: $ukg-form-input-monospaced-disabled-line-height; font-family: $ukg-form-input-monospaced-disabled-font-family; color: $ukg-text-disabled-on-light; font-weight: $ukg-form-input-monospaced-disabled-font-weight; font-size: $ukg-form-input-monospaced-disabled-font-size;  }
+@mixin ukg-form-input-monospaced-disabled() {
+  line-height: $ukg-form-input-monospaced-disabled-line-height;
+  font-family: $ukg-form-input-monospaced-disabled-font-family;
+  color: $ukg-text-disabled-on-light;
+  font-weight: $ukg-form-input-monospaced-disabled-font-weight;
+  font-size: $ukg-form-input-monospaced-disabled-font-size;
+}
 
 /* Used for disabled values in a form date field. */
-@mixin ukg-form-input-monospaced-disabled-small() {  line-height: $ukg-form-input-monospaced-disabled-small-line-height; font-family: $ukg-form-input-monospaced-disabled-small-font-family; color: $ukg-text-disabled-on-light; font-weight: $ukg-form-input-monospaced-disabled-small-font-weight; font-size: $ukg-form-input-monospaced-disabled-small-font-size;  }
+@mixin ukg-form-input-monospaced-disabled-small() {
+  line-height: $ukg-form-input-monospaced-disabled-small-line-height;
+  font-family: $ukg-form-input-monospaced-disabled-small-font-family;
+  color: $ukg-text-disabled-on-light;
+  font-weight: $ukg-form-input-monospaced-disabled-small-font-weight;
+  font-size: $ukg-form-input-monospaced-disabled-small-font-size;
+}
 
 /* Used for data table column header */
-@mixin ukg-table-header--on-light() {  line-height: $ukg-table-header--on-light-line-height; font-family: $ukg-table-header--on-light-font-family; color: $ukg-text-high-emphasis-on-light; font-weight: $ukg-table-header--on-light-font-weight; font-size: $ukg-table-header--on-light-font-size;  }
-  
+@mixin ukg-table-header--on-light() {
+  line-height: $ukg-table-header--on-light-line-height;
+  font-family: $ukg-table-header--on-light-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  font-weight: $ukg-table-header--on-light-font-weight;
+  font-size: $ukg-table-header--on-light-font-size;
+}
+
 /* The top level heading on a normal full width page, or full width form page. */
-h1 { line-height: $ukg-line-height-tight; font-family: $ukg-font-family; color: rgba(0,0,0,.87); margin-bottom: $ukg-spacing-s; margin-top: 0px; font-weight: $ukg-font-weight-semibold; font-size: $ukg-text-size-6;  }
+h1 {
+  line-height: $ukg-line-height-tight;
+  font-family: $ukg-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: $ukg-spacing-s;
+  margin-top: 0px;
+  font-weight: $ukg-font-weight-semibold;
+  font-size: $ukg-text-size-6;
+}
 
 /* Page heading only to be used when a Standard Heading 1 or a Display level heading exists above. */
-h2 { line-height: $ukg-line-height-tight; font-family: $ukg-font-family; color: rgba(0,0,0,.87); margin-bottom: $ukg-spacing-s; margin-top: $ukg-spacing-xl; font-weight: $ukg-font-weight-semibold; font-size: $ukg-text-size-5;  }
+h2 {
+  line-height: $ukg-line-height-tight;
+  font-family: $ukg-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: $ukg-spacing-s;
+  margin-top: $ukg-spacing-xl;
+  font-weight: $ukg-font-weight-semibold;
+  font-size: $ukg-text-size-5;
+}
 
 /* Page heading only to be used when a Standard Heading 2 exists above. */
-h3 { line-height: $ukg-line-height-tight; font-family: $ukg-font-family; color: rgba(0,0,0,.87); margin-bottom: $ukg-spacing-s; margin-top: $ukg-spacing-xl; font-weight: $ukg-font-weight-semibold; font-size: $ukg-text-size-4;  }
+h3 {
+  line-height: $ukg-line-height-tight;
+  font-family: $ukg-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: $ukg-spacing-s;
+  margin-top: $ukg-spacing-xl;
+  font-weight: $ukg-font-weight-semibold;
+  font-size: $ukg-text-size-4;
+}
 
 /* Page heading only to be used when a Standard Heading 3 exists above. */
-h4 { line-height: $ukg-line-height-tight; font-family: $ukg-font-family; color: rgba(0,0,0,.87); margin-bottom: $ukg-spacing-s; margin-top: $ukg-spacing-xl; font-weight: $ukg-font-weight-semibold; font-size: $ukg-text-size-3;  }
-
-
+h4 {
+  line-height: $ukg-line-height-tight;
+  font-family: $ukg-font-family;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: $ukg-spacing-s;
+  margin-top: $ukg-spacing-xl;
+  font-weight: $ukg-font-weight-semibold;
+  font-size: $ukg-text-size-3;
+}
 
 /* Used for paragraph text when introducing a page, giving high level instructions, or for areas of extended reading. Max width is 37.5rem */
-p { line-height: $ukg-line-height-reading; font-family: $ukg-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-spacing-m; margin-top: $ukg-spacing-m; font-weight: $ukg-font-weight-regular; max-width: 37.5rem; font-size: $ukg-text-size-2;  }
+p {
+  line-height: $ukg-line-height-reading;
+  font-family: $ukg-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-spacing-m;
+  margin-top: $ukg-spacing-m;
+  font-weight: $ukg-font-weight-regular;
+  max-width: 37.5rem;
+  font-size: $ukg-text-size-2;
+}
 
 /* Use for paragraph text that should recede slightly. May be used for short disclosures of no more than three lines. */
-small { line-height: $ukg-line-height-small-text; font-family: $ukg-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: 1.3125rem; margin-top: 1.3125rem; font-weight: $ukg-font-weight-regular; font-size: $ukg-text-size-1;  }
+small {
+  line-height: $ukg-line-height-small-text;
+  font-family: $ukg-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: 1.3125rem;
+  margin-top: 1.3125rem;
+  font-weight: $ukg-font-weight-regular;
+  font-size: $ukg-text-size-1;
+}
 
 /* For unordered lists, generally preceeded by a brief introduction of body copy. */
-ul { line-height: $ukg-line-height-reading; font-family: $ukg-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-spacing-m; margin-top: $ukg-spacing-m; font-weight: $ukg-font-weight-regular; font-size: $ukg-text-size-2;  }
+ul {
+  line-height: $ukg-line-height-reading;
+  font-family: $ukg-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-spacing-m;
+  margin-top: $ukg-spacing-m;
+  font-weight: $ukg-font-weight-regular;
+  font-size: $ukg-text-size-2;
+}
 
 /* For prioritized lists, generally preceeded by a brief introduction of body copy. */
-ol { line-height: $ukg-line-height-reading; font-family: $ukg-font-family; color: $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-spacing-m; margin-top: $ukg-spacing-m; font-weight: $ukg-font-weight-regular; font-size: $ukg-text-size-2;  }
+ol {
+  line-height: $ukg-line-height-reading;
+  font-family: $ukg-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-spacing-m;
+  margin-top: $ukg-spacing-m;
+  font-weight: $ukg-font-weight-regular;
+  font-size: $ukg-text-size-2;
+}
 
 /* Text inside either an unordered or prioritized list. */
-li { margin-bottom: $ukg-spacing-xs; color: $ukg-text-high-emphasis-on-light;  }
+li {
+  margin-bottom: $ukg-spacing-xs;
+  color: $ukg-text-high-emphasis-on-light;
+}
 
 /* Used to call special attention to a quote. Can be used with or without a signature. */
-blockquote { line-height: $ukg-line-height-reading; font-family: $ukg-font-family; padding-left: $ukg-spacing-s; color: $ukg-text-high-emphasis-on-light; border-left: 1px solid $ukg-text-high-emphasis-on-light; margin-bottom: $ukg-spacing-l; font-style: italic; margin-top: $ukg-spacing-l; font-weight: $ukg-font-weight-regular; font-size: $ukg-text-size-2;  }
+blockquote {
+  line-height: $ukg-line-height-reading;
+  font-family: $ukg-font-family;
+  padding-left: $ukg-spacing-s;
+  color: $ukg-text-high-emphasis-on-light;
+  border-left: 1px solid $ukg-text-high-emphasis-on-light;
+  margin-bottom: $ukg-spacing-l;
+  font-style: italic;
+  margin-top: $ukg-spacing-l;
+  font-weight: $ukg-font-weight-regular;
+  font-size: $ukg-text-size-2;
+}
 
 /* Used for inline quotes. */
-q { line-height: $ukg-line-height-reading; font-family: $ukg-font-family; color: $ukg-text-high-emphasis-on-light; font-style: italic; font-weight: $ukg-font-weight-regular; font-size: $ukg-text-size-2;  }
+q {
+  line-height: $ukg-line-height-reading;
+  font-family: $ukg-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+  font-style: italic;
+  font-weight: $ukg-font-weight-regular;
+  font-size: $ukg-text-size-2;
+}
 
 /* An inline highlight style */
-mark { font-family: $ukg-font-family; background-color: #4A4A4A; color: #FFFFFF;  }
+mark {
+  font-family: $ukg-font-family;
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
 
 /* An inline bold style. */
-b { font-weight: $ukg-font-weight-heavy; font-family: $ukg-font-family; color: $ukg-text-high-emphasis-on-light;  }
+b {
+  font-weight: $ukg-font-weight-heavy;
+  font-family: $ukg-font-family;
+  color: $ukg-text-high-emphasis-on-light;
+}
 
 /* An inline italic style. */
-i { font-style: italic; color: $ukg-text-high-emphasis-on-light;  }
+i {
+  font-style: italic;
+  color: $ukg-text-high-emphasis-on-light;
+}
 
 /* Text used in button. */
-button { font-size: $ukg-text-size-2; line-height: $ukg-line-height-tight; font-weight: $ukg-font-weight-regular; font-family: $ukg-font-family;  }
+button {
+  font-size: $ukg-text-size-2;
+  line-height: $ukg-line-height-tight;
+  font-weight: $ukg-font-weight-regular;
+  font-family: $ukg-font-family;
+}
 
 /* Text representing a link to another page or application */
-a:link { font-family: $ukg-font-family; color: $ukg-action-text; text-decoration: underline; cursor: pointer;  }
+a:link {
+  font-family: $ukg-font-family;
+  color: $ukg-action-text;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 /* Text representing a link to another page or application */
-a:visited { font-family: $ukg-font-family; color: $ukg-action-text; cursor: pointer; text-decoration: underline;  }
+a:visited {
+  font-family: $ukg-font-family;
+  color: $ukg-action-text;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* Text representing a link to another page or application */
-a:hover { font-family: $ukg-font-family; color: $ukg-action-text-hover; cursor: pointer; text-decoration: underline;  }
+a:hover {
+  font-family: $ukg-font-family;
+  color: $ukg-action-text-hover;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* Text representing a link to another page or application */
-a:active { font-family: $ukg-font-family; color: $ukg-action-text-active; cursor: pointer; text-decoration: underline;  }
+a:active {
+  font-family: $ukg-font-family;
+  color: $ukg-action-text-active;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* Text representing a block and/or snippet of code */
-code { font-family: $ukg-font-family-mono; font-size: $ukg-text-size-2; line-height: $ukg-line-height-reading; font-weight: $ukg-font-weight-regular;  }
+code {
+  font-family: $ukg-font-family-mono;
+  font-size: $ukg-text-size-2;
+  line-height: $ukg-line-height-reading;
+  font-weight: $ukg-font-weight-regular;
+}

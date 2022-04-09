@@ -74,7 +74,7 @@ export class AppRoot {
           >
             <proposal-form></proposal-form>
           </ukg-task-drawer>
-          <div slot="task-main-content">
+          <div slot="task-main-content" class="h-full flex flex-col">
             <ukg-nav-header showMenuButton={false} disable-gradient>
               <div
                 style={{
@@ -155,7 +155,7 @@ export class AppRoot {
               </h2>
               <p>A Blockchain powered voting system that let's residents of a community make a real, transparent impact</p>
             </div>
-            <main>
+            <main class="flex-grow">
               <stencil-router>
                 <stencil-route-switch scrollTopOffset={0}>
                   <stencil-route url="/" component="app-home" exact={true} />
@@ -163,6 +163,7 @@ export class AppRoot {
                 </stencil-route-switch>
               </stencil-router>
             </main>
+            <page-footer></page-footer>
           </div>
         </ukg-task-drawer-container>
       </ukg-app-shell>
