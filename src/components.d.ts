@@ -78,7 +78,6 @@ declare namespace LocalJSX {
         "heading"?: String;
     }
     interface AppHome {
-        "onSignerConnected"?: (event: CustomEvent<any>) => void;
     }
     interface AppRoot {
     }

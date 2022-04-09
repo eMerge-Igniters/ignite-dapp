@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Event, h, State } from '@stencil/core';
+import { Component, h, State } from '@stencil/core';
 import ProposalService from '../../services/proposal.services';
 @Component({
   tag: 'app-home',
@@ -45,14 +45,27 @@ export class AppHome {
     });
   }
 
-  getSupportValue = support => {
+  getSupportValue = (support, proposal) => {
+    // We can optimize this function xD
+
+    if (!proposal) {
+      switch (support) {
+        case '0':
+          return {yes: 1};
+        case '1':
+          return {no: 1};
+        case '2':
+          return {abstain: 1};
+      }
+    }
+    
     switch (support) {
       case '0':
-        return 1;
+        return {yes: proposal.yes + 1};
       case '1':
-        return -1;
+        return {no: proposal.no + 1};
       case '2':
-        return 0;
+        return {abstain: proposal.abstain + 1};
     }
   };
 
@@ -67,31 +80,24 @@ export class AppHome {
 
     const allVotes = [...this.pastVotes, ...this.castedVotes];
     const filteredVotes = allVotes.reduce((acc, vote) => {
-      return { ...acc, [vote.proposalId]: acc[vote.proposalId] ? acc[vote.proposalId] + this.getSupportValue(vote.support) : this.getSupportValue(vote.support) };
+      const supportValue = this.getSupportValue(vote.support, acc[vote.proposalId]);
+      return { ...acc, [vote.proposalId]: acc[vote.proposalId] ? {...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue} : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue }  };
     }, {});
-
-
-    console.log('Casted Votes', this.castedVotes);
-    console.log('Past Votes', this.pastVotes);
-
-    console.log('Filtered Votes', filteredVotes);
-
-    console.log('PROPOSAL OBJS', proposalObjs)
 
     return (
       <div class="app-home">
         <div class="container mx-auto px-4 sm:pt-12 pt-6">
           <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {filteredProposals.map((_, index) => {
+            {filteredProposals.map((proposal, index) => {
               return (
                 <div class="ukg-col-lg-4 ukg-col-md-4 ukg-col-sm-4">
                   <proposal-card
                     heading={proposalObjs[index].title}
                     expirationDate={new Date('04/15/2022')}
                     description={proposalObjs[index].description}
-                    totalVotes={600}
-                    yay={500}
-                    nay={100}
+                    totalVotes={filteredVotes[proposal.proposalId].total}
+                    yay={filteredVotes[proposal.proposalId].yes}
+                    nay={filteredVotes[proposal.proposalId].no}
                   ></proposal-card>
                 </div>
               );
