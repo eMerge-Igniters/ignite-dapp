@@ -6,17 +6,20 @@ import { Component, h } from '@stencil/core';
   scoped: true,
 })
 export class AppRoot {
+  heading="Ignite Community Hub"
+  
   render() {
     return (
       <div>
-        <ukg-nav-header heading="Community">
+        <ukg-nav-header showMenuButton={false} disable-gradient heading={this.heading}>
           <div slot="icons">
-            <ukg-button>
-              Add Proposal
-              <i slot="child-icon" class="fa-solid fa-plus"></i>
-            </ukg-button>
+            <wallet-button connected></wallet-button>
           </div>
         </ukg-nav-header>
+        <div class="header-extension">
+          <h3>Heading</h3>
+          <p>A Blockchain powered voting system that let's residents of a community make a real, transparent impact</p>
+        </div>
         <main>
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>

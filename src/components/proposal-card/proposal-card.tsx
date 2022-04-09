@@ -2,7 +2,7 @@ import { Component, Host, h } from '@stencil/core';
 
 @Component({
   tag: 'proposal-card',
-  styleUrl: 'proposal-card.css',
+  styleUrl: 'proposal-card.scss',
   scoped: true,
 })
 export class ProposalCard {
@@ -15,7 +15,7 @@ export class ProposalCard {
           <ukg-card-footer>
             <div slot="left">footer left</div> <div slot="right"> footer right</div>
           </ukg-card-footer>
-        </ukg-card>{' '}
+        </ukg-card>
       </Host>
     );
   }

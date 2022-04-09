@@ -12,6 +12,9 @@ export namespace Components {
     }
     interface ProposalCard {
     }
+    interface WalletButton {
+        "connected": boolean;
+    }
 }
 declare global {
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
@@ -32,10 +35,17 @@ declare global {
         prototype: HTMLProposalCardElement;
         new (): HTMLProposalCardElement;
     };
+    interface HTMLWalletButtonElement extends Components.WalletButton, HTMLStencilElement {
+    }
+    var HTMLWalletButtonElement: {
+        prototype: HTMLWalletButtonElement;
+        new (): HTMLWalletButtonElement;
+    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-root": HTMLAppRootElement;
         "proposal-card": HTMLProposalCardElement;
+        "wallet-button": HTMLWalletButtonElement;
     }
 }
 declare namespace LocalJSX {
@@ -45,10 +55,14 @@ declare namespace LocalJSX {
     }
     interface ProposalCard {
     }
+    interface WalletButton {
+        "connected"?: boolean;
+    }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-root": AppRoot;
         "proposal-card": ProposalCard;
+        "wallet-button": WalletButton;
     }
 }
 export { LocalJSX as JSX };
@@ -58,6 +72,7 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "proposal-card": LocalJSX.ProposalCard & JSXBase.HTMLAttributes<HTMLProposalCardElement>;
+            "wallet-button": LocalJSX.WalletButton & JSXBase.HTMLAttributes<HTMLWalletButtonElement>;
         }
     }
 }
