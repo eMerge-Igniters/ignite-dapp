@@ -15,9 +15,9 @@ export class ProposalCard {
 
   render() {
     return (
-      <Host>
+      <Host class="proposal-card">
         <ukg-card fit-content>
-          <ukg-card-header card-title={this.heading}> </ukg-card-header>
+          <ukg-card-header card-title={this.heading} subtitle="30 days left"></ukg-card-header>
           <ukg-card-content>{this.description}</ukg-card-content>
           <ukg-card-footer>
              <div slot="right">

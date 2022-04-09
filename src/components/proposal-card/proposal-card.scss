@@ -1,14 +1,17 @@
-:host {
+// Host styles
+.proposal-card {
   display: block;
-  min-height: max-content;
   min-width: 100%;
-}
-
-ukg-card {
   height: 100%;
-  width: 100%;
-}
 
-.ukg-card-wrapper {
-  height: 100%;
+  // card component internal parts
+  .ukg-card-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    ukg-card-content {
+      flex-grow: 1;
+    }
+  }
 }
