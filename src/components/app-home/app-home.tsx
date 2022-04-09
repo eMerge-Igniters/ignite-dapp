@@ -1,5 +1,4 @@
-import { Component, h } from '@stencil/core';
-import { fakeData } from '../../utils/fake-data';
+import { Component, h, State } from '@stencil/core';
 import ProposalService from '../../services/proposal.services';
 
 @Component({
@@ -8,9 +7,20 @@ import ProposalService from '../../services/proposal.services';
   scoped: true,
 })
 export class AppHome {
-  data = fakeData;
+  @State() data;
 
   proposalService = new ProposalService();
+
+  componentDidLoad() {
+    this.proposalService.onProposalsCreated(
+      _ => {},
+      e => {
+        this.data = [...this.data, e];
+        console.log(this.data);
+      },
+      _ => {},
+    );
+  }
 
   render() {
     return (
