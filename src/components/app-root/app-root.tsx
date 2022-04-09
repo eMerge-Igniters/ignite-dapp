@@ -7,17 +7,23 @@ import { Component, h } from '@stencil/core';
 })
 export class AppRoot {
   heading = 'Ignite Community Hub';
+  taskDrawerEl;
 
   async triggerTaskDrawer() {
-    const drawer = (await document.querySelector('ukg-task-drawer')) as any;
-    await drawer.triggerDrawer();
+    await this.taskDrawerEl?.triggerDrawer();
   }
 
   render() {
     return (
       <ukg-app-shell>
         <ukg-task-drawer-container style={{ height: '100vh' }}>
-          <ukg-task-drawer heading="Create Proposal">
+          <ukg-task-drawer
+            ref={el => (this.taskDrawerEl = el)}
+            heading="New Proposal"
+            has-reset-button
+            reset-button-text="Cancel"
+            onUkgTaskDrawerResetButtonClicked={() => this.triggerTaskDrawer()}
+          >
             <proposal-form></proposal-form>
           </ukg-task-drawer>
           <div slot="task-main-content">

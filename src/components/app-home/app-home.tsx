@@ -11,10 +11,6 @@ export class AppHome {
   render() {
     return (
       <div class="app-home">
-        {/* <ukg-button emphasis="mid" onClick={() => this.triggerTaskDrawer()}>
-          Add Proposal
-          <i slot="child-icon" class="fa-solid fa-plus"></i>
-        </ukg-button> */}
         <ukg-grid-container>
           <ukg-grid size="default">
             {this.data.map(proposal => {
