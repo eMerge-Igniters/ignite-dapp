@@ -7,10 +7,10 @@ export default class ProposalService {
   addresses = getAddresses(Networks.ETH);
   provider;
   signer;
-  
+
   constructor() {
     if (ProposalService._instance) {
-      return ProposalService._instance
+      return ProposalService._instance;
     }
     ProposalService._instance = this;
   }
@@ -18,6 +18,7 @@ export default class ProposalService {
   async getProvider() {
     this.provider = new ethers.providers.Web3Provider(window.ethereum);
     this.provider.send('eth_requestAccounts', []);
+    return this.provider;
   }
 
   async getSigner() {
@@ -28,6 +29,10 @@ export default class ProposalService {
     await this.getProvider();
     this.signer = this.provider.getSigner();
     return this.signer;
+  }
+
+  async setSigner(_signer) {
+    this.signer = _signer;
   }
 
   async createProposal(signer, proposalDescription) {

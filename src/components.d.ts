@@ -65,6 +65,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AppHome {
+        "onSignerConnected"?: (event: CustomEvent<any>) => void;
     }
     interface AppRoot {
     }
@@ -80,6 +81,8 @@ declare namespace LocalJSX {
     }
     interface WalletButton {
         "connected"?: boolean;
+        "onConnect"?: (event: CustomEvent<any>) => void;
+        "onDisconnect"?: (event: CustomEvent<any>) => void;
     }
     interface IntrinsicElements {
         "app-home": AppHome;

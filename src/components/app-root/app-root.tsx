@@ -1,3 +1,4 @@
+import ProposalService from '../../services/proposal.services';
 import { Component, h, State } from '@stencil/core';
 
 @Component({
@@ -22,6 +23,27 @@ export class AppRoot {
   componentWillLoad() {
     this.onWindowResize(this.mediaQuery);
     this.mediaQuery.onchange = mq => this.onWindowResize(mq);
+  }
+  @State() connected = false;
+
+  proposalService = new ProposalService();
+
+  async componentDidLoad() {
+    if ((window as any).ethereum) {
+      const provider = await this.proposalService.getProvider();
+      const signer = provider.getSigner();
+      try {
+        await signer.getAddress();
+        this.connected = true;
+        this.proposalService.setSigner(signer);
+      } catch (e) {
+        (window as any).ethereum.on('accountsChanged', accounts => {
+          this.connected = accounts.length > 0;
+          const signer = provider.getSigner();
+          this.proposalService.setSigner(signer);
+        });
+      }
+    }
   }
 
   render() {
@@ -74,26 +96,47 @@ export class AppRoot {
                       Add Proposal
                       <i slot="child-icon" class="fa-solid fa-plus"></i>
                     </ukg-button>
-                    <wallet-button connected></wallet-button>
+                    <wallet-button
+                      connected={this.connected}
+                      onConnect={async () => {
+                        const provider = await this.proposalService.getProvider();
+                        (window as any).ethereum.on('accountsChanged', accounts => {
+                          this.connected = accounts.length > 0;
+                          const signer = provider.getSigner();
+                          this.proposalService.setSigner(signer);
+                        });
+                      }}
+                      onDisconnect={() => {
+                        this.proposalService.setSigner(null);
+                        this.connected = false;
+                      }}
+                    ></wallet-button>
                   </ukg-button-group>
                 ) : null}
               </div>
             </ukg-nav-header>
-            <div class="header-extension" style={{
-              paddingBottom: this.isMobile ? '40px':null
-            }}>
+            <div
+              class="header-extension"
+              style={{
+                paddingBottom: this.isMobile ? '40px' : null,
+              }}
+            >
               {this.isMobile ? (
-                <ukg-button-group style={{paddingBottom: '16px'}}>
+                <ukg-button-group style={{ paddingBottom: '16px' }}>
                   <ukg-button emphasis="mid" onClick={() => this.triggerTaskDrawer()}>
                     Add Proposal
-                    <i slot="child-icon" style={{ color: 'white', marginLeft: '4px'}} class="fa-solid fa-plus"></i>
+                    <i slot="child-icon" style={{ color: 'white', marginLeft: '4px' }} class="fa-solid fa-plus"></i>
                   </ukg-button>
                   <wallet-button connected></wallet-button>
                 </ukg-button-group>
               ) : null}
-              <h2 style={{
-                marginTop: this.isMobile ? '0': null
-              }}>Welcome, Miami-Dade!</h2>
+              <h2
+                style={{
+                  marginTop: this.isMobile ? '0' : null,
+                }}
+              >
+                Welcome, Miami-Dade!
+              </h2>
               <p>A Blockchain powered voting system that let's residents of a community make a real, transparent impact</p>
             </div>
             <main>

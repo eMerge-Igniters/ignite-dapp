@@ -1,4 +1,4 @@
-import { Component, h, State } from '@stencil/core';
+import { Component, EventEmitter, Event, h, State } from '@stencil/core';
 import ProposalService from '../../services/proposal.services';
 
 @Component({
@@ -14,7 +14,7 @@ export class AppHome {
 
   async componentDidLoad() {
     await this.proposalService.getSigner();
-    
+
     this.proposalService.onProposalsCreated(
       _ => {},
       e => {
@@ -23,22 +23,26 @@ export class AppHome {
       _ => {},
     );
 
-    this.proposalService.onPastProposals((e) => {
+    this.proposalService.onPastProposals(e => {
       this.pastProposals = [...e];
     });
   }
+
+  @State() signer;
+
+  @Event() signerConnected: EventEmitter<any>;
 
   render() {
     const allProposals = [...this.pastProposals, ...this.createdProposals];
     console.log('ALL PROPOSALS', allProposals);
     const filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
-    const proposalObjs = filteredProposals.map((proposal) =>  {
+    const proposalObjs = filteredProposals.map(proposal => {
       return JSON.parse(proposal.returnValues.description);
-    } );
+    });
     console.log(proposalObjs);
 
     // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
-    
+
     return (
       <div class="app-home">
         <ukg-grid-container>
