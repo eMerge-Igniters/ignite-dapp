@@ -48,7 +48,7 @@ export class PageFooter {
       </a>
     </div>
     <div class="mt-8 md:mt-0 md:order-1">
-      <p class="text-center text-base text-gray-400">&copy; 2020 IgniteDao, Inc. All rights reserved.</p>
+      <p class="text-center text-base text-gray-400">&copy; 2022 IgniteDao, Inc. All rights reserved.</p>
     </div>
   </div>
 </footer>

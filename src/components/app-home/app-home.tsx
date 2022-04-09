@@ -85,6 +85,8 @@ export class AppHome {
     const allProposals = [...this.pastProposals, ...this.createdProposals];
     console.log('ALL PROPOSALS', allProposals);
     let filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
+
+    console.log('FILTERED PROPOSALS', filteredProposals);
     const proposalObjs = filteredProposals.map(proposal => {
       // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
       return { ...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId };
@@ -95,13 +97,15 @@ export class AppHome {
     const filteredVotes = allVotes.reduce((acc, vote) => {
       const supportValue = this.getSupportValue(vote.support, acc[vote.proposalId]);
       return { ...acc, [vote.proposalId]: vote.proposalId in acc ? {...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue} : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue }  };
-    }, {yes: 0, no: 0, abstain: 0, total: 0});
+    }, {});
+
+    console.log('FILTERED VOTES', filteredVotes);
 
     return (
       <div class="app-home">
         <div class="container mx-auto px-4 sm:pt-12 pt-6">
           <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {filteredProposals.map((proposal, index) => {
+            {proposalObjs.map((proposal, index) => {
               return (
                 <div class="ukg-col-lg-4 ukg-col-md-4 ukg-col-sm-4">
                   <proposal-card
