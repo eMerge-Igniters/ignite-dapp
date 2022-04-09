@@ -94,7 +94,7 @@ export class AppRoot {
                   <ukg-button-group>
                     <ukg-button emphasis="mid" onClick={() => this.triggerTaskDrawer()}>
                       Add Proposal
-                      <i slot="child-icon" class="fa-solid fa-plus"></i>
+                      <i style={{ color: 'white', marginLeft: '4px' }} slot="child-icon" class="fa-solid fa-plus"></i>
                     </ukg-button>
                     <wallet-button
                       connected={this.connected}
