@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c093a743-e5a6-4447-a453-305595989456/deploy-status)](https://app.netlify.com/sites/ignitedao/deploys)
+
 # Stencil App Starter
 
 Stencil is a compiler for building fast web apps using Web Components.
