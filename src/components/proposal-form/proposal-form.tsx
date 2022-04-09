@@ -82,6 +82,7 @@ export class ProposalForm {
     const signer = await this.proposalService.getSigner();
     this.proposalService.createProposal(signer, JSON.stringify(values));
     // console.log(JSON.stringify(values));
+    (document.querySelector('ukg-task-drawer') as any).triggerDrawer();
     return JSON.stringify(values);
   }
 

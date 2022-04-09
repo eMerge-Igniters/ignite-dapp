@@ -19,6 +19,7 @@ export class AppHome {
     this.proposalService.onProposalsCreated(
       _ => {},
       e => {
+        this.clearProposalForm();
         this.createdProposals = [...this.createdProposals, e];
       },
       _ => {},
@@ -51,6 +52,17 @@ export class AppHome {
         this.pastVotes = [...this.pastVotes, { proposalId, support }];
       });
     });
+  }
+
+  clearProposalForm() {
+    const taskDrawer = document.querySelector('ukg-task-drawer');
+    (taskDrawer.querySelector('#title-input') as any).value = null;
+    (taskDrawer.querySelector('#description-input') as any).value = null;
+    (taskDrawer.querySelector('#category-input') as any).value = null;
+    (taskDrawer.querySelector('#voting-mon-input') as any).value = null;
+    const tags = taskDrawer.querySelector('#tag-input')?.querySelectorAll('ukg-chip');
+    tags.forEach((tag: any) => (tag.selected = false));
+    (taskDrawer.querySelector('ukg-stepper') as any).clear();
   }
 
   getSupportValue = (support, proposal) => {
@@ -101,7 +113,11 @@ export class AppHome {
     console.log('ALL VOTES', allVotes);
     const filteredVotes = allVotes.reduce((acc, vote) => {
       const supportValue = this.getSupportValue(vote.support, acc[vote.proposalId]);
-      return { ...acc, [vote.proposalId]: vote.proposalId in acc ? {...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue} : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue }  };
+      return {
+        ...acc,
+        [vote.proposalId]:
+          vote.proposalId in acc ? { ...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue } : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue },
+      };
     }, {});
 
     console.log('FILTERED VOTES', filteredVotes);
