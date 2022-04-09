@@ -31,6 +31,10 @@ export class AppHome {
     this.proposalService.onVoteCast(
       _ => {},
       e => {
+        if (this.castedVotes.find((castedVote) => e.proposalId === castedVote.proposalId)) {
+          return;
+        }
+
         const { proposalId, support } = e.returnValues;
         this.castedVotes = [...this.castedVotes, { proposalId, support }];
         const card = document.getElementById(proposalId);
@@ -82,6 +86,7 @@ export class AppHome {
   }
 
   render() {
+    console.log('ALL VOTES', this.castedVotes);
     const allProposals = [...this.pastProposals, ...this.createdProposals];
     console.log('ALL PROPOSALS', allProposals);
     let filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
