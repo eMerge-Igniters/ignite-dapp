@@ -119,6 +119,7 @@ export class AppRoot {
               class="header-extension"
               style={{
                 paddingBottom: this.isMobile ? '40px' : null,
+                boxSizing: 'content-box'
               }}
             >
               {this.isMobile ? (
