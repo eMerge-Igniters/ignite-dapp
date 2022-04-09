@@ -4,6 +4,10 @@
   min-width: 100%;
   height: 100%;
 
+  ukg-card {
+    background: #06111e;
+  }
+
   // card component internal parts
   .ukg-card-wrapper {
     height: 100%;
@@ -21,12 +25,12 @@
 .progress-bar {
   align-items: center;
   display: flex;
-  
+
   ukg-progress-minimal {
     margin-right: 2rem;
   }
 }
 
 .description {
-flex-grow: 1;
+  flex-grow: 1;
 }
