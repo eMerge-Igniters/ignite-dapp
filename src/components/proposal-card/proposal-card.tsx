@@ -13,11 +13,16 @@ export class ProposalCard {
   @Prop() yay = 0;
   @Prop() nay = 0;
 
+  getDaysTillExpiration() {
+    const timeTill = this.expirationDate.getTime() - new Date().getTime()
+
+    return Math.floor(timeTill / (1000 * 60 * 60 * 24))
+  }
   render() {
     return (
       <Host class="proposal-card">
         <ukg-card fit-content>
-          <ukg-card-header card-title={this.heading} subtitle="30 days left"></ukg-card-header>
+          <ukg-card-header card-title={this.heading} subtitle={this.getDaysTillExpiration() + ' days left'}></ukg-card-header>
           <ukg-card-content>
             <div class="description">{this.description}</div>
 
