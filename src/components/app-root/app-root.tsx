@@ -8,24 +8,23 @@ import { Component, h } from '@stencil/core';
 export class AppRoot {
   render() {
     return (
-      <ukg-app-shell>
-        <div>
-          <ukg-nav-header heading="Community proposals">
-            <div slot="icons">
-              <ukg-button icon-only>
-                <i slot="icon-only" class="fa-solid fa-large"></i>
-              </ukg-button>
-            </div>
-          </ukg-nav-header>
-          <main>
-            <stencil-router>
-              <stencil-route-switch scrollTopOffset={0}>
-                <stencil-route url="/" component="app-home" exact={true} />
-              </stencil-route-switch>
-            </stencil-router>
-          </main>
-        </div>
-      </ukg-app-shell>
+      <div>
+        <ukg-nav-header heading="Community">
+          <div slot="icons">
+            <ukg-button>
+              Add Proposal
+              <i slot="child-icon" class="fa-solid fa-plus"></i>
+            </ukg-button>
+          </div>
+        </ukg-nav-header>
+        <main>
+          <stencil-router>
+            <stencil-route-switch scrollTopOffset={0}>
+              <stencil-route url="/" component="app-home" exact={true} />
+            </stencil-route-switch>
+          </stencil-router>
+        </main>
+      </div>
     );
   }
 }
