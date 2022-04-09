@@ -8,6 +8,8 @@ import ProposalService from '../../services/proposal.services';
 export class AppHome {
   @State() createdProposals = [];
   @State() pastProposals = [];
+  @State() castedVotes = [];
+  @State() pastVotes = [];
 
   proposalService = new ProposalService();
 
@@ -25,22 +27,56 @@ export class AppHome {
     this.proposalService.onPastProposals(e => {
       this.pastProposals = [...e];
     });
+
+    this.proposalService.onVoteCast(
+      _ => {},
+      e => {
+        const { proposalId, support } = e.returnValues;
+        this.castedVotes = [...this.castedVotes, { proposalId, support }];
+      },
+      _ => {},
+    );
+
+    this.proposalService.onPastVoteCreated(events => {
+      events.forEach(event => {
+        const { proposalId, support } = event.returnValues;
+        this.pastVotes = [...this.pastVotes, { proposalId, support }];
+      });
+    });
   }
 
-  @State() signer;
-
-  @Event() signerConnected: EventEmitter<any>;
+  getSupportValue = support => {
+    switch (support) {
+      case '0':
+        return 1;
+      case '1':
+        return -1;
+      case '2':
+        return 0;
+    }
+  };
 
   render() {
     const allProposals = [...this.pastProposals, ...this.createdProposals];
     console.log('ALL PROPOSALS', allProposals);
     const filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
     const proposalObjs = filteredProposals.map(proposal => {
-      return JSON.parse(proposal.returnValues.description);
+      // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
+      return {...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId};
     });
-    console.log(proposalObjs);
 
-    // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
+    const allVotes = [...this.pastVotes, ...this.castedVotes];
+    const filteredVotes = allVotes.reduce((acc, vote) => {
+      return { ...acc, [vote.proposalId]: acc[vote.proposalId] ? acc[vote.proposalId] + this.getSupportValue(vote.support) : this.getSupportValue(vote.support) };
+    }, {});
+
+
+    console.log('Casted Votes', this.castedVotes);
+    console.log('Past Votes', this.pastVotes);
+
+    console.log('Filtered Votes', filteredVotes);
+
+    console.log('PROPOSAL OBJS', proposalObjs)
 
     return (
       <div class="app-home">
