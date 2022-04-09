@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Event, h, State } from '@stencil/core';
 import ProposalService from '../../services/proposal.services';
-
 @Component({
   tag: 'app-home',
   styleUrl: 'app-home.scss',
@@ -45,8 +44,8 @@ export class AppHome {
 
     return (
       <div class="app-home">
-        <ukg-grid-container>
-          <ukg-grid size="default">
+        <div class="container mx-auto px-4 sm:pt-12 pt-6">
+          <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {filteredProposals.map((_, index) => {
               return (
                 <div class="ukg-col-lg-4 ukg-col-md-4 ukg-col-sm-4">
@@ -61,8 +60,8 @@ export class AppHome {
                 </div>
               );
             })}
-          </ukg-grid>
-        </ukg-grid-container>
+          </div>
+        </div>
       </div>
     );
   }

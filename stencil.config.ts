@@ -8,6 +8,9 @@ export const config: Config = {
   globalScript: 'src/global/app.ts',
   taskQueue: 'async',
   plugins: [sass()],
+  devServer: {
+    reloadStrategy: 'pageReload'
+  },
   outputTargets: [
     {
       type: 'www',

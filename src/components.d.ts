@@ -6,6 +6,9 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AppDetails {
+        "heading": String;
+    }
     interface AppHome {
     }
     interface AppRoot {
@@ -25,6 +28,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAppDetailsElement extends Components.AppDetails, HTMLStencilElement {
+    }
+    var HTMLAppDetailsElement: {
+        prototype: HTMLAppDetailsElement;
+        new (): HTMLAppDetailsElement;
+    };
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
     }
     var HTMLAppHomeElement: {
@@ -56,6 +65,7 @@ declare global {
         new (): HTMLWalletButtonElement;
     };
     interface HTMLElementTagNameMap {
+        "app-details": HTMLAppDetailsElement;
         "app-home": HTMLAppHomeElement;
         "app-root": HTMLAppRootElement;
         "proposal-card": HTMLProposalCardElement;
@@ -64,6 +74,9 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AppDetails {
+        "heading"?: String;
+    }
     interface AppHome {
         "onSignerConnected"?: (event: CustomEvent<any>) => void;
     }
@@ -85,6 +98,7 @@ declare namespace LocalJSX {
         "onDisconnect"?: (event: CustomEvent<any>) => void;
     }
     interface IntrinsicElements {
+        "app-details": AppDetails;
         "app-home": AppHome;
         "app-root": AppRoot;
         "proposal-card": ProposalCard;
@@ -96,6 +110,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-details": LocalJSX.AppDetails & JSXBase.HTMLAttributes<HTMLAppDetailsElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "proposal-card": LocalJSX.ProposalCard & JSXBase.HTMLAttributes<HTMLProposalCardElement>;
