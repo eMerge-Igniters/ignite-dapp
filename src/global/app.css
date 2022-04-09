@@ -16,5 +16,12 @@ body {
 }
 
 :root {
-  --ukg-brand: green;
+  --ukg-brand: #0e2a47;
+  --ukg-brand-darker: #0e2a47;
+
+  --ukg_sys_color_buttonBg_highEmphasis_enabled: var(--ukg-brand);
+  --ukg_sys_color_buttonBg_highEmphasis_hover: var(--ukg-brand-darker);
+  --ukg_sys_color_buttonBorder_midEmphasis_enabled: var(--ukg-brand);
+  --ukg_sys_color_buttonText_midEmphasis_enabled: var(--ukg-brand);
+  --ukg_sys_color_buttonText_midEmphasis_hover: var(--ukg-brand-darker);
 }

@@ -15,7 +15,7 @@ export class AppHome {
           <ukg-grid size="default">
             {this.data.map(proposal => {
               return (
-                <div class="ukg-col-lg-3 ukg-col-md-4 ukg-col-sm-4">
+                <div class="ukg-col-lg-4 ukg-col-md-4 ukg-col-sm-4">
                   <proposal-card
                     heading={proposal.title}
                     expirationDate={proposal.expirationDate}

@@ -22,5 +22,13 @@ export const fakeData = [
     totalVotes: 100,
     yay: 5,
     nay: 95
+  },
+  {
+    title: 'Plant a tree',
+    expirationDate: new Date('04/25/2022'),
+    description: 'Lets go',
+    totalVotes: 0,
+    yay: 0,
+    nay: 0
   }
 ]
