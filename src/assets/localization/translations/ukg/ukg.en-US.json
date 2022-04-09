@@ -1,0 +1,515 @@
+{
+  "CHECKBOXGROUP": {
+    "ERROR": {
+      "description": "The text 'Required Selection' in checkbox-group",
+      "message": "Required Selection"
+    }
+  },
+  "CHECKBOX": {
+    "ARIA_LABEL": {
+      "message": "Checkbox Icon",
+      "description": "Aria label for checkbox icon"
+    }
+  },
+  "DATE_PICKER": {
+    "DATE_LABEL": {
+      "description": "Label for the date input in date picker",
+      "message": "Date"
+    },
+    "DONE_LABEL": {
+      "description": "Label for the done button in date range picker",
+      "message": "Done"
+    },
+    "END_DATE_LABEL": {
+      "description": "Label for the end date in date range picker",
+      "message": "End Date"
+    },
+    "START_DATE_LABEL": {
+      "description": "Label for the start date in date range picker",
+      "message": "Start Date"
+    },
+    "TODAY_LABEL": {
+      "description": "Label for the Today button in date range picker",
+      "message": "Today"
+    },
+    "MONTH_ARIA_LABEL": {
+      "description": "Label for the date picker month",
+      "message": "Month"
+    },
+    "YEAR_ARIA_LABEL": {
+      "description": "Label for the date picker year",
+      "message": "Year"
+    },
+    "PREVIOUS_MONTH_ARIA_LABEL": {
+      "description": "Label for the date picker previous month",
+      "message": "Previous month"
+    },
+    "NEXT_MONTH_ARIA_LABEL": {
+      "description": "Label for the date picker next month",
+      "message": "Next month"
+    }
+  },
+  "DROPZONE": {
+    "BROWSE_FILES": {
+      "description": "Browse files button label ",
+      "message": "browse files",
+      "a11y": "Browse files, {{count}} file",
+      "a11y_0": "Browse files",
+      "a11y_plural": "Browse files, {{count}} files"
+    },
+    "DISABLED": {
+      "description": "Label for the disabled icon",
+      "message": "Disabled"
+    },
+    "DRAG_AND_DROP": {
+      "description": "Invit to drag and drop or [browse a file]",
+      "message": "Drag and drop or"
+    },
+    "DROP_FILES": {
+      "description": "Invit to drop files",
+      "message": "Drop files"
+    },
+    "FILE_ADDED": {
+      "description": "Vocalised message when a file is added",
+      "message": "{{file}}, added."
+    },
+    "FILES_ADDED": {
+      "description": "Vocalised message when several files are added",
+      "message": "{{count}} files, added."
+    },
+    "FILES_CLEARED": {
+      "description": "Vocalized message when files are cleared",
+      "message": "Files cleared"
+    },
+    "READ_ONLY": {
+      "description": "Label for the read only icon",
+      "message": "Read only"
+    }
+  },
+  "FILE_SIZE_UNITS": {
+    "BIT_UNIT": {
+      "description": "Bit unit for file size",
+      "message": "bit",
+      "message_plural": "bits"
+    },
+    "BYTE_UNIT": {
+      "description": "Byte unit for file size",
+      "message": "byte",
+      "message_plural": "bytes"
+    },
+    "KB_UNIT": {
+      "description": "Kilobyte unit for file size",
+      "message": "kilobyte",
+      "message_plural": "kilobytes",
+      "message_label": "Kilobyte",
+      "message_label_plural": "Kilobytes",
+      "message_abbr": "KB"
+    },
+    "MB_UNIT": {
+      "description": "Megabyte unit for file size",
+      "message": "megabyte",
+      "message_plural": "megabytes",
+      "message_label": "Megabyte",
+      "message_label_plural": "Megabytes",
+      "message_abbr": "MB"
+    },
+    "GB_UNIT": {
+      "description": "Gigabyte unit for file size",
+      "message": "gigabyte",
+      "message_plural": "gigabytes",
+      "message_label": "Gigabyte",
+      "message_label_plural": "Gigabytes",
+      "message_abbr": "GB"
+    }
+  },
+  "NAVIGATION": {
+    "ARIA_LABEL": {
+      "description": "Aria Label for main navigation drawer",
+      "message": "Side Menu"
+    },
+    "BACK_BUTTON_TEXT": {
+      "description": "Tool tip text for back button on Header",
+      "message": "Back"
+    },
+    "BUTTON_TEXT": {
+      "description": "Tool tip text for menu button",
+      "message": "Side Navigation Menu"
+    },
+    "CLOSE_BUTTON_TEXT": {
+      "description": "Tool tip text for close button on Header",
+      "message": "Close"
+    },
+    "CLOSE_NAVIGATION": {
+      "description": "Close the navigation drawer",
+      "message": "Close Menu"
+    },
+    "NAVIGATION_OPTIONS": {
+      "description": "the options menu for the side navigation",
+      "message": "Menu Options"
+    },
+    "EXPAND_NAVIGATION": {
+      "description": "Expand all accordion items in the navigation menu",
+      "message": "Expand All"
+    },
+    "COLLAPSE_NAVIGATION": {
+      "description": "Collapse all accordion items in the navigation menu",
+      "message": "Collapse All"
+    },
+    "NAVIGATION_ITEMS": {
+      "description": "label for the options menu to modify the navigation items",
+      "message": "Menu Items"
+    },
+    "NAVIGATION_LAYOUT": {
+      "description": "label for the options menu to modify the navigation layout",
+      "message": "Menu Layout"
+    },
+    "STANDARD_VIEW_NAVIGATION": {
+      "description": "layout option for the menu standard view",
+      "message": "Standard View"
+    },
+    "COMPACT_VIEW_NAVIGATION": {
+      "description": "layout option for the menu compact view",
+      "message": "Compact View"
+    },
+    "HOVER_ON_NAVIGATION": {
+      "description": "hover option for navigation tabs (on)",
+      "message": "Hover Tabs On"
+    },
+    "HOVER_OFF_NAVIGATION": {
+      "description": "hover option for navigation tabs (off)",
+      "message": "Hover Tabs Off"
+    },
+    "PIN_NAVIGATION": {
+      "description": "Pin the navigation menu",
+      "message": "Pin"
+    },
+    "UNPIN_NAVIGATION": {
+      "description": "UnPin the navigation menu",
+      "message": "Unpin"
+    }
+  },
+  "RADIOGROUP": {
+    "ERROR": {
+      "description": "The text 'Required Selection' in radio-group",
+      "message": "Required Selection"
+    }
+  },
+  "PAGINATOR": {
+    "ARIALABEL": {
+      "description": "paginator",
+      "message": "paginator"
+    },
+    "OF": {
+      "description": "the text 'of' in paginator",
+      "message": "of"
+    },
+    "ROWS_PER_PAGE": {
+      "description": "the text 'rows per page' in paginator",
+      "message": "Rows per page"
+    },
+    "ROW_OPTIONS": {
+      "description": "the aria label for the row options button",
+      "message": "rows options"
+    }
+  },
+  "SEARCHBAR": {
+    "SEARCH": {
+      "description": "Placeholder text for searchbar",
+      "message": "Search"
+    }
+  },
+  "TOOLBAR": {
+    "BUTTON_GROUP_LABEL": {
+      "description": "Button group label for toolbar",
+      "message": "Toolbar button group label"
+    },
+    "TOOLTIP_TEXT": {
+      "description": "Toolbar responsive button group overflow menu tooltip text",
+      "message": "More"
+    }
+  },
+  "SKIP_TO_MAIN": {
+    "TEXT": {
+      "message": "Skip to Main Content",
+      "description": "skip to main button text"
+    }
+  },
+  "TREE": {
+    "LINK_INDICATOR": {
+      "description": "Label to mark if a tree item is a link for screenreader users",
+      "message": "(link)"
+    }
+  },
+  "DATA_TABLE": {
+    "SELECTION_LABEL": {
+      "message": " Selected",
+      "description": "Set the text in the selected label at header"
+    },
+    "SELECT_ALL_ON_PAGE": {
+      "message": "Select all on this page",
+      "description": "Dropdown options when multiple pages - all on page"
+    },
+    "SELECT_ALL": {
+      "message": "Select all",
+      "description": "Dropdown options when multiple pages - all"
+    },
+    "DESELECT_ALL": {
+      "message": "Deselect all",
+      "description": "Dropdown options when multiple pages - deselect"
+    }
+  },
+  "DATE_INPUT_TEXT": {
+    "INPUT_ARIA_LABEL": {
+      "description": "Label for the date input text",
+      "message": "Date Input"
+    },
+    "DAY_ARIA_LABEL": {
+      "description": "Label for the day input text",
+      "message": "Day"
+    },
+    "MONTH_ARIA_LABEL": {
+      "description": "Label for the month input text",
+      "message": "Month"
+    },
+    "YEAR_ARIA_LABEL": {
+      "description": "Label for the year input text",
+      "message": "Year"
+    }
+  },
+  "CALENDAR": {
+    "MONTH_ARIA_LABEL": {
+      "description": "Label for the calendar month",
+      "message": "Month"
+    },
+    "YEAR_ARIA_LABEL": {
+      "description": "Label for the calendar year",
+      "message": "Year"
+    },
+    "PREVIOUS_MONTH_ARIA_LABEL": {
+      "description": "Label for the calendar previous month",
+      "message": "Previous month"
+    },
+    "NEXT_MONTH_ARIA_LABEL": {
+      "description": "Label for the calendar next month",
+      "message": "Next month"
+    }
+  },
+  "DATE_RANGE_PICKER": {
+    "START_INPUT_ARIA_LABEL": {
+      "description": "Label for the date range picker start date",
+      "message": "Start Date"
+    },
+    "END_INPUT_ARIA_LABEL": {
+      "description": "Label for the date range picker end date",
+      "message": "End date"
+    }
+  },
+  "INPUT": {
+    "TODAY_BUTTON_LABEL": {
+      "description": "Label for input today label",
+      "message": "Today"
+    },
+    "DONE_BUTTON_LABEL": {
+      "description": "Label for input done",
+      "message": "Done"
+    }
+  },
+  "MENU_CONTAINER": {
+    "OPTIONS_STRING": {
+      "description": "Options string to display number of options in menu.",
+      "message": "{{count}} option",
+      "message_plural": "{{count}} options"
+    }
+  },
+  "PROGRESS_LINEAR": {
+    "CANCEL": {
+      "description": "Label for progress linear cancel done",
+      "message": "Cancel"
+    }
+  },
+  "SEARCH": {
+    "PLACEHOLDER": {
+      "description": "Placeholder for search component",
+      "message": "Search"
+    },
+    "CLEAR": {
+      "description": "Clear button and tooltip",
+      "message": "Clear"
+    }
+  },
+  "SELECT": {
+    "OK_STRING": {
+      "description": "Select label for OK button",
+      "message": "Done"
+    },
+    "CANCEL_STRING": {
+      "description": "Select label for cancel button",
+      "message": "Cancel"
+    },
+    "SEARCH_ARIA_LABEL": {
+      "description": "Label for search input",
+      "message": "Search in the list of options below"
+    },
+    "NO_OPTIONS_STRING": {
+      "description": "Live region string for when no options are found on select or menu",
+      "message": "No options found."
+    }
+  },
+  "TASK_DRAWER": {
+    "RESET_BUTTON_TEXT": {
+      "description": "Label for task drawer reset button",
+      "message": "Reset"
+    },
+    "RESET_BUTTON_ARIA_LABEL": {
+      "description": "Aria label for task drawer reset button",
+      "message": "Reset"
+    },
+    "APPLY_BUTTON_TEXT": {
+      "description": "Label for task drawer apply button",
+      "message": "Apply"
+    },
+    "APPLY_BUTTON_ARIA_LABEL": {
+      "description": "Aria label for task drawer apply button",
+      "message": "Apply"
+    }
+  },
+  "UPLOAD": {
+    "CLEAR": {
+      "description": "Clear button label and tooltip",
+      "message": "Clear",
+      "a11y": "Clear: {{file}}"
+    },
+    "DELETE": {
+      "description": "Delete button label and tooltip",
+      "message": "Delete",
+      "a11y": "Delete: {{file}}"
+    },
+    "FILE_PROGRESSING": {
+      "description": "Progressing message",
+      "message": "Progressing"
+    },
+    "FILE_TOO_BIG": {
+      "description": "Message to signal is bigger than the maximum limit size",
+      "message": "The selected file must be smaller than {{count}} {{- unit}}"
+    },
+    "FILE_TYPE_ERROR": {
+      "description": "Message to signal the file type is not allowed",
+      "message": "The file type {{type}} is not allowed. The selected file must be: {{accept}}."
+    },
+    "MAX_NUMBER_OF_FILES_PASSED": {
+      "description": "Error message to signal the maximum number of file have been passed",
+      "message": "You can only select up to {{count}} file.",
+      "message_plural": "You can only select up to {{count}} files."
+    },
+    "MAX_NUMBER_OF_FILES_REACHED": {
+      "description": "Message to signal the maximum number of file is reached",
+      "message": "You have reached the maximum number of files"
+    },
+    "RETRY": {
+      "description": "Retry button label and tooltip",
+      "message": "Retry",
+      "a11y": "Retry: {{file}}"
+    },
+    "UPLOAD_FAIL": {
+      "description": "Message to signal a fail during upload",
+      "message": "The selected file could not be processed – press the retry button to try again."
+    }
+  },
+  "DOCUMENT_VIEWER": {
+    "SIDEBAR_LABEL": {
+      "description": "Aria label for the toggle button of the document's thumbnails list",
+      "message": "Toggle document's thumbnails list"
+    },
+    "PREV_PAGE_LABEL": {
+      "description": "Aria label for the previous page button",
+      "message": "Previous page"
+    },
+    "NEXT_PAGE_LABEL": {
+      "description": "Aria label for the next page button",
+      "message": "Next page"
+    },
+    "ZOOM_OUT_LABEL": {
+      "description": "Aria label for the zoom out button",
+      "message": "Zoom out"
+    },
+    "ZOOM_IN_LABEL": {
+      "description": "Aria label for the zoom in button",
+      "message": "Zoom in"
+    },
+    "FOCUSED_PAGE_NUMBER_LABEL": {
+      "description": "Aria label for the focused page number input",
+      "message": "Current page"
+    },
+    "OF": {
+      "description": "Preposition between focused page number input and total number of pages",
+      "message": "of"
+    },
+    "ZOOM_LEVEL_LABEL": {
+      "description": "Aria label for the zoom level select",
+      "message": "Zoom level"
+    },
+    "FULL_SCREEN_LABEL": {
+      "description": "Aria label for the full screen button",
+      "message": "Full screen"
+    },
+    "PRINT_LABEL": {
+      "description": "Aria label for the print button",
+      "message": "Print"
+    },
+    "DOWNLOAD_LABEL": {
+      "description": "Aria label for the download button",
+      "message": "Download"
+    },
+    "SEND_LABEL": {
+      "description": "Aria label for the send button",
+      "message": "Send"
+    },
+    "SUMMARY": {
+      "description": "Aria label for the sidebar toolbar",
+      "message": "Document summary"
+    },
+    "CONTENT": {
+      "description": "Aria label for the content area",
+      "message": "Document content"
+    },
+    "PAGE": {
+      "description": "Word for page in alternative text",
+      "message": "Page"
+    },
+    "EXTENDED_DESCRIPTION": {
+      "description": "Label to guide screen reader users towards extended description",
+      "message": "Extended description below"
+    }
+  },
+  "CAROUSEL": {
+    "PAGINATION_LABEL": {
+      "description": "Aria label for whole pagination element, {{count}} is replaced with exact number of slides",
+      "message": "There is {{count}} slide",
+      "message_plural": "There are {{count}} number of slides"
+    },
+    "PAGE_CHANGE": {
+      "description": "Text to be read when changing pages by navigation, {{index}} is replaced with exact number of slides",
+      "message": "Currently on slide {{index}}"
+    },
+    "PREV_SLIDE_MESSAGE": {
+      "description": "Aria label for previous slide navigation button",
+      "message": "Previous slide"
+    },
+    "NEXT_SLIDE_MESSAGE": {
+      "description": "Aria label for next slide navigation button",
+      "message": "Next slide"
+    },
+    "FIRST_SLIDE_MESSAGE": {
+      "description": "Text inserted into live aria region when reaching first slide",
+      "message": "This is the first slide"
+    },
+    "LAST_SLIDE_MESSAGE": {
+      "description": "Text inserted into live aria region when reaching last slide",
+      "message": "This is the last slide"
+    },
+    "PAGINATION_BULLET_MESSAGE": {
+      "description": "Aria label of each pagination bullet element. {{index}} is replaced with exact number of slides",
+      "message": "Go to slide {{index}}"
+    }
+  }
+}

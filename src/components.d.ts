@@ -12,6 +12,8 @@ export namespace Components {
     }
     interface ProposalCard {
     }
+    interface ProposalForm {
+    }
     interface WalletButton {
         "connected": boolean;
     }
@@ -35,6 +37,12 @@ declare global {
         prototype: HTMLProposalCardElement;
         new (): HTMLProposalCardElement;
     };
+    interface HTMLProposalFormElement extends Components.ProposalForm, HTMLStencilElement {
+    }
+    var HTMLProposalFormElement: {
+        prototype: HTMLProposalFormElement;
+        new (): HTMLProposalFormElement;
+    };
     interface HTMLWalletButtonElement extends Components.WalletButton, HTMLStencilElement {
     }
     var HTMLWalletButtonElement: {
@@ -45,6 +53,7 @@ declare global {
         "app-home": HTMLAppHomeElement;
         "app-root": HTMLAppRootElement;
         "proposal-card": HTMLProposalCardElement;
+        "proposal-form": HTMLProposalFormElement;
         "wallet-button": HTMLWalletButtonElement;
     }
 }
@@ -55,6 +64,8 @@ declare namespace LocalJSX {
     }
     interface ProposalCard {
     }
+    interface ProposalForm {
+    }
     interface WalletButton {
         "connected"?: boolean;
     }
@@ -62,6 +73,7 @@ declare namespace LocalJSX {
         "app-home": AppHome;
         "app-root": AppRoot;
         "proposal-card": ProposalCard;
+        "proposal-form": ProposalForm;
         "wallet-button": WalletButton;
     }
 }
@@ -72,6 +84,7 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "proposal-card": LocalJSX.ProposalCard & JSXBase.HTMLAttributes<HTMLProposalCardElement>;
+            "proposal-form": LocalJSX.ProposalForm & JSXBase.HTMLAttributes<HTMLProposalFormElement>;
             "wallet-button": LocalJSX.WalletButton & JSXBase.HTMLAttributes<HTMLWalletButtonElement>;
         }
     }
