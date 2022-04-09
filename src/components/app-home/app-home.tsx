@@ -1,5 +1,6 @@
 import { Component, h } from '@stencil/core';
 import { fakeData } from '../../utils/fake-data';
+import ProposalService from '../../services/proposal.services';
 
 @Component({
   tag: 'app-home',
@@ -8,6 +9,9 @@ import { fakeData } from '../../utils/fake-data';
 })
 export class AppHome {
   data = fakeData;
+
+  proposalService = new ProposalService();
+
   render() {
     return (
       <div class="app-home">
