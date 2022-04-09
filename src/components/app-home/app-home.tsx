@@ -84,29 +84,18 @@ export class AppHome {
   render() {
     const allProposals = [...this.pastProposals, ...this.createdProposals];
     console.log('ALL PROPOSALS', allProposals);
-    const filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
+    let filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
     const proposalObjs = filteredProposals.map(proposal => {
       // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
       return { ...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId };
     });
 
     const allVotes = [...this.pastVotes, ...this.castedVotes];
+    console.log('ALL VOTES', allVotes);
     const filteredVotes = allVotes.reduce((acc, vote) => {
       const supportValue = this.getSupportValue(vote.support, acc[vote.proposalId]);
-      return {
-        ...acc,
-        [vote.proposalId]: acc[vote.proposalId]
-          ? { ...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue }
-          : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue },
-      };
-    }, {});
-
-    console.log('Casted Votes', this.castedVotes);
-    console.log('Past Votes', this.pastVotes);
-
-    console.log('Filtered Votes', filteredVotes);
-
-    console.log('PROPOSAL OBJS', proposalObjs);
+      return { ...acc, [vote.proposalId]: vote.proposalId in acc ? {...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue} : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue }  };
+    }, {yes: 0, no: 0, abstain: 0, total: 0});
 
     return (
       <div class="app-home">
@@ -119,13 +108,13 @@ export class AppHome {
                     onCastVote={e => {
                       this.castVote(e.detail, proposalObjs[index].proposalId);
                     }}
-                    id={proposalObjs[index].proposalId}
-                    heading={proposalObjs[index].title}
+                    id={proposalObjs[index]?.proposalId}
+                    heading={proposalObjs[index]?.title}
                     expirationDate={new Date('04/15/2022')}
-                    description={proposalObjs[index].description}
-                    totalVotes={filteredVotes[proposal.proposalId].total}
-                    yay={filteredVotes[proposal.proposalId].yes}
-                    nay={filteredVotes[proposal.proposalId].no}
+                    description={proposalObjs[index]?.description}
+                    totalVotes={filteredVotes[proposal.proposalId]?.total}
+                    yay={filteredVotes[proposal.proposalId]?.yes}
+                    nay={filteredVotes[proposal.proposalId]?.no}
                   ></proposal-card>
                 </div>
               );
