@@ -21,7 +21,7 @@ export class AppHome {
               return (
                 <div class="ukg-col-lg-3 ukg-col-md-4 ukg-col-sm-4">
                   <proposal-card
-                    title={proposal.title}
+                    heading={proposal.title}
                     expirationDate={proposal.expirationDate}
                     description={proposal.description}
                     totalVotes={proposal.totalVotes}
