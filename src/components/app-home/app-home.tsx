@@ -51,21 +51,21 @@ export class AppHome {
     if (!proposal) {
       switch (support) {
         case '0':
-          return {yes: 1};
+          return { yes: 1 };
         case '1':
-          return {no: 1};
+          return { no: 1 };
         case '2':
-          return {abstain: 1};
+          return { abstain: 1 };
       }
     }
-    
+
     switch (support) {
       case '0':
-        return {yes: proposal.yes + 1};
+        return { yes: proposal.yes + 1 };
       case '1':
-        return {no: proposal.no + 1};
+        return { no: proposal.no + 1 };
       case '2':
-        return {abstain: proposal.abstain + 1};
+        return { abstain: proposal.abstain + 1 };
     }
   };
 
@@ -75,13 +75,18 @@ export class AppHome {
     const filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
     const proposalObjs = filteredProposals.map(proposal => {
       // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
-      return {...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId};
+      return { ...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId };
     });
 
     const allVotes = [...this.pastVotes, ...this.castedVotes];
     const filteredVotes = allVotes.reduce((acc, vote) => {
       const supportValue = this.getSupportValue(vote.support, acc[vote.proposalId]);
-      return { ...acc, [vote.proposalId]: acc[vote.proposalId] ? {...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue} : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue }  };
+      return {
+        ...acc,
+        [vote.proposalId]: acc[vote.proposalId]
+          ? { ...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue }
+          : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue },
+      };
     }, {});
 
     return (

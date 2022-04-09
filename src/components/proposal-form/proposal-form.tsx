@@ -11,8 +11,6 @@ export class ProposalForm {
   months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   categories = ['Education', 'Parks and Recreation', 'Budget', 'Restoration', 'Events'];
 
-  stepperEl;
-  finalStep;
   titleInput;
   descriptionInput;
   categoryInput;
@@ -45,8 +43,8 @@ export class ProposalForm {
     ));
   }
 
-  renderSelectOptions(opts) {
-    return opts.map(o => <ukg-select-option value={o} label={o} />);
+  renderSelectOptions(opts, months = false) {
+    return opts.map((o, index) => <ukg-select-option value={months ? `${index + 1}` : o} label={o} />);
   }
 
   toggleChip(ev) {
@@ -54,26 +52,16 @@ export class ProposalForm {
     chip.selected = !chip.selected;
   }
 
-  async clearProposalForm() {
-    this.titleInput.value = null;
-    this.descriptionInput.value = null;
-    this.categoryInput.value = null;
-    this.votingMonInput.value = null;
-    const chips = this.tagInput.querySelectorAll('ukg-chip');
-    chips.forEach(chip => (chip.selected = false));
-    this.stepperEl.clear();
-  }
-
   getSelectedTags() {
     const chips = this.tagInput.querySelectorAll('ukg-chip');
     return [...chips].filter(chip => chip.selected).map(chip => chip.value);
   }
 
-  async getValues() {
+  async submitProposal() {
     const title = this.titleInput.value;
     const description = this.descriptionInput.value;
     const category = this.categoryInput.value;
-    const votingMonth = this.votingMonInput.value;
+    const votingMonth = new Date(2022, parseInt(this.votingMonInput.value)).toDateString();
     const tags = this.getSelectedTags().join(',');
     const values = {
       title: title,
@@ -84,79 +72,85 @@ export class ProposalForm {
     };
 
     const signer = await this.proposalService.getSigner();
-    this.proposalService.createProposal(signer,JSON.stringify(values));
-    console.log(JSON.stringify(values));
+    this.proposalService.createProposal(signer, JSON.stringify(values));
+    // console.log(JSON.stringify(values));
+    return JSON.stringify(values);
   }
 
   render() {
     return (
       <Host>
-        <ukg-stepper ref={el => (this.stepperEl = el)}>
+        <ukg-stepper>
           <ukg-step is-active step="1">
             Title
             <form slot="content">
               <ukg-input-container>
-                <ukg-input ref={el => (this.titleInput = el)}></ukg-input>
+                <ukg-input id="title-input" ref={el => (this.titleInput = el)}></ukg-input>
               </ukg-input-container>
-              <ukg-button emphasis="mid" ukg-stepper-next-button disabled={this.titleInputDisabled}>
-                Continue
-              </ukg-button>
+              <ukg-button-group right-align>
+                <ukg-button emphasis="high" ukg-stepper-next-button disabled={this.titleInputDisabled}>
+                  Continue
+                </ukg-button>
+              </ukg-button-group>
             </form>
           </ukg-step>
           <ukg-step step="2">
             Description
             <form slot="content">
               <ukg-input-container size="maximum">
-                <ukg-textarea ref={el => (this.descriptionInput = el)}></ukg-textarea>
+                <ukg-textarea id="description-input" ref={el => (this.descriptionInput = el)}></ukg-textarea>
               </ukg-input-container>
-              <ukg-button emphasis="mid" ukg-stepper-next-button disabled={this.descriptionInputDisabled}>
-                Continue
-              </ukg-button>
+              <ukg-button-group right-align>
+                <ukg-button emphasis="high" ukg-stepper-next-button disabled={this.descriptionInputDisabled}>
+                  Continue
+                </ukg-button>
+              </ukg-button-group>
             </form>
           </ukg-step>
           <ukg-step step="3">
             Category
             <form slot="content">
               <ukg-input-container size="maximum">
-                <ukg-select header="Label" select-state="secondary" ref={el => (this.categoryInput = el)}>
+                <ukg-select id="category-input" header="Label" select-state="secondary" ref={el => (this.categoryInput = el)}>
                   {this.renderSelectOptions(this.categories)}
                 </ukg-select>
               </ukg-input-container>
-              <ukg-button emphasis="mid" ukg-stepper-next-button disabled={this.categoryInputDisabled}>
-                Continue
-              </ukg-button>
+              <ukg-button-group right-align>
+                <ukg-button emphasis="high" ukg-stepper-next-button disabled={this.categoryInputDisabled}>
+                  Continue
+                </ukg-button>
+              </ukg-button-group>
             </form>
           </ukg-step>
           <ukg-step step="4">
             Voting Month
             <form slot="content">
               <ukg-input-container size="maximum">
-                <ukg-select header="Label" select-state="secondary" ref={el => (this.votingMonInput = el)}>
-                  {this.renderSelectOptions(this.months)}
+                <ukg-select id="voting-mon-input" header="Label" select-state="secondary" ref={el => (this.votingMonInput = el)}>
+                  {this.renderSelectOptions(this.months, true)}
                 </ukg-select>
               </ukg-input-container>
-              <ukg-button emphasis="mid" ukg-stepper-next-button>
-                Continue
-              </ukg-button>
+              <ukg-button-group right-align>
+                <ukg-button emphasis="high" ukg-stepper-next-button>
+                  Continue
+                </ukg-button>
+              </ukg-button-group>
             </form>
           </ukg-step>
-          <ukg-step step="5" ref={el => (this.finalStep = el)}>
+          <ukg-step step="5">
             Tags
             <form slot="content">
-              <ukg-chip-group align="left" error="false" error-label="Error" fitted-type="none" aria-label="Tags" ref={el => (this.tagInput = el)}>
+              <ukg-chip-group id="tag-input" align="left" error="false" error-label="Error" fitted-type="none" aria-label="Tags" ref={el => (this.tagInput = el)}>
                 {this.renderTags()}
               </ukg-chip-group>
-              <ukg-button emphasis="mid" onClick={() => this.getValues()}>
-                Submit
-              </ukg-button>
+              <ukg-button-group right-align>
+                <ukg-button emphasis="high" onClick={() => this.submitProposal()}>
+                  Submit
+                </ukg-button>
+              </ukg-button-group>
             </form>
           </ukg-step>
         </ukg-stepper>
-        <ukg-button-group right-align>
-          <ukg-button emphasis="mid" onClick={() => this.clearProposalForm()}>
-            Clear
-          </ukg-button>
-        </ukg-button-group>
       </Host>
     );
   }
