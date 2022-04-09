@@ -81,9 +81,9 @@ export default class ProposalService {
   //   return igniteGovernor.methods.getVotes().call();
   // }
 
-  async vote(proposalId, support, signer) {
+  async vote(proposalId, support) {
     const governorAddress = this.addresses.IGNITE_GOVERNOR_ADDRESS;
-    const igniteGovernorContract = new ethers.Contract(governorAddress, IgniteGovernorContract, signer);
+    const igniteGovernorContract = new ethers.Contract(governorAddress, IgniteGovernorContract, this.signer);
 
     // const castVoteData = igniteGovernorContract.interface.encodeFunctionData('castVote', [proposalId, support]);
     await igniteGovernorContract.castVote(proposalId, support);
@@ -103,6 +103,13 @@ export default class ProposalService {
 
         onError(error);
       });
+  }
+
+  hasVoted(proposalId) {
+    const governorAddress = this.addresses.IGNITE_GOVERNOR_ADDRESS;
+    const igniteGovernorContract = new ethers.Contract(governorAddress, IgniteGovernorContract, this.signer);
+    const address = this.signer.getAddress();
+    return igniteGovernorContract.hasVoted(proposalId, address);
   }
 
   onPastVoteCreated(onPastVoteCreated) {
