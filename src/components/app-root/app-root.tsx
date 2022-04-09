@@ -31,7 +31,7 @@ export class AppRoot {
               </div>
             </ukg-nav-header>
             <div class="header-extension">
-              <h3>Heading</h3>
+              <h2>Heading</h2>
               <p>A Blockchain powered voting system that let's residents of a community make a real, transparent impact</p>
             </div>
             <main>

@@ -11,6 +11,12 @@ export namespace Components {
     interface AppRoot {
     }
     interface ProposalCard {
+        "description": string;
+        "expirationDate": Date;
+        "nay": number;
+        "title": string;
+        "totalVotes": number;
+        "yay": number;
     }
     interface ProposalForm {
     }
@@ -63,6 +69,12 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface ProposalCard {
+        "description"?: string;
+        "expirationDate"?: Date;
+        "nay"?: number;
+        "title"?: string;
+        "totalVotes"?: number;
+        "yay"?: number;
     }
     interface ProposalForm {
     }

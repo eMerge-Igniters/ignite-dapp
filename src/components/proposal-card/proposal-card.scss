@@ -1,8 +1,10 @@
 :host {
   display: block;
+  min-height: max-content;
+  min-width: 100%;
 }
 
 ukg-card {
-  min-width: 300px;
-  max-width: 200px;
+  height: 100%;
+  width: 100%;
 }

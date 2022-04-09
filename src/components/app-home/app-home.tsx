@@ -1,4 +1,5 @@
 import { Component, h } from '@stencil/core';
+import { fakeData } from '../../utils/fake-data';
 
 @Component({
   tag: 'app-home',
@@ -6,11 +7,7 @@ import { Component, h } from '@stencil/core';
   scoped: true,
 })
 export class AppHome {
-  // async triggerTaskDrawer() {
-  //   const drawer = (await document.querySelector('ukg-task-drawer')) as any;
-  //   await drawer.triggerDrawer();
-  // }
-
+  data = fakeData;
   render() {
     return (
       <div class="app-home">
@@ -20,16 +17,22 @@ export class AppHome {
         </ukg-button> */}
         <ukg-grid-container>
           <ukg-grid size="default">
-            <div class="ukg-col-lg-3 ukg-col-md-4 ukg-col-sm-4">
-              <proposal-card></proposal-card>
-            </div>
+            {this.data.map(proposal => {
+              return (
+                <div class="ukg-col-lg-3 ukg-col-md-4 ukg-col-sm-4">
+                  <proposal-card
+                    title={proposal.title}
+                    expirationDate={proposal.expirationDate}
+                    description={proposal.description}
+                    totalVotes={proposal.totalVotes}
+                    yay={proposal.yay}
+                    nay={proposal.nay}
+                  ></proposal-card>
+                </div>
+              );
+            })}
           </ukg-grid>
         </ukg-grid-container>
-        {/* <ukg-task-drawer-container style={{ 'min-height': '100vh' }}>
-          <ukg-task-drawer heading="Create Proposal">
-            <proposal-form></proposal-form>
-          </ukg-task-drawer>
-        </ukg-task-drawer-container> */}
       </div>
     );
   }

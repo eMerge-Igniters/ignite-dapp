@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'proposal-card',
@@ -6,14 +6,24 @@ import { Component, Host, h } from '@stencil/core';
   scoped: true,
 })
 export class ProposalCard {
+
+  @Prop() title = ''
+  @Prop() expirationDate: Date = null;
+  @Prop() description = ''
+  @Prop() totalVotes = 0
+  @Prop() yay = 0
+  @Prop() nay = 0
+
   render() {
     return (
       <Host>
-        <ukg-card>
-          <ukg-card-header card-title="Heading"> </ukg-card-header>
-          <ukg-card-content>Content</ukg-card-content>
+        <ukg-card fit-content>
+          <ukg-card-header card-title={this.title}> </ukg-card-header>
+          <ukg-card-content>{this.description}</ukg-card-content>
           <ukg-card-footer>
-            <div slot="left">footer left</div> <div slot="right"> footer right</div>
+             <div slot="right">
+               <ukg-button>Vote</ukg-button>
+             </div>
           </ukg-card-footer>
         </ukg-card>
       </Host>
