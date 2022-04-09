@@ -133,7 +133,7 @@ export class AppRoot {
             <div
               class="header-extension"
               style={{
-                paddingBottom: this.isMobile ? '40px' : null,
+                paddingBottom: this.isMobile ? '60px' : null,
                 boxSizing: 'content-box'
               }}
             >
