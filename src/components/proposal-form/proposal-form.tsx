@@ -16,6 +16,7 @@ export class ProposalForm {
   categoryInput;
   votingMonInput;
   tagInput;
+  stepperEl;
 
   proposalService = new ProposalService();
 
@@ -23,7 +24,6 @@ export class ProposalForm {
   @State() descriptionInputDisabled: boolean = true;
   @State() categoryInputDisabled: boolean = true;
 
-  @Listen('ukgInput')
   @Listen('ukgChange')
   handleInput(ev) {
     if (ev.target === this.titleInput) {
@@ -32,6 +32,14 @@ export class ProposalForm {
       this.descriptionInputDisabled = ev.target.value ? false : true;
     } else if (ev.target === this.categoryInput) {
       this.categoryInputDisabled = ev.target.value ? false : true;
+    }
+  }
+
+  @Listen('keydown')
+  handleKey(ev) {
+    if (ev.key === 'Enter') {
+      ev.preventDefault();
+      this.stepperEl.next();
     }
   }
 
@@ -80,7 +88,7 @@ export class ProposalForm {
   render() {
     return (
       <Host>
-        <ukg-stepper>
+        <ukg-stepper ref={el => (this.stepperEl = el)}>
           <ukg-step is-active step="1">
             Title
             <form slot="content">
