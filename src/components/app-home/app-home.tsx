@@ -15,7 +15,7 @@ export class AppHome {
         </p>
 
         <stencil-route-link url="/profile/stencil">
-          <button>Profile page</button>
+          <ukg-button>hello</ukg-button>
         </stencil-route-link>
       </div>
     );
