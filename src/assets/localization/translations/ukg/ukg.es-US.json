@@ -1,0 +1,514 @@
+{
+  "DATE_PICKER": {
+    "DATE_LABEL": {
+      "description": "Etiqueta para el ingreso de fecha en el selector de fecha",
+      "message": "Fecha"
+    },
+    "DONE_LABEL": {
+      "description": "Etiqueta para el botón Listo en el selector de intervalo de fechas",
+      "message": "Listo"
+    },
+    "END_DATE_LABEL": {
+      "description": "Etiqueta para la fecha de finalización en el selector de intervalo de fechas",
+      "message": "Fecha de finalización"
+    },
+    "START_DATE_LABEL": {
+      "description": "Etiqueta para la fecha de inicio en el selector de intervalo de fechas",
+      "message": "Fecha de inicio"
+    },
+    "TODAY_LABEL": {
+      "description": "Etiqueta para el botón Hoy en el selector de intervalo de fechas",
+      "message": "Hoy"
+    },
+    "MONTH_ARIA_LABEL": {
+      "description": "Etiqueta para el mes de la selección de fecha",
+      "message": "Mes"
+    },
+    "YEAR_ARIA_LABEL": {
+      "description": "Etiqueta para el selector de fechas del mes",
+      "message": "Año"
+    },
+    "PREVIOUS_MONTH_ARIA_LABEL": {
+      "description": "Etiqueta para el selector de fechas del mes anterior",
+      "message": "Mes anterior"
+    },
+    "NEXT_MONTH_ARIA_LABEL": {
+      "description": "Etiqueta para el selector de fechas del mes siguiente",
+      "message": "Mes siguiente"
+    }
+  },
+  "NAVIGATION": {
+    "ARIA_LABEL": {
+      "description": "Etiqueta Aria para el cajón de navegación principal",
+      "message": "Menú lateral"
+    },
+    "BACK_BUTTON_TEXT": {
+      "description": "Texto de información sobre herramientas para el botón Atrás en el encabezado",
+      "message": "Atrás"
+    },
+    "BUTTON_TEXT": {
+      "description": "Texto de información sobre herramientas para el botón Menú",
+      "message": "Menú de navegación lateral"
+    },
+    "CLOSE_BUTTON_TEXT": {
+      "description": "Texto de información sobre herramientas para el botón Cerrar en el encabezado",
+      "message": "Cerrar"
+    },
+    "CLOSE_NAVIGATION": {
+      "description": "Cerrar el cajón de navegación",
+      "message": "Cerrar el menú"
+    },
+    "NAVIGATION_OPTIONS": {
+      "description": "el menú Opciones para la navegación lateral",
+      "message": "Menú Opciones"
+    },
+    "EXPAND_NAVIGATION": {
+      "description": "Expandir todos los elementos de acordeón en el menú de navegación",
+      "message": "Expandir todo"
+    },
+    "COLLAPSE_NAVIGATION": {
+      "description": "Contraer todos los elementos acordeón en el menú de navegación",
+      "message": "Contraer todo"
+    },
+    "NAVIGATION_ITEMS": {
+      "description": "etiqueta para el menú Opciones para modificar los elementos de navegación",
+      "message": "Elementos de menú"
+    },
+    "NAVIGATION_LAYOUT": {
+      "description": "etiqueta para el menú Opciones para modificar el diseño de navegación",
+      "message": "Diseño de menú"
+    },
+    "STANDARD_VIEW_NAVIGATION": {
+      "description": "opción de diseño para la vista estándar de menú",
+      "message": "Vista estándar"
+    },
+    "COMPACT_VIEW_NAVIGATION": {
+      "description": "opción de diseño para la vista compacta de menú",
+      "message": "Vista compacta"
+    },
+    "HOVER_ON_NAVIGATION": {
+      "description": "Opción desplegable para las pestañas de navegación (activado)",
+      "message": "Pestañas desplegables activadas"
+    },
+    "HOVER_OFF_NAVIGATION": {
+      "description": "Opción desplegable para las pestañas de navegación (desactivado)",
+      "message": "Pestañas desplegables desactivadas"
+    },
+    "PIN_NAVIGATION": {
+      "description": "Anclar el menú Navegación",
+      "message": "Anclar"
+    },
+    "UNPIN_NAVIGATION": {
+      "description": "Desanclar el menú Navegación",
+      "message": "Desanclar"
+    }
+  },
+  "RADIOGROUP": {
+    "ERROR": {
+      "description": "El texto 'Selección requerida' en el grupo de radio",
+      "message": "Selección requerida"
+    }
+  },
+  "PAGINATOR": {
+    "ARIALABEL": {
+      "description": "paginador",
+      "message": "paginador"
+    },
+    "OF": {
+      "description": "el texto ’de’ en el paginador",
+      "message": "de"
+    },
+    "ROWS_PER_PAGE": {
+      "description": "el texto ’filas por página’ en el paginador",
+      "message": "Filas por página"
+    },
+    "ROW_OPTIONS": {
+      "description": "Etiqueta aria para el botón Opciones de fila",
+      "message": "opciones de filas"
+    }
+  },
+  "SEARCHBAR": {
+    "SEARCH": {
+      "description": "Texto de marcador de posición para barra de búsqueda",
+      "message": "Buscar"
+    }
+  },
+  "TOOLBAR": {
+    "BUTTON_GROUP_LABEL": {
+      "description": "Botón Etiqueta de grupo para la barra de herramientas",
+      "message": "Botón Etiqueta de grupo en la barra de herramientas"
+    },
+    "TOOLTIP_TEXT": {
+      "description": "Texto de información sobre herramientas para el menú de desbordamiento del botón Grupo receptivo en la barra de herramientas",
+      "message": "Más"
+    }
+  },
+  "DATA_TABLE": {
+    "SELECTION_LABEL": {
+      "message": "Seleccionado",
+      "description": "Establecer el texto de la etiqueta seleccionada en el encabezado"
+    },
+    "SELECT_ALL_ON_PAGE": {
+      "message": "Seleccionar todo en esta página",
+      "description": "Opciones de menú desplegable cuando hay varias páginas - todo lo de la página"
+    },
+    "SELECT_ALL": {
+      "message": "Seleccionar todo",
+      "description": "Opciones de menú desplegable cuando hay varias páginas - todo"
+    },
+    "DESELECT_ALL": {
+      "message": "Cancelar la selección de todo",
+      "description": "Opciones de menú desplegable cuando hay varias páginas - cancelar selección"
+    }
+  },
+  "DATE_INPUT_TEXT": {
+    "INPUT_ARIA_LABEL": {
+      "description": "Etiqueta para el ingreso del texto de la fecha",
+      "message": "Ingreso de la fecha"
+    },
+    "DAY_ARIA_LABEL": {
+      "description": "Etiqueta para el ingreso del texto del día",
+      "message": "Día"
+    },
+    "MONTH_ARIA_LABEL": {
+      "description": "Etiqueta para el ingreso del texto del mes",
+      "message": "Mes"
+    },
+    "YEAR_ARIA_LABEL": {
+      "description": "Etiqueta para el ingreso del texto del año",
+      "message": "Año"
+    }
+  },
+  "CALENDAR": {
+    "MONTH_ARIA_LABEL": {
+      "description": "Etiqueta para el mes calendario",
+      "message": "Mes"
+    },
+    "YEAR_ARIA_LABEL": {
+      "description": "Etiqueta para el año calendario",
+      "message": "Año"
+    },
+    "PREVIOUS_MONTH_ARIA_LABEL": {
+      "description": "Etiqueta para el mes anterior del calendario",
+      "message": "Mes anterior"
+    },
+    "NEXT_MONTH_ARIA_LABEL": {
+      "description": "Etiqueta para el mes siguiente del calendario",
+      "message": "Mes siguiente"
+    }
+  },
+  "DATE_RANGE_PICKER": {
+    "START_INPUT_ARIA_LABEL": {
+      "description": "Etiqueta para la fecha de inicio del selector de rango de fechas",
+      "message": "Fecha de inicio"
+    },
+    "END_INPUT_ARIA_LABEL": {
+      "description": "Etiqueta para la fecha de término del selector de rango de fechas",
+      "message": "Fecha de término"
+    }
+  },
+  "INPUT": {
+    "TODAY_BUTTON_LABEL": {
+      "description": "Etiqueta para el ingreso del día de hoy",
+      "message": "Hoy"
+    },
+    "DONE_BUTTON_LABEL": {
+      "description": "Etiqueta para el ingreso lista",
+      "message": "Listo"
+    }
+  },
+  "PROGRESS_LINEAR": {
+    "CANCEL": {
+      "description": "Etiqueta para cancelar el progreso linear lista",
+      "message": "Cancelar"
+    }
+  },
+  "SEARCH": {
+    "PLACEHOLDER": {
+      "description": "Marcador de posición para el componente de búsqueda",
+      "message": "Buscar"
+    },
+    "CLEAR": {
+      "description": "Botón Borrar y mensaje de aviso",
+      "message": "Borrar"
+    }
+  },
+  "SELECT": {
+    "OK_STRING": {
+      "description": "Seleccionar etiqueta para el botón OK",
+      "message": "Listo"
+    },
+    "CANCEL_STRING": {
+      "description": "Seleccionar etiqueta para el botón Cancelar",
+      "message": "Cancelar"
+    },
+    "NO_OPTIONS_STRING": {
+      "description": "Cadena de regiones activas para cuando no se encuentran opciones en la selección ni en el menú",
+      "message": "No se encontraron opciones."
+    },
+    "SEARCH_ARIA_LABEL": {
+      "description": "Etiqueta para la entrada de búsqueda",
+      "message": "Buscar en la lista de opciones abajo"
+    }
+  },
+  "TASK_DRAWER": {
+    "RESET_BUTTON_TEXT": {
+      "description": "Etiqueta para el botón Restablecer de la caja de tareas",
+      "message": "Restablecer"
+    },
+    "RESET_BUTTON_ARIA_LABEL": {
+      "description": "Etiqueta aria para el botón Restablecer de la caja de tareas",
+      "message": "Restablecer"
+    },
+    "APPLY_BUTTON_TEXT": {
+      "description": "Etiqueta para el botón Solicitar de la caja de tareas",
+      "message": "Solicitar"
+    },
+    "APPLY_BUTTON_ARIA_LABEL": {
+      "description": "Etiqueta aria para el botón Solicitar de la caja de tareas",
+      "message": "Solicitar"
+    }
+  },
+  "CHECKBOXGROUP": {
+    "ERROR": {
+      "description": "El texto \"Selección obligatoria\" en el grupo de casillas de selección",
+      "message": "Selección obligatoria"
+    }
+  },
+  "CHECKBOX": {
+    "ARIA_LABEL": {
+      "message": "Icono de la casilla de selección",
+      "description": "Etiqueta aria para el icono de la casilla de selección"
+    }
+  },
+  "DROPZONE": {
+    "BROWSE_FILES": {
+      "description": "Etiqueta del botón Examinar archivos ",
+      "message": "examinar archivos",
+      "a11y": "Examinar archivos, {{count}} archivo",
+      "a11y_0": "Examinar archivos",
+      "a11y_plural": "Examinar archivos, {{count}} archivos"
+    },
+    "DISABLED": {
+      "description": "Etiqueta para el icono desactivado",
+      "message": "Desactivado"
+    },
+    "DRAG_AND_DROP": {
+      "description": "Invitar a arrastrar y soltar o [examinar un archivo]",
+      "message": "Arrastrar y soltar o"
+    },
+    "DROP_FILES": {
+      "description": "Invitar a soltar archivos",
+      "message": "Soltar archivos"
+    },
+    "FILE_ADDED": {
+      "description": "Mensaje vocalizado cuando se agrega un archivo",
+      "message": "{{file}}, agregado."
+    },
+    "FILES_ADDED": {
+      "description": "Mensaje vocalizado cuando se agregan varios archivos",
+      "message": "{{count}} archivos, agregados."
+    },
+    "FILES_CLEARED": {
+      "description": "Mensaje vocalizado cuando se borran archivos",
+      "message": "Archivos borrados"
+    },
+    "READ_ONLY": {
+      "description": "Etiqueta para el icono de solo lectura",
+      "message": "Solo lectura"
+    }
+  },
+  "FILE_SIZE_UNITS": {
+    "BIT_UNIT": {
+      "description": "Tamaño del archivo en bits",
+      "message": "bit",
+      "message_plural": "bits"
+    },
+    "BYTE_UNIT": {
+      "description": "Tamaño del archivo en bytes",
+      "message": "byte",
+      "message_plural": "bytes"
+    },
+    "KB_UNIT": {
+      "description": "Tamaño del archivo en kilobytes",
+      "message": "kilobyte",
+      "message_plural": "kilobytes",
+      "message_label": "Kilobyte",
+      "message_label_plural": "Kilobytes",
+      "message_abbr": "KB"
+    },
+    "MB_UNIT": {
+      "description": "Tamaño del archivo en megabytes",
+      "message": "megabyte",
+      "message_plural": "megabytes",
+      "message_label": "Megabyte",
+      "message_label_plural": "Megabytes",
+      "message_abbr": "MB"
+    },
+    "GB_UNIT": {
+      "description": "Tamaño del archivo en gigabytes",
+      "message": "gigabyte",
+      "message_plural": "gigabytes",
+      "message_label": "Gigabyte",
+      "message_label_plural": "Gigabytes",
+      "message_abbr": "GB"
+    }
+  },
+  "SKIP_TO_MAIN": {
+    "TEXT": {
+      "message": "Saltar al contenido principal",
+      "description": "saltar al texto de botón principal"
+    }
+  },
+  "TREE": {
+    "LINK_INDICATOR": {
+      "description": "Etiqueta para marcar si un elemento del árbol es un enlace para usuarios del lector de pantalla",
+      "message": "(enlace)"
+    }
+  },
+  "MENU_CONTAINER": {
+    "OPTIONS_STRING": {
+      "description": "Cadena de opciones para mostrar número de opciones en el menú.",
+      "message": "{{count}} opción",
+      "message_plural": "{{count}} opciones"
+    }
+  },
+  "CAROUSEL": {
+    "PAGINATION_LABEL": {
+      "description": "Etiqueta aria para todo el elemento de paginación, {{index}} se reemplaza por el número exacto de diapositivas",
+      "message": "Hay {{index}} diapositivas"
+    },
+    "PAGE_CHANGE": {
+      "description": "Texto que se lee cuando se cambia de página en la navegación, {{index}} se reemplaza por el número exacto de diapositivas",
+      "message": "Actualmente en diapositiva {{index}}"
+    },
+    "PREV_SLIDE_MESSAGE": {
+      "description": "Etiqueta aria para el botón Navegar a la diapositiva anterior",
+      "message": "Diapositiva anterior"
+    },
+    "NEXT_SLIDE_MESSAGE": {
+      "description": "Etiqueta aria para el botón Navegar a la diapositiva siguiente",
+      "message": "Diapositiva siguiente"
+    },
+    "FIRST_SLIDE_MESSAGE": {
+      "description": "Texto insertado en la región aria activa cuando se llega a la primera diapositiva",
+      "message": "Esta es la primera diapositiva"
+    },
+    "LAST_SLIDE_MESSAGE": {
+      "description": "Texto insertado en la región aria activa cuando se llega a la última diapositiva",
+      "message": "Esta es la última diapositiva"
+    },
+    "PAGINATION_BULLET_MESSAGE": {
+      "description": "Etiqueta aria de cada elemento de la viñeta de paginación {{index}} se reemplaza por el número exacto de diapositivas",
+      "message": "Ir a la diapositiva {{index}}"
+    }
+  },
+  "UPLOAD": {
+    "CLEAR": {
+      "description": "Etiqueta del botón Borrar y mensaje de aviso",
+      "message": "Borrar",
+      "a11y": "Borrar: {{file}}"
+    },
+    "DELETE": {
+      "description": "Etiqueta del botón Eliminar y mensaje de aviso",
+      "message": "Eliminar",
+      "a11y": "Eliminar: {{file}}"
+    },
+    "FILE_PROGRESSING": {
+      "description": "Mensaje de progreso",
+      "message": "Progreso"
+    },
+    "FILE_TOO_BIG": {
+      "description": "Mensaje para señalar que supera el tamaño máximo permitido",
+      "message": "El archivo seleccionado debe ser de menos de {{count}} {{- unit}}"
+    },
+    "FILE_TYPE_ERROR": {
+      "description": "Mensaje para señalar que el tipo archivo no es compatible",
+      "message": "El tipo de archivo {{type}} no es compatible. El archivo seleccionado debe ser: {{accept}}."
+    },
+    "MAX_NUMBER_OF_FILES_PASSED": {
+      "description": "Mensaje de error para señalar que se ha superado el número máximo de archivos permitidos.",
+      "message": "Solo puedes seleccionar hasta {{count}} archivo.",
+      "message_plural": "Solo puedes seleccionar hasta {{count}} archivos."
+    },
+    "MAX_NUMBER_OF_FILES_REACHED": {
+      "description": "Mensaje de para señalar que se alcanza el número máximo de archivos permitidos.",
+      "message": "Ha alcanzado el número máximo de archivos permitidos"
+    },
+    "RETRY": {
+      "description": "Etiqueta del botón Reintentar y mensaje de aviso",
+      "message": "Reintentar",
+      "a11y": "Reintentar: {{file}}"
+    },
+    "UPLOAD_FAIL": {
+      "description": "Mensaje para señalar que se produjo un error durante la carga",
+      "message": "El archivo seleccionado no se pudo procesar, presione el botón Reintentar para volver a intentarlo."
+    }
+  },
+  "DOCUMENT_VIEWER": {
+    "SIDEBAR_LABEL": {
+      "description": "Etiqueta aria para el botón de cambio de la lista en miniatura del documento",
+      "message": "Cambiar lista en miniatura del documento"
+    },
+    "PREV_PAGE_LABEL": {
+      "description": "Etiqueta aria para el botón Página anterior",
+      "message": "Página anterior"
+    },
+    "NEXT_PAGE_LABEL": {
+      "description": "Etiqueta aria para el botón Página siguiente",
+      "message": "Página siguiente"
+    },
+    "ZOOM_OUT_LABEL": {
+      "description": "Etiqueta aria para el botón Alejar",
+      "message": "Alejar"
+    },
+    "ZOOM_IN_LABEL": {
+      "description": "Etiqueta aria para el botón Acercar",
+      "message": "Acercar"
+    },
+    "FOCUSED_PAGE_NUMBER_LABEL": {
+      "description": "Etiqueta aria para la entrada de número de página enfocada",
+      "message": "Página actual"
+    },
+    "OF": {
+      "description": "Preposición entre la entrada de número de página enfocada y el número total de páginas",
+      "message": "de"
+    },
+    "ZOOM_LEVEL_LABEL": {
+      "description": "Etiqueta aria para el botón Seleccionar nivel de zoom",
+      "message": "Nivel de zoom"
+    },
+    "FULL_SCREEN_LABEL": {
+      "description": "Etiqueta aria para el botón Pantalla completa",
+      "message": "Pantalla completa"
+    },
+    "PRINT_LABEL": {
+      "description": "Etiqueta aria para el botón Imprimir",
+      "message": "Imprimir"
+    },
+    "DOWNLOAD_LABEL": {
+      "description": "Etiqueta aria para el botón Descargar",
+      "message": "Descargar"
+    },
+    "SEND_LABEL": {
+      "description": "Etiqueta aria para el botón Enviar",
+      "message": "Enviar"
+    },
+    "SUMMARY": {
+      "description": "Etiqueta aria para la barra de herramientas lateral",
+      "message": "Resumen del documento"
+    },
+    "CONTENT": {
+      "description": "Etiqueta aria para el área de contenido",
+      "message": "Contenido del documento"
+    },
+    "PAGE": {
+      "description": "Palabra por página en texto alternativo",
+      "message": "Página"
+    },
+    "EXTENDED_DESCRIPTION": {
+      "description": "Etiqueta para guiar a los usuarios del lector de pantalla a la descripción extendida",
+      "message": "Descripción extendida abajo."
+    }
+  }
+}
