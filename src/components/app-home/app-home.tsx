@@ -33,6 +33,10 @@ export class AppHome {
       e => {
         const { proposalId, support } = e.returnValues;
         this.castedVotes = [...this.castedVotes, { proposalId, support }];
+        const card = document.getElementById(proposalId);
+        if (card) {
+          (card as any).hasVoted = true;
+        }
       },
       _ => {},
     );
@@ -51,23 +55,31 @@ export class AppHome {
     if (!proposal) {
       switch (support) {
         case '0':
-          return {yes: 1};
+          return { yes: 1 };
         case '1':
-          return {no: 1};
+          return { no: 1 };
         case '2':
-          return {abstain: 1};
+          return { abstain: 1 };
       }
     }
-    
+
     switch (support) {
       case '0':
-        return {yes: proposal.yes + 1};
+        return { yes: proposal.yes + 1 };
       case '1':
-        return {no: proposal.no + 1};
+        return { no: proposal.no + 1 };
       case '2':
-        return {abstain: proposal.abstain + 1};
+        return { abstain: proposal.abstain + 1 };
     }
   };
+
+  castVote(value, proposalId) {
+    this.proposalService.vote(proposalId, value);
+  }
+
+  hasVoted(proposalId) {
+    return this.proposalService.hasVoted(proposalId);
+  }
 
   render() {
     const allProposals = [...this.pastProposals, ...this.createdProposals];
@@ -75,14 +87,26 @@ export class AppHome {
     const filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
     const proposalObjs = filteredProposals.map(proposal => {
       // {"title":"jkbkjb","description":"jkhbkj","category":"Parks and Recreation","votingMonth":"March","tags":"community,education,sports"}
-      return {...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId};
+      return { ...JSON.parse(proposal.returnValues.description), proposalId: proposal.returnValues.proposalId };
     });
 
     const allVotes = [...this.pastVotes, ...this.castedVotes];
     const filteredVotes = allVotes.reduce((acc, vote) => {
       const supportValue = this.getSupportValue(vote.support, acc[vote.proposalId]);
-      return { ...acc, [vote.proposalId]: acc[vote.proposalId] ? {...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue} : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue }  };
+      return {
+        ...acc,
+        [vote.proposalId]: acc[vote.proposalId]
+          ? { ...acc[vote.proposalId], total: acc[vote.proposalId].total + 1, ...supportValue }
+          : { yes: 0, no: 0, abstain: 0, total: 1, ...supportValue },
+      };
     }, {});
+
+    console.log('Casted Votes', this.castedVotes);
+    console.log('Past Votes', this.pastVotes);
+
+    console.log('Filtered Votes', filteredVotes);
+
+    console.log('PROPOSAL OBJS', proposalObjs);
 
     return (
       <div class="app-home">
@@ -92,6 +116,10 @@ export class AppHome {
               return (
                 <div class="ukg-col-lg-4 ukg-col-md-4 ukg-col-sm-4">
                   <proposal-card
+                    onCastVote={e => {
+                      this.castVote(e.detail, proposalObjs[index].proposalId);
+                    }}
+                    id={proposalObjs[index].proposalId}
                     heading={proposalObjs[index].title}
                     expirationDate={new Date('04/15/2022')}
                     description={proposalObjs[index].description}

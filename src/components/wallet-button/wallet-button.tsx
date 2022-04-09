@@ -16,13 +16,14 @@ export class WalletButton {
       <Host>
         {this.connected ? (
           <ukg-button
-            key="disconnect"
+            key="connected"
             emphasis="mid"
+            disabled
             onClick={() => {
               this.disconnect.emit();
             }}
           >
-            Disconnect
+            Connected
             <i slot="child-icon" class="fa-solid fa-arrow-right-from-bracket"></i>
           </ukg-button>
         ) : (

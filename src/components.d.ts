@@ -18,6 +18,7 @@ export namespace Components {
     interface ProposalCard {
         "description": string;
         "expirationDate": Date;
+        "hasVoted": boolean;
         "heading": string;
         "nay": number;
         "totalVotes": number;
@@ -95,8 +96,10 @@ declare namespace LocalJSX {
     interface ProposalCard {
         "description"?: string;
         "expirationDate"?: Date;
+        "hasVoted"?: boolean;
         "heading"?: string;
         "nay"?: number;
+        "onCastVote"?: (event: CustomEvent<any>) => void;
         "totalVotes"?: number;
         "yay"?: number;
     }

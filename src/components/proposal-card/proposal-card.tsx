@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, State, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'proposal-card',
@@ -7,6 +7,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class ProposalCard {
   modal;
   detailsModal;
+  radioGroup;
 
   @Prop() heading = '';
   @Prop() expirationDate: Date = null;
@@ -14,12 +15,17 @@ export class ProposalCard {
   @Prop() totalVotes = 0;
   @Prop() yay = 0;
   @Prop() nay = 0;
+  @Prop() hasVoted = false;
+
+  @Event() castVote: EventEmitter<any>;
 
   getDaysTillExpiration() {
     const timeTill = this.expirationDate.getTime() - new Date().getTime();
 
     return Math.floor(timeTill / (1000 * 60 * 60 * 24));
   }
+
+  @State() voteValue = 'for';
 
   render() {
     return (
@@ -54,6 +60,7 @@ export class ProposalCard {
                     ev.stopPropagation();
                     this.modal.present(ev);
                   }}
+                  disabled={this.hasVoted}
                 >
                   Vote
                 </ukg-button>
@@ -63,21 +70,31 @@ export class ProposalCard {
         </ukg-card>
 
         <ukg-modal ref={el => (this.modal = el)}>
-          <ukg-radio-group full-width>
-            <ukg-radio-button full-width value="for">
+          <ukg-radio-group
+            full-width
+            ref={el => {
+              this.radioGroup = el;
+            }}
+            value={this.voteValue}
+            onUkgChange={e => {
+              const { value } = e.detail;
+              this.voteValue = value;
+            }}
+          >
+            <ukg-radio-button full-width value="0">
               For
             </ukg-radio-button>
-            <ukg-radio-button full-width value="against">
+            <ukg-radio-button full-width value="1">
               Against
             </ukg-radio-button>
-            <ukg-radio-button full-width value="abstain">
+            <ukg-radio-button full-width value="2">
               Abstain
             </ukg-radio-button>
           </ukg-radio-group>
           <ukg-dialog-footer divider>
             <ukg-button
               onClick={() => {
-                // submit proposal vote
+                this.castVote.emit(this.radioGroup.value);
                 this.modal.dismiss();
               }}
               slot="button1"
@@ -88,7 +105,8 @@ export class ProposalCard {
         </ukg-modal>
 
         <ukg-modal is-full-screen ref={el => (this.detailsModal = el)}>
-          <ukg-nav-header showMenuButton={false}
+          <ukg-nav-header
+            showMenuButton={false}
             onUkgNavCloseButtonSelected={() => {
               this.detailsModal.dismiss();
             }}
@@ -96,7 +114,7 @@ export class ProposalCard {
             show-close-button
             heading={`${this.heading} - Updates`}
           ></ukg-nav-header>
-         <app-details heading={this.heading}></app-details>
+          <app-details heading={this.heading}></app-details>
         </ukg-modal>
       </Host>
     );
