@@ -21,6 +21,9 @@ export class AppHome {
       _ => {},
       e => {
         this.clearProposalForm();
+        if (this.createdProposals.find(proposal => proposal.returnValues.proposalId === e.returnValues.proposalId)) {
+          return;
+        }
         this.createdProposals = [...this.createdProposals, e];
       },
       _ => {},
@@ -104,7 +107,7 @@ export class AppHome {
     console.log('ALL VOTES', this.castedVotes);
     const allProposals = [...this.pastProposals, ...this.createdProposals];
     console.log('ALL PROPOSALS', allProposals);
-    let filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"'));
+    let filteredProposals = allProposals.filter(proposal => proposal.returnValues.description.includes('{"') && !proposal.returnValues.description.includes('test'));
 
     console.log('FILTERED PROPOSALS', filteredProposals);
     const proposalObjs = filteredProposals.map(proposal => {
