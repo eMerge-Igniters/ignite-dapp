@@ -7,7 +7,8 @@ import ProposalService from '../../services/proposal.services';
   scoped: true,
 })
 export class AppHome {
-  @State() data;
+  @State() createdProposals = [];
+  @State() pastProposals = [];
 
   proposalService = new ProposalService();
 
@@ -15,28 +16,38 @@ export class AppHome {
     this.proposalService.onProposalsCreated(
       _ => {},
       e => {
-        this.data = [...this.data, e];
-        console.log(this.data);
+        this.createdProposals = [...this.createdProposals, e];
       },
       _ => {},
     );
+
+    this.proposalService.onPastProposals((e) => {
+      this.pastProposals = [...e];
+    });
   }
 
   render() {
+    const allProposals = [...this.pastProposals, ...this.createdProposals];
+    console.log('ALL PROPOSALS', allProposals);
+    const filteredProposals = allProposals.filter(proposal => !proposal.returnValues.description.includes('PID'));
+    const descriptions = filteredProposals.map((proposal) =>  { 
+      return proposal.returnValues.description; 
+    } );
+    console.log(descriptions);
     return (
       <div class="app-home">
         <ukg-grid-container>
           <ukg-grid size="default">
-            {this.data.map(proposal => {
+            {filteredProposals.map((_, index) => {
               return (
                 <div class="ukg-col-lg-4 ukg-col-md-4 ukg-col-sm-4">
                   <proposal-card
-                    heading={proposal.title}
-                    expirationDate={proposal.expirationDate}
-                    description={proposal.description}
-                    totalVotes={proposal.totalVotes}
-                    yay={proposal.yay}
-                    nay={proposal.nay}
+                    heading={descriptions[index]}
+                    expirationDate={new Date('04/15/2022')}
+                    description={descriptions[index]}
+                    totalVotes={600}
+                    yay={500}
+                    nay={100}
                   ></proposal-card>
                 </div>
               );
