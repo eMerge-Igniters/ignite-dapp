@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, State } from '@stencil/core';
 
 @Component({
   tag: 'app-root',
@@ -6,11 +6,22 @@ import { Component, h } from '@stencil/core';
   scoped: true,
 })
 export class AppRoot {
-  heading = 'Ignite Community Hub';
+  heading = 'Community Hub';
   taskDrawerEl;
+  mediaQuery = window.matchMedia('(min-width: 555px');
+  @State() isMobile = false;
 
   async triggerTaskDrawer() {
     await this.taskDrawerEl?.triggerDrawer();
+  }
+
+  onWindowResize(mq) {
+    this.isMobile = !mq.matches;
+  }
+
+  componentWillLoad() {
+    this.onWindowResize(this.mediaQuery);
+    this.mediaQuery.onchange = mq => this.onWindowResize(mq);
   }
 
   render() {
@@ -27,17 +38,62 @@ export class AppRoot {
             <proposal-form></proposal-form>
           </ukg-task-drawer>
           <div slot="task-main-content">
-            <ukg-nav-header showMenuButton={false} disable-gradient heading={this.heading}>
+            <ukg-nav-header showMenuButton={false} disable-gradient>
+              <div
+                style={{
+                  display: 'flex',
+                  height: '100%',
+                  alignItems: 'center',
+                }}
+                slot="left"
+              >
+                <img
+                  style={{
+                    width: '128px',
+                    display: 'inline-block',
+                  }}
+                  src="assets/icon/logo.svg"
+                ></img>
+                <h3
+                  style={{
+                    display: 'inline-block',
+                    color: 'white',
+                    marginLeft: '1rem',
+                    marginTop: '0',
+                    marginBottom: '0',
+                  }}
+                >
+                  {this.heading}
+                </h3>
+              </div>
+
               <div slot="icons">
-                <wallet-button connected></wallet-button>
-                <ukg-button emphasis="mid" onClick={() => this.triggerTaskDrawer()}>
-                  Add Proposal
-                  <i slot="child-icon" class="fa-solid fa-plus"></i>
-                </ukg-button>
+                {!this.isMobile ? (
+                  <ukg-button-group>
+                    <ukg-button emphasis="mid" onClick={() => this.triggerTaskDrawer()}>
+                      Add Proposal
+                      <i slot="child-icon" class="fa-solid fa-plus"></i>
+                    </ukg-button>
+                    <wallet-button connected></wallet-button>
+                  </ukg-button-group>
+                ) : null}
               </div>
             </ukg-nav-header>
-            <div class="header-extension">
-              <h2>Welcome, Miami-Dade!</h2>
+            <div class="header-extension" style={{
+              paddingBottom: this.isMobile ? '40px':null
+            }}>
+              {this.isMobile ? (
+                <ukg-button-group style={{paddingBottom: '16px'}}>
+                  <ukg-button emphasis="mid" onClick={() => this.triggerTaskDrawer()}>
+                    Add Proposal
+                    <i slot="child-icon" style={{ color: 'white', marginLeft: '4px'}} class="fa-solid fa-plus"></i>
+                  </ukg-button>
+                  <wallet-button connected></wallet-button>
+                </ukg-button-group>
+              ) : null}
+              <h2 style={{
+                marginTop: this.isMobile ? '0': null
+              }}>Welcome, Miami-Dade!</h2>
               <p>A Blockchain powered voting system that let's residents of a community make a real, transparent impact</p>
             </div>
             <main>
